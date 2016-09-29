@@ -1,0 +1,5 @@
+$lb_ok="[\u9ed2\u6192\u9055OKzh_CN]"
+$lb_close="[\u9ed2\u6192\u9055Closezh_CN]"
+$lb_cancel="[\u9ed2\u6192\u9055Cancelzh_CN]"
+$lb_warning_critical="[\u9ed2\u6192\u9055Warning, Critical~~~~~zh_CN]"
+$lb_task_completed="[\u9ed2\u6192\u9055The task completed.~~~~~~zh_CN]"

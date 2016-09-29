@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export CLUSTER_IP="9.186.96.217"
+export NODE1_IP="9.186.96.215"
+export NODE2_IP="9.186.96.216"
+

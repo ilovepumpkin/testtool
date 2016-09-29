@@ -1,0 +1,12 @@
+#!/usr/bin/expect
+
+set hostname [lindex $argv 0]
+
+set timeout 5
+set password l0destone
+
+spawn bash -c "ssh-copy-id -i ~/.ssh/id_rsa.pub '-p26 root@$hostname'"
+expect {
+	"Password:" { send -- "$password\r" }
+}
+expect eof

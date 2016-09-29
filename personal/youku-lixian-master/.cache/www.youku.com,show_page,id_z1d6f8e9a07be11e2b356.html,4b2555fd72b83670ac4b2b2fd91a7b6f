@@ -1,0 +1,2202 @@
+status: 200
+content-length: 156997
+content-location: http://www.youku.com/show_page/id_z1d6f8e9a07be11e2b356.html
+x-cache: Miss from 3.w.b28
+set-cookie: ykss=9dfdb7524ea778ed1d9cd02c; path=/;
+ domain=.youku.com, u=__LOGOUT__; path=/; domain=.youku.com
+accept-ranges: bytes
+expires: Mon, 23 Dec 2013 09:13:45 GMT
+vary: Accept-Encoding
+server: Apache
+connection: keep-alive
+-content-encoding: gzip
+pragma: 
+cache-control: max-age=300
+date: Mon, 23 Dec 2013 09:08:45 GMT
+content-type: text/html; charset=UTF-8
+age: 0
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="咱们结婚吧 - 高清全集在线观看" />
+<meta name="description" content="咱们结婚吧,咱们结婚吧在线观看,咱们结婚吧全集,电视剧咱们结婚吧"/>
+<title>《咱们结婚吧》50集全—大陆—电视剧—优酷网，视频高清在线观看—又名：《We Get Married》《我们结婚吧》</title>
+<script>
+
+window.g_config={
+	id:'z1d6f8e9a07be11e2b356',
+	pk_odshow:'270792',
+	cat_id:'97', 
+	uc_domain:'i.youku.com',
+	youku_homeurl:'www.youku.com',
+	player: 'http://static.youku.com/v1.0.0390/v/swf/player.swf',
+	onlinetime: '0000-00-00 00:00:00'
+};</script>
+<link href="http://static.youku.com/v1.0.0914/index/css/youku.css" type="text/css" rel="stylesheet" />
+<link href="http://static.youku.com/v1.0.0914/show/css/showinfo_V1.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="window">
+<div class="screen">
+<link href="http://static.youku.com/v1.0.0914/index/css/qheader.css" type="text/css" rel="stylesheet" />
+<div class="yk-header" id="qheader">
+	<div class="yk-header-container" id="qheader_box">
+		<div class="yk-box">
+			<div class="yk-logo">
+					
+		<a href="http://www.youku.com/" title="Youku 优酷" attr=g_6><img src="http://static.youku.com/index/img/header/yklogo.png" alt="Youku 优酷" attr=1></a>
+	
+
+
+			</div>        
+			<div class="yk-so">
+				<div class="yk-so-box">
+					<form id="qheader_search" 
+					action="http://www.soku.com/search_video"
+					method="get"
+					target="_blank"
+					onsubmit="
+						if(typeof(XBox) == 'object'){ 
+							return false; 
+						}
+						else if(typeof(QHeader) == 'object'){
+							return QHeader.Search.doSearch();
+						}
+					">
+						<input name="q" id="headq" type="text" autocomplete="off" />
+						<button type="submit"><em>搜索</em></button>
+						<div id="qheader_keywords" style="display:none;">
+
+
+
+
+
+					<a target="_blank" href="http://www.soku.com/search_video/q_" class=""></a>
+			</div>
+						<input type="text" style="display:none;" />
+					</form>
+				</div>
+			</div>
+			<div class="yk-ucenter">
+                            <div class="yk-upload">
+                                <div class="dropdown" id="qheader_upload">
+                                    <div class="handle"><a href="http://www.youku.com/v/upload" target="_blank"><i class="ico-upload-l2"></i><span>上传</span></a></div>
+                                    <div class="panel">
+                                        <ul class="yk-userservices-list">
+                                            <li><a href="http://www.youku.com/v/upload" target="_blank"><i class="ico-upload-l2"></i>上传视频</a></li>
+                                            <li><a href="http://i.youku.com/u/videos" target="_blank"><i class="ico-videomanage-l2"></i>视频管理</a></li>
+                                            <li><a href="
+                                                                                                                http://i.youku.com/u/profile/
+                                                                                                                " target="_blank" id="qheader_upload_userspace"><i class="ico-myspace-l2"></i>我的空间</a></li>
+                                            <li><a href="http://share.youku.com" target="_blank"><i class="ico-sharing-l2"></i>分享计划</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                
+                            <div class="yk-playrecords">
+                                <div class="dropdown" id="qheader_looking">
+                                    <div class="handle"><a href="http://i.youku.com/u/home?type=watch_timeline" target="_blank"><i class="ico-record-l2"></i><span>记录</span></a></div>
+                                    <div class="panel"></div>
+                                </div>
+                            </div>
+                            <div class="yk-notifications" id="qheader_notice" style="display:none;">
+                                <a href="http://i.youku.com/u/comments" target="_blank">
+                                    <i class="ico-notifications-l2"></i>
+                                    <span class="yk-notifications-num" id="qheader_noticenum" style="display:none;"></span>
+                                </a>
+                            </div>  
+                            <div class="yk-subscription">
+                                <div class="dropdown" id="qheader_subscription"><!-- dropdown-open：打开 -->
+                                    <div class="handle"><a href=" http://hz.youku.com/red/click.php?tp=1&cp=4009106&cpp=1000798&url=http%3A%2F%2Fi.youku.com%2Fu%2Fhome%3Ftype%3Dsubscribe" target="_blank" id="subscibe-a"><i class="ico-subscription-l2"></i><span>订阅</span><span class="yk-subscription-num" style="display:none">NaN</span></a></div>
+                                    <div class="panel"></div>
+                                    <input type="hidden" id="new_subscribe_simbol" value="0" />
+                                    <input type="hidden" id="old_subscribe_num" value="NaN" />
+                                </div>
+                            </div>
+                            <div class="yk-userlog">
+                                    <div class="yk-userlog-before" id="qheader_logbefore" style="display:none">
+                                            <div class="dropdown">
+	<div class="handle">
+		<a id="qheader_login" href="http://www.youku.com/user_login/"><i class="ico-user-l2"></i>登录</a><span class="splite">|</span><a href="http://www.youku.com/user_signup/from_header/" target="_blank">注册</a>
+	</div>
+	<div class="panel">
+		<div class="yk-userlog-action">
+			<h4>登录个人中心，观看精彩视频：</h4>
+			<span class="btn-login" id="qheader_login2">登　录</span><a class="btn-reg" href="http://www.youku.com/user_signup/from_header/" target="_blank">注　册</a>
+		</div>
+		<ul class="yk-userservices-list">
+			<li><a href="http://i.youku.com/u/home?type=watch_timeline" target="_blank"><i class="ico-record-l2"></i>观看记录</a></li>
+			<li>
+                <a href="http://i.youku.com/u/home?type=favorite" target="_blank"><i class="ico-favorite-l2"></i>我的收藏</a>
+                <!-- tips “我的追剧”搬家到这里 2013-11-13 -->
+                <div class="qtips qtips_tl">
+                   <div class="handler" onclick="this.parentNode.style.display='none';"></div>
+                   <div class="arrow"></div>
+                   <div class="content">“我的追剧”搬家到这里</div>
+                </div>
+                <!-- tips “我的追剧”搬家到这里 end -->    
+            </li>
+			<li><a href="http://i.youku.com/u/home?type=subscribe" target="_blank"><i class="ico-subscription-l2"></i>我的订阅</a></li>
+		</ul>
+		<ul class="yk-userservices-list yk-userservices-list-topborder">
+			<li><a href="http://i.youku.com/u/videos" target="_blank"><i class="ico-videomanage-l2"></i>视频管理</a></li>
+			<li><a href="http://i.youku.com/u/profile" target="_blank"><i class="ico-myspace-l2"></i>我的空间</a></li>
+			<li><a href="http://vip.youku.com/" target="_blank"><i class="ico-member-l2"></i>优酷会员</a></li>
+		</ul>
+	</div>
+</div>
+                                    </div>
+                                    <div class="yk-userlog-after" id="qheader_logafter" style="display:none;"></div>
+                            </div>
+                            <div class="yk-msgbox" id="yk-msgbox" style="display:none">
+                                <div title="关闭" class="handle" id="close_handle"><i></i></div>
+                                <div class="content" id="tab_msg">
+                                    <div class="videomsg" style="display:none"></div>
+                                    <div class="msglist" style="display:none"></div>
+                                </div>
+                                <div class="content" id="notice_show" style="display:none">
+                                    <div class="updatemsg" id="watchmsg_v"></div>
+                                </div>
+                            </div>
+			</div>
+						<div class="yk-menus-wrap">
+                            <ul class="yk-menus">
+                                <li class="yk-menus-item"><a href="http://www.youku.com" title="返回首页">首页</a></li>
+                                <li class="yk-menus-item">
+                                    <div class="yk-guide">
+                                        <div class="dropdown" id="qheader_channel">
+                                            <div class="handle"><a href="javascript:void(0);"><i class="ico-channels-l2"></i><span>频道</span></a></div>
+                                            <div class="panel">
+                                                
+
+
+
+
+
+	<div class="yk-guide-entry yk-channels">
+	<dl class="yk-guide-item">
+		<dd><a href="http://www.youku.com/">优酷首页</a></dd>
+		<dd><a href="http://tv.youku.com/">电视剧</a></dd>
+		<dd><a href="http://movie.youku.com/">电影</a></dd>
+		<dd><a href="http://zy.youku.com/">综艺</a></dd>
+		<dd><a href="http://music.youku.com/">音乐</a></dd>
+		<dd><a href="http://comic.youku.com/">动漫</a></dd>
+	</dl>
+	<dl class="yk-guide-item">
+		<dt><label>资讯中心</label></dt>
+                 <dd><a href="http://news.youku.com/">资讯</a></dd>
+                 <dd><a href="http://jilupian.youku.com/">纪录片</a></dd>
+	         <dd><a href="http://sports.youku.com/">体育</a></dd>
+	        <dd><a href="http://finance.youku.com/">财经</a></dd>
+                <dd><a href="http://edu.youku.com/">教育</a></dd>
+                <dd><a href="http://aixin.youku.com/">爱心</a></dd>
+	
+	
+	</dl>
+	<dl class="yk-guide-item">
+		<dt><label>娱乐中心</label></dt>
+		<dd><a href="http://ent.youku.com/">娱乐</a></dd>
+		<dd><a href="http://dv.youku.com/">原创</a></dd>
+		<dd><a href="http://game.youku.com/">游戏</a></dd>
+		<dd><a href="http://fun.youku.com/">搞笑</a></dd>
+                <dd><a href="http://original.youku.com/">优酷出品</a></dd>
+	</dl>
+	<dl class="yk-guide-item">
+		<dt><label>生活中心</label></dt>
+		<dd><a href="http://life.youku.com/">生活</a></dd>
+		<dd><a href="http://fashion.youku.com/">时尚</a></dd>
+		<dd><a href="http://travel.youku.com/">旅游</a></dd>
+		<dd><a href="http://auto.youku.com/">汽车</a></dd>
+		<dd><a href="http://tech.youku.com/">科技</a></dd>
+		<dd><a href="http://baby.youku.com/">母婴</a></dd>
+	</dl>
+</div>
+<div class="yk-guide-entry yk-services">
+	<dl class="yk-guide-item">
+		<dt><label>用户中心</label></dt>
+		<dd><a href="http://i.youku.com/u/official/">视频官网</a></dd>
+	</dl>
+	<dl class="yk-guide-item">
+		<dt><label>优酷会员</label></dt>
+		<dd><a href="http://pay.youku.com/" target="_blank">充值</a></dd>
+		<dd><a href="http://vip.youku.com/" target="_blank">会员</a></dd>
+		<dd><a href="http://yuanxian.youku.com/" target="_blank">院线</a></dd>
+	</dl>
+	<dl class="yk-guide-item">
+		<dt><label>客户端</label></dt>
+		<dd><a href="http://mobile.youku.com/index/paike/" target="_blank">拍客</a></dd>
+		<dd><a href="http://mobile.youku.com/index/wireless/" target="_blank">优酷移动</a></dd>
+		<dd><a href="http://mobile.youku.com/index/pc/" target="_blank">PC客户端</a></dd>
+	</dl>
+</div>
+	                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+			</div>
+					</div>
+		<iframe class="mask" frameborder="0" scrolling="no" style="width:100%;height:60px;"></iframe>
+	</div><!-- yk-header end -->
+</div>
+<script>
+var udomain = 'u.youku.com'
+,UC_DOMAIN = 'i.youku.com'
+,nc_domain ='nc.youku.com'
+,youku_index_domain = 'www.youku.com'
+,notice_domain ='http://notice.youku.com'
+,space_domain ='u.youku.com'
+,comments_domain ='http://comments.youku.com'
+,openLookingClick = '1'
+,passport = '1'
+,passport_url = 'http://passport.youku.com'
+,callback = 'mynull'
+,novamodule = ''
+,youku_homeurl = 'www.youku.com'
+//only for header
+,qheaderjs = {
+	relyon: [
+		{
+			src			: 'http://static.youku.com/v1.0.0914/js/prototype.js',
+			condition	: 'typeof($)=="function"',
+			ready		: false
+		},{
+			src			: 'http://static.youku.com/v1.0.0914/index/js/common.js',
+			condition	: 'typeof(login)=="function"',
+			ready		: false
+		},{
+			src			: 'http://static.youku.com/v1.0.0914/index/js/qwindow.js',
+			condition	: 'typeof(Qwindow)=="function"',
+			ready		: false
+		}
+	],
+	addons: [
+	 	{
+			src			: 'http://static.soku.com/v1.0.0713/soku/js/sk-box-open.js',
+			condition	: 'typeof(XBox)=="object"',
+			ready		: false
+		}
+	]
+};
+</script>
+<script src="http://static.youku.com/v1.0.0914/index/js/qheader.js"></script>
+<script src="http://static.youku.com/v1.0.0914/index/js/qwindow.js"></script>
+<script src="http://static.youku.com/v1.0.0914/index/js/popup.js"></script>
+<div class="s_body">
+<div class="s_main col2_21">
+		
+	<div id='ab_101486'></div>
+	<div style="display:none"><div id='ab_854'></div></div>
+	<div id="AB100" style="display:block;"></div>
+	<div id="title_wrap"><div id="title"><div class="base">
+	<h1 class="title">
+		<span class="type"><a href="http://www.youku.com/v_olist/c_97.html" charset="411-1-1" target="_blank">电视剧</a>:</span>
+		<span class="name">咱们结婚吧</span>
+ 
+		<span class="pub">2013</span> 
+	</h1>
+	<div class="clear"></div>
+</div></div></div>
+	<div class="left">
+		<div id="showInfo_wrap"><div id="showInfo"><div class="showInfo poster_w"><!--poster_w:海报尺寸200x300; poster_s:海报尺寸120x170;-->
+	<ul class="baseinfo">
+		<li class="link"><a charset="411-2-11" href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html" target="_blank" title="咱们结婚吧"></a></li>
+<li class="thumb"><img src='http://r4.ykimg.com/050E000051930CE8670C4A1ADB040B22' alt='咱们结婚吧'></li>
+			<li class="status"><span class="bg"></span></li>
+		<li class="ishd"><span class="ico__SD"></span></li>
+		
+		
+<li class="row1 rate">
+	<span class="ratingstar"><label>评分:</label><span class="rating" title="有1,069,351人顶过
+有130,341人踩过"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">9.0</em></span></span>
+
+<span class="rating_dp"><label>豆瓣:</label>暂无</span>
+</li>	
+		<li class="row1 alias"> 
+	<label>别名:</label>
+					We Get Married			/		我们结婚吧	</li>
+	
+		<li class="row2">
+		<span class="pub"><label>上映:</label>2013-11-06</span>
+					<span class="pub"><label>优酷开播:</label>2013-11-07</span>
+			</li>
+	
+			
+		<li class="row2">
+			<span class="area">
+<label>地区:</label>
+	<a  charset="411-2-1" href="http://www.youku.com/v_olist/c_97_a_大陆.html" target="_blank">大陆</a></span>	
+			<span class="type">
+	<label>类型:</label>
+						<a target="_blank"  charset="411-2-8" href="http://www.youku.com/v_olist/c_97_g_剧情.html">剧情</a> / 					<a target="_blank"  charset="411-2-8" href="http://www.youku.com/v_olist/c_97_g_都市.html">都市</a> / 					<a target="_blank"  charset="411-2-8" href="http://www.youku.com/v_olist/c_97_g_家庭.html">家庭</a> / 					<a target="_blank"  charset="411-2-8" href="http://www.youku.com/v_olist/c_97_g_言情.html">言情</a> / 					<a target="_blank"  charset="411-2-8" href="http://www.youku.com/v_olist/c_97_g_时装.html">时装</a>			</span>	
+		</li>
+		<li class="row1">
+			<span class="actor">
+	<label>主演:</label>
+						<a href="http://www.youku.com/star_page/uid_UNjkxODg=.html"  charset="411-2-10" target="_blank">黄海波</a> / 					<a href="http://www.youku.com/star_page/uid_UNjg5MDQ=.html"  charset="411-2-10" target="_blank">高圆圆</a> / 					<a href="http://www.youku.com/star_page/uid_UNjIyMjA=.html"  charset="411-2-10" target="_blank">张凯丽</a> / 					<a href="http://www.youku.com/star_page/uid_UODU4MjA=.html"  charset="411-2-10" target="_blank">王彤</a> / 					<a href="http://www.youku.com/star_page/uid_UMTMxOTYyNA==.html"  charset="411-2-10" target="_blank">柳岩</a>			</span>	
+				
+		</li>
+	</ul>
+
+
+	<ul class="basedata">
+		<li class="row2">
+			<span class="play">
+				<label>总播放:</label>1,027,073,700
+			</span>
+			<span class="comment">
+				<label>评论:</label><em class="num">183,314</em> / <label>收藏:</label><em class="num">40,294</em>
+			</span>
+		</li>
+		<li class="row2">
+			<span class="increm">
+				<label>今日新增播放:</label>7,884,556			</span>
+			<span class="duration">
+									<label>集均播放:</label>19,562,956							</span>
+		</li>
+		<li class="row2">
+			<span class="vr">
+						<label>指数:</label>
+				<a title="优酷指数"  charset="411-2-16" href="http://hz.youku.com/red/click.php?tp=1&cp=4005347&cpp=1000536&url=http://index.youku.com/vr_show/showid_z1d6f8e9a07be11e2b356.html" target="_blank" charset=""><span class="ico__VR"></span><span id="vr_id" class="num"><div class="ico__loading_16"></div></span></a>
+					</span>
+		</li>
+		<li class="clear"></li>
+	</ul>
+
+<div class="basenotice">
+
+	
+		共50集
+	
+		<span id="YK_Follow"></span>
+	<style type="text/css">
+	
+@charset "utf-8";
+
+.attention_info{padding:40px 50px 30px 30px;}
+
+.attention_info .att_success{margin:-10px -15px 20px 15px;}
+.attention_info .att_success .hint{height:75px;margin-bottom:10px;padding:25px 40px 0;border:1px solid #ffda70;background:#fffdcd;}
+.attention_info .att_success .ht_ico{float:left;width:40px;height:30px;background:url(http://static.youku.com/v1.0.0914/u/img/attention/ico_LS.gif) no-repeat scroll;}
+.attention_info .att_success .ht_cont{padding-left:40px;}
+.attention_info .att_success h3{color:#555;}
+.attention_info .att_success .text{line-height:25px;color:#555;font-size:14px;}
+.attention_info .att_success .tab{height:95px;background:url(http://static.youku.com/v1.0.0914/u/img/attention/ico_show.png) no-repeat scroll;}
+
+.attention_info .att_fail{margin-bottom:20px;}
+.attention_info .att_fail .att_ico{float:left;width:40px;height:29px;background:url(http://static.youku.com/v1.0.0914/u/img/attention/ico_notice.png) no-repeat scroll;}
+.attention_info .att_fail .att_cont{padding-left:40px;}
+.attention_info .att_fail .title{height:30px;}
+.attention_info .att_fail h3{color:#555;}
+.attention_info .att_fail .text{line-height:25px;color:#555;font-size:14px;}
+.attention_info .att_fail a{color:#3299e0;}
+.attention_info .action{text-align:center;}
+	</style>
+	<div  id="Followed_Failuer" style="display:none;">
+		<div class="attention_info">
+			<div class="att_fail">
+				<div class="att_ico"></div>
+				<div class="att_cont">
+					<div class="title"><h3>订阅失败!</h3></div>				<div class="text">
+						<span>
+							请刷新页面并重试。如果依然有问题，请<a target="_blank" href="http://www.youku.com/service/feed/subtype/4/?" id="Feedback">反馈给我们</a>。
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="action">
+				<div onclick="popwin.hide();" class="form_btn form_btn_m form_btnmaj_m"><span class="form_btn_text">确&nbsp;&nbsp;&nbsp;&nbsp;定</span></div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+			<ul class="baseaction">
+    <li class="action">
+                                                            <a class="btnShow btnplayposi"  charset="411-2-3" href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html" target="_blank"><em>播放正片</em></a>
+                        
+            </li>
+</ul>
+<div class="baseshare interactArea">
+	<div class="fns">
+		<div class="fn" id="fn_share">
+			<span class="handle" id="fn_share1"><a  charset="411-2-5" href="#" link="null">转发到</a></span>
+			<span class="options">
+			<a  charset="411-2-4" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://www.youku.com/show_page/id_z1d6f8e9a07be11e2b356.html&pics=http://r4.ykimg.com/050E000051930CE8670C4A1ADB040B22&title=%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E3%80%8A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%E3%80%8B%2C%E8%AF%A6%E7%BB%86%E8%B5%84%E6%96%99%E5%9C%A8%E8%BF%99%E9%87%8C" target="_blank" title="转发到QQ空间"><img src="http://static.youku.com/v1.0.0914/v/img/ico_Qzone.png"></a>
+			<a  charset="411-2-5" href="http://v.t.sina.com.cn/share/share.php?url=http://www.youku.com/show_page/id_z1d6f8e9a07be11e2b356.html&sourceUrl=http://www.youku.com/show_page/id_z1d6f8e9a07be11e2b356.html&pic=http://r4.ykimg.com/050E000051930CE8670C4A1ADB040B22&title=%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E3%80%8A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%E3%80%8B%2C%E8%AF%A6%E7%BB%86%E8%B5%84%E6%96%99%E5%9C%A8%E8%BF%99%E9%87%8C&appkey=2684493555&content=utf8" target="_blank" title="转发到新浪微博"><img src="http://static.youku.com/v1.0.0914/v/img/ico_sina.gif"></a>
+			<a charset="411-2-6" href="http://widget.renren.com/dialog/share?resourceUrl=http://www.youku.com/show_page/id_z1d6f8e9a07be11e2b356.html&pic=http://r4.ykimg.com/050E000051930CE8670C4A1ADB040B22&title=%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E3%80%8A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%E3%80%8B%2C%E8%AF%A6%E7%BB%86%E8%B5%84%E6%96%99%E5%9C%A8%E8%BF%99%E9%87%8C" target="_blank" title="转发到人人网"><img src="http://static.youku.com/v1.0.0914/v/img/ico_renren.gif"></a>
+			<a  charset="411-2-7" href="http://share.v.t.qq.com/index.php?c=share&a=index&title=%E7%BB%99%E5%A4%A7%E5%AE%B6%E5%88%86%E4%BA%AB%E3%80%8A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%E3%80%8B%2C%E8%AF%A6%E7%BB%86%E8%B5%84%E6%96%99%E5%9C%A8%E8%BF%99%E9%87%8C&url=http://www.youku.com/show_page/id_z1d6f8e9a07be11e2b356.html&appkey=e7ad0b0199994bda85ecc0a44ce9915f&site=www.youku.com&assname=youku2010&pic=http://r4.ykimg.com/050E000051930CE8670C4A1ADB040B22" target="_blank" title="转发到腾讯微博"><img src="http://static.youku.com/v1.0.0914/v/img/ico_qq_t.png"></a>
+			</span>
+		</div>
+		<div class="fn" id="fn_download" style="width:52px;">
+			<div class="handle"><a href="javascript:;" onclick="y.client.showDownload();" link="null"><i class="drophandle" style="float:right;margin-left:5px;*margin-left:0;"></i>下载</a></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>    	
+	
+	<div class="clear"></div>
+</div>
+<div class="interactPanels">
+		<div class="panel panel_down" id="panel_down" style="display: none;">
+			<div class="close" id="handle_down" onclick="y.client.closeDownload();" title="关闭"></div>
+			<div class="panelarea">
+				<div class="common">
+					<div class="head"><h4 class="title">你可以把视频下载到不同的设备</h4></div>
+					<div class="panel_con">
+						<div class="devices">
+							<div class="inner">
+							<div class="con">
+								<div class="thumb"><i class="ico_pc"></i></div>
+								<div class="desc">
+									<h6>使用电脑</h6>
+									<p>飞速下载</p>
+									<p>轻易收藏喜欢的视频</p>
+								</div>
+								<div class="form_btn form_btn_l form_btnsub_l"><a  charset="411-2-8" class="form_btn_text" href="javascript:;" onclick="y.client.pcTarget();">下载</a></div>
+								<!--<div class="form_btn form_btn_l form_btnmaj_l"><span class="form_btn_text">下载视频</span></div>-->
+							</div>
+							<div class="con">
+								<div class="thumb"><i class="ico_phone"></i></div>
+								<div class="desc">
+									<h6>使用手机</h6>
+									<p>支持iOS、安卓系统</p>
+									<p>断点续看，播放纪录带着走</p>
+								</div>
+								<div class="form_btn form_btn_l form_btnsub_l"><a  charset="411-2-9" href="javascript:;" onclick="y.client.iosTarget();" class="form_btn_text">下载手机客户端</a></div>
+							</div>
+							<div class="con">
+								<div class="thumb"><i class="ico_pad"></i></div>
+								<div class="desc">
+									<h6>使用平板电脑</h6>
+									<p>更大、更清晰</p>
+									<p>媲美电脑的播放体验</p>
+								</div>
+								<div class="form_btn form_btn_l form_btnsub_l"><a  charset="411-2-10" href="javascript:;" onclick="y.client.ipadTarget()" class="form_btn_text">下载Pad客户端</a></div>
+							</div>
+							<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--panel_down end-->
+	</div></div></div>
+
+		<a name="top"></a>
+		<div id="package_wrap"><div id="package"></div></div>
+		<div class="box nBox">
+			<div class="overview">
+				<div class="bd" id="bd">
+					<div class="opus" id="reload_showInfo">
+						<div id="overview_wrap"><div id="overview"><div class="overview_wrap">
+	<div class="seriespanels">
+	<div class="linkpanels">
+		<div id="EpisodeNote"></div>
+		
+		<div class="pgm-tab">
+		<div class="pgm-list ">
+			<ul id="zySeriesTab">
+							<li data="reload_1" class="current">
+					<a href="javascript:;"  charset="411-3-1" onclick="y.episode.show('reload_1')">1-40</a>
+				</li>
+							<li data="reload_41" >
+					<a href="javascript:;"  charset="411-3-1" onclick="y.episode.show('reload_41')">41-50</a>
+				</li>
+						</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+			<div class="linkpanel" id="zy_bd">
+			<div class="items" id="reload_1">
+					<div id="episode_wrap"><div id="episode"><div class="coll_10">
+		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html" title="咱们结婚吧 01" charset="411-5-1" target="_blank">1</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MTk4MDcy.html" title="咱们结婚吧 02" charset="411-5-2" target="_blank">2</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MzEzMjcy.html" title="咱们结婚吧 03" charset="411-5-3" target="_blank">3</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MzE4MDUy.html" title="咱们结婚吧 04" charset="411-5-4" target="_blank">4</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MzIzMDc2.html" title="咱们结婚吧 05" charset="411-5-5" target="_blank">5</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MjE5NDk2.html" title="咱们结婚吧 06" charset="411-5-6" target="_blank">6</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MjIzNzcy.html" title="咱们结婚吧 07" charset="411-5-7" target="_blank">7</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MjI4MjA4.html" title="咱们结婚吧 08" charset="411-5-8" target="_blank">8</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MjMyOTA4.html" title="咱们结婚吧 09" charset="411-5-9" target="_blank">9</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0MjM4NjA0.html" title="咱们结婚吧 10" charset="411-5-10" target="_blank">10</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MTEyMTY0.html" title="咱们结婚吧 11" charset="411-5-11" target="_blank">11</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0NzkzMTgw.html" title="咱们结婚吧 12" charset="411-5-12" target="_blank">12</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MzEzODYw.html" title="咱们结婚吧 13" charset="411-5-13" target="_blank">13</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MzIxMDEy.html" title="咱们结婚吧 14" charset="411-5-14" target="_blank">14</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODA0ODcy.html" title="咱们结婚吧 15" charset="411-5-15" target="_blank">15</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODExOTQ0.html" title="咱们结婚吧 16" charset="411-5-16" target="_blank">16</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODM4NDE2.html" title="咱们结婚吧 17" charset="411-5-17" target="_blank">17</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODQ2Nzcy.html" title="咱们结婚吧 18" charset="411-5-18" target="_blank">18</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODU0NTk2.html" title="咱们结婚吧 19" charset="411-5-19" target="_blank">19</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODYwOTUy.html" title="咱们结婚吧 20" charset="411-5-20" target="_blank">20</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODY2NjQ0.html" title="咱们结婚吧 21" charset="411-5-21" target="_blank">21</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODcyMDEy.html" title="咱们结婚吧 22" charset="411-5-22" target="_blank">22</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODc2NTA4.html" title="咱们结婚吧 23" charset="411-5-23" target="_blank">23</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODgxMTky.html" title="咱们结婚吧 24" charset="411-5-24" target="_blank">24</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODg1MzQ0.html" title="咱们结婚吧 25" charset="411-5-25" target="_blank">25</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI3NzQ0ODky.html" title="咱们结婚吧 26" charset="411-5-26" target="_blank">26</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0ODk0ODE2.html" title="咱们结婚吧 27" charset="411-5-27" target="_blank">27</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI3NzYxNTcy.html" title="咱们结婚吧 28" charset="411-5-28" target="_blank">28</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0OTA2NDY0.html" title="咱们结婚吧 29" charset="411-5-29" target="_blank">29</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI0OTEyMjgw.html" title="咱们结婚吧 30" charset="411-5-30" target="_blank">30</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MjU3Mjky.html" title="咱们结婚吧 31" charset="411-5-31" target="_blank">31</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html" title="咱们结婚吧 32" charset="411-5-32" target="_blank">32</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MjY4NDA4.html" title="咱们结婚吧 33" charset="411-5-33" target="_blank">33</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MjczMTA0.html" title="咱们结婚吧 34" charset="411-5-34" target="_blank">34</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1Mjc3NTQw.html" title="咱们结婚吧 35" charset="411-5-35" target="_blank">35</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MjgzNTA4.html" title="咱们结婚吧 36" charset="411-5-36" target="_blank">36</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1Mjg4NjE2.html" title="咱们结婚吧 37" charset="411-5-37" target="_blank">37</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1Mjk0NzI4.html" title="咱们结婚吧 38" charset="411-5-38" target="_blank">38</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MzAyMjE2.html" title="咱们结婚吧 39" charset="411-5-39" target="_blank">39</a></li>
+                    </ul>
+                    
+                		                                                                        <ul>
+                        <li><a href="http://v.youku.com/v_show/id_XNjI1MzA4MjI0.html" title="咱们结婚吧 40" charset="411-5-40" target="_blank">40</a></li>
+                    </ul>
+                    
+                		</div>
+</div></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>	
+<div id="series_wrap"><div id="series"></div></div>
+</div></div></div>
+						<div id="point_wrap"><div id="point"><div class="zy_aspect">
+<div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">分集剧情</h3></div>				
+	<div class="extend">
+				<a href="javascript:;" charset='411-4-1' onclick="javascript:window.location.hash = '#top';y.tab.change(this,'point');">全部分集剧情</a>
+			</div>
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="aspect_con">
+			<!--.deatail-->
+			<div class="detail">
+				<span class="short" id="show_info_short" style="display: inline;">
+								<span>杨桃是一家四星级酒店的大堂经理，由于在感情中受过伤，三十岁的她依然单身一人。三十三岁的果然在婚姻登记处做离婚登记办事员，父母婚姻的阴影使他成为典型恐婚族。在朋友的撮合下，桃子和果然很不情愿地见了面。没想到，俩人竟然都对彼此留下好感。关闭已久的心门刚刚打开，桃子却发现果然是恐婚男，她愤然撤离。桃子面对现实，毅然投入到相亲大军中。桃子的相亲举动刺激了果然，他...</span>
+				<span style="display:none">杨桃是一家四星级酒店的大堂经理，由于在感情中受过伤，三十岁的她依然单身一人。三十三岁的果然在婚姻登记处做离婚登记办事员，父母婚姻的阴影使他成为典型恐婚族。在朋友的撮合下，桃子和果然很不情愿地见了面。没想到，俩人竟然都对彼此留下好感。关闭已久的心门刚刚打开，桃子却发现果然是恐婚男，她愤然撤离。桃子面对现实，毅然投入到相亲大军中。桃子的相亲举动刺激了果然，他使出浑身解数，成功地将桃子的相亲一次次搅黄，自己却还是下不了结婚的决心。果然的父母知道了儿子恐婚的原因，开始反省他们的婚姻，果然也对婚姻有了新的认识。而桃子经过跟果然的几番交道后对果然有了全面的了解，重新树立起对婚姻的信心。最后有情人终成眷属。</span>
+				<a class="more" onclick="y.toggle.point(this)">查看详情>></a>
+								</span>
+			</div>
+							<div class="item">
+		<div class="link"><a charset="411-4-7"  title="咱们结婚吧 01" target="video" href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html"></a></div>
+		<div class="thumb"><img alt="咱们结婚吧 01" src="http://g2.ykimg.com/01270F1F465264E133D46E000000007E3B9002-2E59-4E5C-44C2-B4A30717ADA1"></div>
+		<div class="time"><span class="num">45:04</span><span class="bg"></span></div>
+		<div class="ishd">
+									<span class="ico__SD"></span>
+							</div>
+		
+		<div class="title"><a charset="411-4-2"  title="咱们结婚吧 01" target="video" href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html">咱们结婚吧 01</a></div>
+				<div class="stat"><span class="num">59,149,052</span><span class="ico__statplay" title="播放"></span></div>
+				<div class="desc">眼瞅着爱女杨桃已步入剩女的行列，退休女演员薛素梅通过各种途径为女张罗对象。三十二岁的杨桃是一名星级酒店的大堂经理，她因曾被男友甩掉，而对男人产生排斥感。三十五岁的果然是一名离婚登记办事员，父母婚姻的阴影使他成为典型恐婚族。一天，杨桃表姐夫西风将好友果然介绍给杨桃。杨桃与果然在西风安排下见面，两人却因停车位发生争执，由此一场“相亲”变成了“争执战”。</div>
+	
+		<div class="keylist">
+						<ul>
+									<li><em class="ktime">06:19</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html?firsttime=379" target="video" title="极品男女起冲突 夫妻大闹民政局">极品男女起冲突 夫妻大闹民政局</a></li>
+												<li><em class="ktime">21:33</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html?firsttime=1293" target="video" title="相亲对象抢车位 果然杨桃初邂逅">相亲对象抢车位 果然杨桃初邂逅</a></li>
+						</ul><ul>
+												<li><em class="ktime">29:16</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html?firsttime=1756" target="video" title="杨桃大意忘证件 果然仗义助脱困">杨桃大意忘证件 果然仗义助脱困</a></li>
+										</ul>
+						<div class="clear"></div>
+		</div>
+		<!--		-->
+</div><!--.item-->
+<div class="item">
+		<div class="link"><a charset="411-4-7"  title="咱们结婚吧 02" target="video" href="http://v.youku.com/v_show/id_XNjI0MTk4MDcy.html"></a></div>
+		<div class="thumb"><img alt="咱们结婚吧 02" src="http://g4.ykimg.com/01270F1F465265145E898100000000C8690D77-77FF-5093-654C-36CC944E2B08"></div>
+		<div class="time"><span class="num">45:05</span><span class="bg"></span></div>
+		<div class="ishd">
+									<span class="ico__SD"></span>
+							</div>
+		
+		<div class="title"><a charset="411-4-2"  title="咱们结婚吧 02" target="video" href="http://v.youku.com/v_show/id_XNjI0MTk4MDcy.html">咱们结婚吧 02</a></div>
+				<div class="stat"><span class="num">30,564,654</span><span class="ico__statplay" title="播放"></span></div>
+				<div class="desc">在西风的劝说下，果然决定与杨桃再次见面。果然因父母闹矛盾而放了杨桃鸽子，被蒙在鼓里的杨桃却在餐厅傻傻的等待。西风为挽回颜面，他再次设计让两人在KTV包厢相见。果然与杨桃合唱歌曲产生共鸣，两人哭着互吐心中不快。关键时刻，醉酒的果然却数落杨桃是花痴，继而两人互掐。西风见情况不妙，将两人分开。果然酒醒后给杨桃道歉，但他的态度却将杨桃再次激怒，杨桃暗中设局报仇。</div>
+	
+		<div class="keylist">
+						<ul>
+									<li><em class="ktime">09:42</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MTk4MDcy.html?firsttime=582" target="video" title="二次约会出状况 杨桃惨遭放鸽子">二次约会出状况 杨桃惨遭放鸽子</a></li>
+												<li><em class="ktime">23:14</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MTk4MDcy.html?firsttime=1394" target="video" title="一首歌曲产共鸣 果然杨桃哭诉往事">一首歌曲产共鸣 果然杨桃哭诉往事</a></li>
+						</ul><ul>
+												<li><em class="ktime">35:17</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MTk4MDcy.html?firsttime=2117" target="video" title="果然为醉话道歉 杨桃趁机恶惩其">果然为醉话道歉 杨桃趁机恶惩其</a></li>
+										</ul>
+						<div class="clear"></div>
+		</div>
+		<!--		-->
+</div><!--.item-->
+<div class="item">
+		<div class="link"><a charset="411-4-7"  title="咱们结婚吧 03" target="video" href="http://v.youku.com/v_show/id_XNjI0MzEzMjcy.html"></a></div>
+		<div class="thumb"><img alt="咱们结婚吧 03" src="http://g4.ykimg.com/01270F1F465264F2D3060200000000E43A61EB-339E-2A8F-709B-C8FA0369776E"></div>
+		<div class="time"><span class="num">45:04</span><span class="bg"></span></div>
+		<div class="ishd">
+									<span class="ico__SD"></span>
+							</div>
+		
+		<div class="title"><a charset="411-4-2"  title="咱们结婚吧 03" target="video" href="http://v.youku.com/v_show/id_XNjI0MzEzMjcy.html">咱们结婚吧 03</a></div>
+				<div class="stat"><span class="num">27,328,055</span><span class="ico__statplay" title="播放"></span></div>
+				<div class="desc">果然和朋友聊天时，他接到母亲打来的求助电话。果然得知父亲又离家出走，他立刻奉母命寻找父亲。果然在公园中找到了父亲，他用钱收买父亲。果父看在钱的份上，他跟着果然回家。未未母彩平到素梅家拜访，她大夸自己女婿，并借机羞辱素梅。彩平走后，素梅气得发火，她决定为爱女寻找金龟婿打败彩平。杨桃与母因为找对象的事儿再起争执，母女两人不欢而散。</div>
+	
+		<div class="keylist">
+						<ul>
+									<li><em class="ktime">06:19</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MzEzMjcy.html?firsttime=379" target="video" title="知儿见己跳舞 果父尴尬忙解释">知儿见己跳舞 果父尴尬忙解释</a></li>
+												<li><em class="ktime">11:41</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MzEzMjcy.html?firsttime=701" target="video" title="父母各抒己难处 果然夹中间受气">父母各抒己难处 果然夹中间受气</a></li>
+						</ul><ul>
+												<li><em class="ktime">33:29</em><a charset="411-4-4"  href="http://v.youku.com/v_show/id_XNjI0MzEzMjcy.html?firsttime=2009" target="video" title="杨桃婚事愁煞人 相依母女起争执">杨桃婚事愁煞人 相依母女起争执</a></li>
+										</ul>
+						<div class="clear"></div>
+		</div>
+		<!--		-->
+</div><!--.item-->
+
+	
+					</div><!--.aspect_con-->
+	</div><!--body end-->
+</div>
+</div>
+</div></div>
+						<div id="awardmod_wrap"><div id="awardmod"></div></div>
+												<div id="around_wrap"><div id="around"><div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">预告片</h3></div>				
+	<div class="extend">
+				<a href="javascript:;" charset='411-21-1' onclick="javascript:window.location.hash = '#top';y.tab.change(this,'around_type_2_title_%E9%A2%84%E5%91%8A%E7%89%87');">全部预告片</a>
+			</div>
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="collgrid4w">	
+			<div class="items" >
+				<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjIwNDkwMTQ4.html" charset="411-21-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》热播版预告" src="http://g4.ykimg.com/0100641F46525E6FCE413302692D2F06B97845-B47E-BA1D-8E41-70B76FFEBDBC"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">00:15</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjIwNDkwMTQ4.html" charset="411-21-2">《咱们结婚吧》热播版预告</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">187,319</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjIwNDkwMjk2.html" charset="411-21-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》预热版预告" src="http://g2.ykimg.com/0100641F46525E6DD15C9A003E880393E6D06B-8774-F6B3-E0D6-480D249D9176"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">00:15</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjIwNDkwMjk2.html" charset="411-21-2">《咱们结婚吧》预热版预告</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">100,156</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjA4NDk3MjUy.html" charset="411-21-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》斗阵篇" src="http://g4.ykimg.com/0100641F46523675A67EEF087AAA949A15D434-45F3-2209-6960-8F5F51A66794"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">01:00</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjA4NDk3MjUy.html" charset="411-21-2">《咱们结婚吧》斗阵篇</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">133,243</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjI0MTE5MjI0.html" charset="411-21-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》绯闻篇" src="http://g1.ykimg.com/0100641F46525CE5167F4C087AAA94454D7AE9-FFCF-39CA-BCB1-BD2C94DA69BE"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">01:00</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjI0MTE5MjI0.html" charset="411-21-2">《咱们结婚吧》绯闻篇</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">143,334</span></li>
+	</ul>
+<div class="clear"></div>
+	
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div><!--body end-->
+</div>
+<div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">花絮</h3></div>				
+	<div class="extend">
+				<a href="javascript:;" charset='411-22-1' onclick="javascript:window.location.hash = '#top';y.tab.change(this,'around_type_3_title_%E8%8A%B1%E7%B5%AE');">全部花絮</a>
+			</div>
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="collgrid4w">	
+			<div class="items" >
+				<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNDU1MjAwMjM2.html" charset="411-22-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》首爆片花 黄海波高圆圆恋情现冰山一角" src="http://g4.ykimg.com/0100401F46506264525BAA07D6F1FCC144C01D-C000-1EF2-6143-A3A797014D28"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">05:23</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNDU1MjAwMjM2.html" charset="411-22-2">《咱们结婚吧》首爆片花 黄海波高圆圆恋情现冰山一角</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">915,756</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNDg0NTg5NjQ0.html" charset="411-22-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》高圆圆李丽虹母女变“闺蜜”" src="http://g2.ykimg.com/01270F1F46514F94CDCF430123193C7B6AF5B0-2AA0-FA0B-4CFF-4258FEFC4394"></li>	
+	<li class="v_ishd">
+						<span class="ico__HD"></span>
+				</li>	
+	<li class="v_time"><span class="num">00:51</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNDg0NTg5NjQ0.html" charset="411-22-2">《咱们结婚吧》高圆圆李丽虹母女变“闺蜜”</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">112,091</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNDkzNjczMTAw.html" charset="411-22-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》片花" src="http://g4.ykimg.com/0100641F4651EACE6D039002692D2F122DFD51-F05E-495E-1DA8-02C51260DAFF"></li>	
+	<li class="v_ishd">
+						<span class="ico__HD"></span>
+				</li>	
+	<li class="v_time"><span class="num">10:51</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNDkzNjczMTAw.html" charset="411-22-2">《咱们结婚吧》片花</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">494,544</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjE4NDI2NDM2.html" charset="411-22-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》3分钟片花" src="http://g4.ykimg.com/0100641F465252D80C99CE02692D2F4C574F65-A0C1-4CA3-9920-186C292158FD"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">03:09</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjE4NDI2NDM2.html" charset="411-22-2">《咱们结婚吧》3分钟片花</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">1,494,601</span></li>
+	</ul>
+<div class="clear"></div>
+	
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div><!--body end-->
+</div>
+<div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">资讯</h3></div>				
+	<div class="extend">
+				<a href="javascript:;" charset='411-23-1' onclick="javascript:window.location.hash = '#top';y.tab.change(this,'around_type_4_title_%E8%B5%84%E8%AE%AF');">全部资讯</a>
+			</div>
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="collgrid4w">	
+			<div class="items" >
+				<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjQxMzY2MDUy.html" charset="411-23-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》纪录片 01" src="http://g4.ykimg.com/01270F1F46529842C75097000000008FE01F34-BFB6-A046-13BF-3D03B5FD5EE8"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">13:01</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjQxMzY2MDUy.html" charset="411-23-2">《咱们结婚吧》纪录片 01</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">1,043,350</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjQxMzU4NzM2.html" charset="411-23-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》纪录片 02" src="http://g3.ykimg.com/01270F1F46529846B1B63300000000DB0E8A7C-3C05-9EBF-E7C4-4CC143E3ECC8"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">31:03</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjQxMzU4NzM2.html" charset="411-23-2">《咱们结婚吧》纪录片 02</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">913,271</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjQxMzY0MTA0.html" charset="411-23-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》纪录片 03" src="http://g2.ykimg.com/01270F1F4652986A7F96DF00000000187C3D6D-67CE-A58F-5291-1227CBFFE2C6"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">43:17</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjQxMzY0MTA0.html" charset="411-23-2">《咱们结婚吧》纪录片 03</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">57,240</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNDg0Mzc2NDYw.html" charset="411-23-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》柳岩疑似有男友" src="http://g2.ykimg.com/01270F1F46514E3AB94EAE0123193C633A3B15-7738-BD72-437F-9EA2A1BE3215"></li>	
+	<li class="v_ishd">
+						<span class="ico__HD"></span>
+				</li>	
+	<li class="v_time"><span class="num">00:31</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNDg0Mzc2NDYw.html" charset="411-23-2">《咱们结婚吧》柳岩疑似有男友</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">21,421</span></li>
+	</ul>
+<div class="clear"></div>
+	
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div><!--body end-->
+</div>
+<div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">MV</h3></div>				
+	<div class="extend">
+				<a href="javascript:;" charset='411-24-1' onclick="javascript:window.location.hash = '#top';y.tab.change(this,'around_type_6_title_MV');">全部MV</a>
+			</div>
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="collgrid4w">	
+			<div class="items" >
+				<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjI1MDY1ODEy.html" charset="411-24-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》王铮亮版插曲《默认》" src="http://g1.ykimg.com/0100641F46526739FC7C1402692D2FCE0F08FC-A980-38A4-EEEA-0F31FF3FD7D6"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">02:54</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjI1MDY1ODEy.html" charset="411-24-2">《咱们结婚吧》王铮亮版插曲《默认》</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">95,338</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjI0MTkxOTQw.html" charset="411-24-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》片尾曲之《终于等到你》" src="http://g2.ykimg.com/0100641F46526498BDFBA502692D2F6F6730D5-DC19-A00D-D52E-3A8ED01DD0C1"></li>	
+	<li class="v_ishd">
+					</li>	
+	<li class="v_time"><span class="num">04:56</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjI0MTkxOTQw.html" charset="411-24-2">《咱们结婚吧》片尾曲之《终于等到你》</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">370,299</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjI1NDc1NjU2.html" charset="411-24-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》网络版" src="http://g4.ykimg.com/0100641F465267B2AF4E91087AAA947DEFDD5E-C1FC-A8FC-CEE2-B8BEDA4600CD"></li>	
+	<li class="v_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+	<li class="v_time"><span class="num">01:00</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjI1NDc1NjU2.html" charset="411-24-2">《咱们结婚吧》网络版</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">59,274</span></li>
+	</ul>
+<ul class="v">	
+	<li class="v_link">
+		<a href="http://v.youku.com/v_show/id_XNjMwMjQ2ODg0.html" charset="411-24-3" target="_blank"></a>
+	</li>
+	<li class="v_thumb"><img alt="《咱们结婚吧》片头曲" src="http://g1.ykimg.com/0100641F465277064A237502692D2F042F89F8-83E2-5070-0FC4-8B1B0792089B"></li>	
+	<li class="v_ishd">
+					</li>	
+	<li class="v_time"><span class="num">03:04</span><span class="bg"></span></li>	
+	<li class="v_title">
+		<a  href="http://v.youku.com/v_show/id_XNjMwMjQ2ODg0.html" charset="411-24-2">《咱们结婚吧》片头曲</a>
+	</li>			
+		<li class="v_stat"><span class="ico__statplay" title="播放"></span><span class="num">1,831,258</span></li>
+	</ul>
+<div class="clear"></div>
+	
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div><!--body end-->
+</div>
+</div></div>
+
+						<div id="comment_wrap"><div id="comment"><script type="text/javascript">if (!window.Nova) Nova={};
+Nova.QOfficial = {
+_name : 'QOfficial',
+ needVerify : function(param, callback, id) { return nova_call('/QOfficial/~ajax/needVerify', param, callback, id); },
+ postSubject : function(param, callback, id) { return nova_call('/QOfficial/~ajax/postSubject', param, callback, id); },
+ prize : function(param, callback, id) { return nova_call('/QOfficial/~ajax/prize', param, callback, id); },
+ relatedRecommend : function(param, callback, id) { return nova_call('/QOfficial/~ajax/relatedRecommend', param, callback, id); },
+ getPlayLog : function(param, callback, id) { return nova_call('/QOfficial/~ajax/getPlayLog', param, callback, id); },
+ isNeedVerify : function(param, callback, id) { return nova_call('/QOfficial/~ajax/isNeedVerify', param, callback, id); },
+ subscribe : function(param, callback, id) { return nova_call('/QOfficial/~ajax/subscribe', param, callback, id); },
+ followed : function(param, callback, id) { return nova_call('/QOfficial/~ajax/followed', param, callback, id); }
+};</script>
+<script type="text/javascript">if (!window.Nova) Nova={};
+Nova.QComments = {
+_name : 'QComments',
+ vpcommentContent : function(param, callback, id) { return nova_call('/QComments/~ajax/vpcommentContent', param, callback, id); },
+ getPageBySid : function(param, callback, id) { return nova_call('/QComments/~ajax/getPageBySid', param, callback, id); },
+ hotCommentContent : function(param, callback, id) { return nova_call('/QComments/~ajax/hotCommentContent', param, callback, id); },
+ getStar : function(param, callback, id) { return nova_call('/QComments/~ajax/getStar', param, callback, id); },
+ getReplyAndAt : function(param, callback, id) { return nova_call('/QComments/~ajax/getReplyAndAt', param, callback, id); },
+ comment : function(param, callback, id) { return nova_call('/QComments/~ajax/comment', param, callback, id); },
+ getUserIcon : function(param, callback, id) { return nova_call('/QComments/~ajax/getUserIcon', param, callback, id); },
+ getStatus : function(param, callback, id) { return nova_call('/QComments/~ajax/getStatus', param, callback, id); },
+ getUserStatus : function(param, callback, id) { return nova_call('/QComments/~ajax/getUserStatus', param, callback, id); },
+ clearUserStatus : function(param, callback, id) { return nova_call('/QComments/~ajax/clearUserStatus', param, callback, id); },
+ clearUserStatusNew : function(param, callback, id) { return nova_call('/QComments/~ajax/clearUserStatusNew', param, callback, id); },
+ clearUcenterStatus : function(param, callback, id) { return nova_call('/QComments/~ajax/clearUcenterStatus', param, callback, id); },
+ clearReset : function(param, callback, id) { return nova_call('/QComments/~ajax/clearReset', param, callback, id); },
+ clearAllStatus : function(param, callback, id) { return nova_call('/QComments/~ajax/clearAllStatus', param, callback, id); },
+ getSelf : function(param, callback, id) { return nova_call('/QComments/~ajax/getSelf', param, callback, id); },
+ getUserSelf : function(param, callback, id) { return nova_call('/QComments/~ajax/getUserSelf', param, callback, id); },
+ getReply : function(param, callback, id) { return nova_call('/QComments/~ajax/getReply', param, callback, id); },
+ getVideoReply : function(param, callback, id) { return nova_call('/QComments/~ajax/getVideoReply', param, callback, id); },
+ getRef : function(param, callback, id) { return nova_call('/QComments/~ajax/getRef', param, callback, id); },
+ getMyListSize : function(param, callback, id) { return nova_call('/QComments/~ajax/getMyListSize', param, callback, id); },
+ deleteComment : function(param, callback, id) { return nova_call('/QComments/~ajax/deleteComment', param, callback, id); },
+ getFollowers : function(param, callback, id) { return nova_call('/QComments/~ajax/getFollowers', param, callback, id); },
+ createFriend : function(param, callback, id) { return nova_call('/QComments/~ajax/createFriend', param, callback, id); },
+ getCommentsNotice : function(param, callback, id) { return nova_call('/QComments/~ajax/getCommentsNotice', param, callback, id); },
+ getTweetNotice : function(param, callback, id) { return nova_call('/QComments/~ajax/getTweetNotice', param, callback, id); },
+ getMentionNotice : function(param, callback, id) { return nova_call('/QComments/~ajax/getMentionNotice', param, callback, id); },
+ publishComment : function(param, callback, id) { return nova_call('/QComments/~ajax/publishComment', param, callback, id); },
+ getServerUserId : function(param, callback, id) { return nova_call('/QComments/~ajax/getServerUserId', param, callback, id); },
+ getVideoUserComments : function(param, callback, id) { return nova_call('/QComments/~ajax/getVideoUserComments', param, callback, id); },
+ isNeedVerify : function(param, callback, id) { return nova_call('/QComments/~ajax/isNeedVerify', param, callback, id); },
+ getSubCommentsContent : function(param, callback, id) { return nova_call('/QComments/~ajax/getSubCommentsContent', param, callback, id); }
+};</script>
+<div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">精华评论</h3></div>				
+	<div class="extend">
+				<a href="javascript:;" charset='411-9-1' onclick="javascript:window.location.hash = '#top';y.tab.change(this,'comment');">全部精华评论</a>
+			</div>
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="commentArea">
+			<div class="comments"	>
+			<div class="commentpop" id="Commentpop" style="display:none;"><span onclick="this.parentNode.style.display='none';" class="close"></span>评论已提交，请等待审核通过。</div>
+<div class="commentAction commentReply" id="reply_div" style="display:none;">
+	<div id="CommentUser"></div>
+	<div class="commentTextArea">
+		<textarea class="form_input" id="r_content"></textarea>
+		<div class="wordlimit" id="r_wordlimit"><span id="r_maxinput" class="wordenter" style="color: rgb(144, 144, 144); ">0</span><span class="wordenter">/300</span></div>
+	</div>
+	<div class="toolbar">
+		<div class="tool">
+			<div class="insert_emoticon">
+				<div id="CommentDropMenu" class="dropmenu" index="1">
+					<div class="handle"><a title="表情" onclick="y.comment.showFace(this);return false;" href="javascript:;"><span class="icon"><em>表情</em></span>表情</a></div>
+					<div class="panel">
+						<div class="faces">
+							<div class="ico__faces_act" id="comment_faces">
+								<a class="o1" href="javascript:;" title="[赞]"><em>赞</em></a>
+								<a class="o2" href="javascript:;" title="[稀饭]"><em>稀饭</em></a>
+								<a class="o3" href="javascript:;" title="[怒]"><em>怒</em></a>
+								<a class="o4" href="javascript:;" title="[吐]"><em>吐</em></a>
+								<a class="o5" href="javascript:;" title="[无语]"><em>无语</em></a>
+								<a class="o6" href="javascript:;" title="[难过]"><em>难过</em></a>
+								<a class="o7" href="javascript:;" title="[汗]"><em>汗</em></a>
+								<a class="o8" href="javascript:;" title="[搞笑]"><em>搞笑</em></a>
+							</div>
+						</div>
+					</div><!--panel end-->
+				</div>
+			</div>
+		</div><!--tool end-->
+		<div class="splite"></div>
+		<div class="tool">
+			<div class="insert_share" id="connect_div"></div>
+		</div>
+		<div class="action"><button id="tt_comment" class="btn_reply" onclick="y.comment.submit()">回复</button><button class="btn_cancle" onclick="y.comment.cancel();">取消</button></div>
+		<div class="clear"></div>
+	</div>
+	<div class="com_overlay" id="com_overlay" style="display:none">
+		<div class="com_overlay_con">
+			<div class="tips" id="r_tips"></div>
+		</div>
+	</div>
+	<div class="validate" id="r_verify_code" style="style:none;"> 验证码: <input class="defaultext" type="text" onkeydown="ctlentComments(event,'r_comment');" name="r_verify_code_value" id="r_verify_code_value" value="输入右图的字符"> <span><img class="key" id="r_verify_code_img"></span> <span>看不清, <a href="#" onclick="verify_code_comment(true,rpo);return false;">点此刷新</a></span></div>
+	<div class="clear"></div>
+</div>
+	
+			
+<div class="comment" id="comment608461175">
+	
+	<div class="user">
+		
+					<div class="photo"><a href="http://i.youku.com/u/UMTIwNTA0NTY3Mg==" target="_blank" ><img  src="http://static.youku.com/user/img/avatar/50/27.jpg"></a></div>
+			</div>
+	<div class="content">
+		<h3 class="username">
+					 <a href="http://i.youku.com/u/UMTIwNTA0NTY3Mg==" target="_blank" id>仙道苍云</a>
+				</h3><!--.username-->
+		<div class="summary">
+			<div class="text">
+				<p id="content_608461175">塑造果然他妈这个形象是想表达什么呢，感觉有点太夸张，我妈额也是老师，性格跟男女主人公双方的母亲都有相似的地方，相当于2人结合版，但是肯定有2件事不可能做出，如果她儿子是果然，他肯定不会扣户口本，太可笑了，凡是智商属于人类范畴的，用扣户口本吗，房子写2人名字2人一起还不就行了，离婚了一人一半多么容易划分的事情，如果她是桃子的妈妈，那么她必定要翻脸到底，自己命可以不要，绝对不能同意这个婚姻，那果然他妈，那还是人吗<br /> </p>
+				<span style="color:#909090">(评论自：<a charset="411-9-12" href="http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html" target="_blank" style="color:#99ccee;">咱们结婚吧 32</a>)</span>			</div>
+		</div><!--.summary-->
+		<div class="panel">
+			<div class="handle">
+				<div class="com_reply"><a onclick="y.comment.showReply(608461175, 156315774, '52b71139e844a99060000002', '52b71139e844a99060000002', false);return false;" href="javascript:;">回复</a></div>
+				<div class="com_share" onmouseover="y.comment.changeStyle(this, true)" onmouseout="y.comment.changeStyle(this, false)">
+					<label>转发</label>
+					<span class="share_list" style="width:1px">
+						<span class="share_list_inner">
+							<a target="_blank"  charset="411-9-7"  href="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&ralateUid=2580607742&source=%E4%BC%98%E9%85%B7%E7%BD%91&sourceUrl=http%3A%2F%2Fwww.youku.com%2F&content=utf8&url=http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2032%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E5%A1%91%E9%80%A0%E6%9E%9C%E7%84%B6%E4%BB%96%E5%A6%88%E8%BF%99%E4%B8%AA%E5%BD%A2%E8%B1%A1%E6%98%AF%E6%83%B3%E8%A1%A8%E8%BE%BE%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%8C%E6%84%9F%E8%A7%89%E6%9C%89%E7%82%B9%E5%A4%AA%E5%A4%B8%E5%BC%A0%EF%BC%8C%E6%88%91%E5%A6%88%E9%A2%9D%E4%B9%9F%E6%98%AF%E8%80%81%E5%B8%88%EF%BC%8C%E6%80%A7%E6%A0%BC%E8%B7%9F%E7%94%B7%E5%A5%B3%E4%B8%BB%E4%BA%BA%E5%85%AC%E5%8F%8C%E6%96%B9%E7%9A%84%E6%AF%8D%E4%BA%B2%E9%83%BD%E6%9C%89%E7%9B%B8%E4%BC%BC%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E7%9B%B8%E5%BD%93%E4%BA%8E2%E4%BA%BA%E7%BB%93%E5%90%88%E7%89%88%EF%BC%8C%E4%BD%86%E6%98%AF%E8%82%AF%E5%AE%9A%E6%9C%892%E4%BB%B6%E4%BA%8B%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%87%BA%EF%BC%8C%E5%A6%82... http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%E8%AF%84%E8%AE%BA%EF%BC%89" title="转发评论至新浪微博" class="sina_weibo"><em>新浪微博</em></a>
+							<a target="_blank"  charset="411-9-8"  href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html&desc=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E5%A1%91%E9%80%A0%E6%9E%9C%E7%84%B6%E4%BB%96%E5%A6%88%E8%BF%99%E4%B8%AA%E5%BD%A2%E8%B1%A1%E6%98%AF%E6%83%B3%E8%A1%A8%E8%BE%BE%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%8C%E6%84%9F%E8%A7%89%E6%9C%89%E7%82%B9%E5%A4%AA%E5%A4%B8%E5%BC%A0%EF%BC%8C%E6%88%91%E5%A6%88%E9%A2%9D%E4%B9%9F%E6%98%AF%E8%80%81%E5%B8%88%EF%BC%8C%E6%80%A7%E6%A0%BC%E8%B7%9F%E7%94%B7%E5%A5%B3%E4%B8%BB%E4%BA%BA%E5%85%AC%E5%8F%8C%E6%96%B9%E7%9A%84%E6%AF%8D%E4%BA%B2%E9%83%BD%E6%9C%89%E7%9B%B8%E4%BC%BC%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E7%9B%B8%E5%BD%93%E4%BA%8E2%E4%BA%BA%E7%BB%93%E5%90%88%E7%89%88%EF%BC%8C%E4%BD%86%E6%98%AF%E8%82%AF%E5%AE%9A%E6%9C%892%E4%BB%B6%E4%BA%8B%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%87%BA%EF%BC%8C%E5%A6%82..." title="转发评论至QQ空间" class="qzone"><em>QQ空间</em></a>
+							<a target="_blank"  charset="411-9-9" href="http://widget.renren.com/dialog/share?message=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%3A%E5%A1%91%E9%80%A0%E6%9E%9C%E7%84%B6%E4%BB%96%E5%A6%88%E8%BF%99%E4%B8%AA%E5%BD%A2%E8%B1%A1%E6%98%AF%E6%83%B3%E8%A1%A8%E8%BE%BE%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%8C%E6%84%9F%E8%A7%89%E6%9C%89%E7%82%B9%E5%A4%AA%E5%A4%B8%E5%BC%A0%EF%BC%8C%E6%88%91%E5%A6%88%E9%A2%9D%E4%B9%9F%E6%98%AF%E8%80%81%E5%B8%88%EF%BC%8C%E6%80%A7%E6%A0%BC%E8%B7%9F%E7%94%B7%E5%A5%B3%E4%B8%BB%E4%BA%BA%E5%85%AC%E5%8F%8C%E6%96%B9%E7%9A%84%E6%AF%8D%E4%BA%B2%E9%83%BD%E6%9C%89%E7%9B%B8%E4%BC%BC%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E7%9B%B8%E5%BD%93%E4%BA%8E2%E4%BA%BA%E7%BB%93%E5%90%88%E7%89%88%EF%BC%8C%E4%BD%86%E6%98%AF%E8%82%AF%E5%AE%9A%E6%9C%892%E4%BB%B6%E4%BA%8B%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%87%BA%EF%BC%8C%E5%A6%82...&resourceUrl=http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html" class="renren" title="转发评论至人人网"><em>人人网</em></a>
+							<a target="_blank"  charset="411-9-10"  href="http://v.t.qq.com/share/share.php?appkey=e7ad0b0199994bda85ecc0a44ce9915f&site=www.youku.com&assname=youku2010&url=http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2032%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E5%A1%91%E9%80%A0%E6%9E%9C%E7%84%B6%E4%BB%96%E5%A6%88%E8%BF%99%E4%B8%AA%E5%BD%A2%E8%B1%A1%E6%98%AF%E6%83%B3%E8%A1%A8%E8%BE%BE%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%8C%E6%84%9F%E8%A7%89%E6%9C%89%E7%82%B9%E5%A4%AA%E5%A4%B8%E5%BC%A0%EF%BC%8C%E6%88%91%E5%A6%88%E9%A2%9D%E4%B9%9F%E6%98%AF%E8%80%81%E5%B8%88%EF%BC%8C%E6%80%A7%E6%A0%BC%E8%B7%9F%E7%94%B7%E5%A5%B3%E4%B8%BB%E4%BA%BA%E5%85%AC%E5%8F%8C%E6%96%B9%E7%9A%84%E6%AF%8D%E4%BA%B2%E9%83%BD%E6%9C%89%E7%9B%B8%E4%BC%BC%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E7%9B%B8%E5%BD%93%E4%BA%8E2%E4%BA%BA%E7%BB%93%E5%90%88%E7%89%88%EF%BC%8C%E4%BD%86%E6%98%AF%E8%82%AF%E5%AE%9A%E6%9C%892%E4%BB%B6%E4%BA%8B%E4%B8%8D%E5%8F%AF%E8%83%BD%E5%81%9A%E5%87%BA%EF%BC%8C%E5%A6%82... http://v.youku.com/v_show/id_XNjI1MjYzMDk2.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%EF%BC%89" title="转发评论至腾讯微博" class="tencent_weibo"><em>腾讯微博</em></a>
+						</span>
+					</span>
+				</div>	
+				<div class="clear"></div>
+			</div>
+			<span class="timestamp">16小时前</span>
+			<span class="via">来自<a href="http://www.youku.com/" target="_blank">优酷</a></span>
+		</div><!--.panel-->
+		
+	</div><!--.content-->
+	<div class="clear"></div>
+</div>
+ <div class="comment" id="comment605908347">
+	
+	<div class="user">
+		
+					<div class="photo"><a href="http://u.youku.com/user_show/id_UMTQ3NzgwNzI=.html" target="_blank" ><img  src="http://static.youku.com/user/img/avatar/50/7.jpg"></a></div>
+			</div>
+	<div class="content">
+		<h3 class="username">
+					 <a href="http://u.youku.com/user_show/id_UMTQ3NzgwNzI=.html" target="_blank" id>kawavivi</a>
+				</h3><!--.username-->
+		<div class="summary">
+			<div class="text">
+				<p id="content_605908347">现实中像苏青这样明白事理的女人，男人是不会真正懂珍惜的，就像当年跟李威在一起的桃子，果然的行为桃子的反应是激烈，一是她受过类似的伤害，身边这种事也发生过，二是她对果然的信任太大，失望就越大，人总是对意料之外的事情才会有过激反应。现实中比这激烈百倍的争吵都有，有些还不是原则问题，爱情和婚姻必经之路，人生就是这样幸福和痛苦是一对双生子。经历过多少痛苦，幸福来的时候越真切也越害怕会再次失去。成熟淡定是我们一辈子都在学习的感觉。<br /> </p>
+				<span style="color:#909090">(评论自：<a charset="411-9-12" href="http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html" target="_blank" style="color:#99ccee;">咱们结婚吧 43</a>)</span>			</div>
+		</div><!--.summary-->
+		<div class="panel">
+			<div class="handle">
+				<div class="com_reply"><a onclick="y.comment.showReply(605908347, 156335100, '52ad4b082e5b94a83e000000', '52ad4b082e5b94a83e000000', false);return false;" href="javascript:;">回复</a></div>
+				<div class="com_share" onmouseover="y.comment.changeStyle(this, true)" onmouseout="y.comment.changeStyle(this, false)">
+					<label>转发</label>
+					<span class="share_list" style="width:1px">
+						<span class="share_list_inner">
+							<a target="_blank"  charset="411-9-7"  href="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&ralateUid=2580607742&source=%E4%BC%98%E9%85%B7%E7%BD%91&sourceUrl=http%3A%2F%2Fwww.youku.com%2F&content=utf8&url=http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2043%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%83%8F%E8%8B%8F%E9%9D%92%E8%BF%99%E6%A0%B7%E6%98%8E%E7%99%BD%E4%BA%8B%E7%90%86%E7%9A%84%E5%A5%B3%E4%BA%BA%EF%BC%8C%E7%94%B7%E4%BA%BA%E6%98%AF%E4%B8%8D%E4%BC%9A%E7%9C%9F%E6%AD%A3%E6%87%82%E7%8F%8D%E6%83%9C%E7%9A%84%EF%BC%8C%E5%B0%B1%E5%83%8F%E5%BD%93%E5%B9%B4%E8%B7%9F%E6%9D%8E%E5%A8%81%E5%9C%A8%E4%B8%80%E8%B5%B7%E7%9A%84%E6%A1%83%E5%AD%90%EF%BC%8C%E6%9E%9C%E7%84%B6%E7%9A%84%E8%A1%8C%E4%B8%BA%E6%A1%83%E5%AD%90%E7%9A%84%E5%8F%8D%E5%BA%94%E6%98%AF%E6%BF%80%E7%83%88%EF%BC%8C%E4%B8%80%E6%98%AF%E5%A5%B9%E5%8F%97%E8%BF%87%E7%B1%BB%E4%BC%BC%E7%9A%84%E4%BC%A4%E5%AE%B3%EF%BC%8C%E8%BA%AB%E8%BE%B9%E8%BF%99%E7%A7%8D%E4%BA%8B%E4%B9%9F%E5%8F%91%E7%94%9F%E8%BF%87%EF%BC%8C%E4%BA%8C... http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%E8%AF%84%E8%AE%BA%EF%BC%89" title="转发评论至新浪微博" class="sina_weibo"><em>新浪微博</em></a>
+							<a target="_blank"  charset="411-9-8"  href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html&desc=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%83%8F%E8%8B%8F%E9%9D%92%E8%BF%99%E6%A0%B7%E6%98%8E%E7%99%BD%E4%BA%8B%E7%90%86%E7%9A%84%E5%A5%B3%E4%BA%BA%EF%BC%8C%E7%94%B7%E4%BA%BA%E6%98%AF%E4%B8%8D%E4%BC%9A%E7%9C%9F%E6%AD%A3%E6%87%82%E7%8F%8D%E6%83%9C%E7%9A%84%EF%BC%8C%E5%B0%B1%E5%83%8F%E5%BD%93%E5%B9%B4%E8%B7%9F%E6%9D%8E%E5%A8%81%E5%9C%A8%E4%B8%80%E8%B5%B7%E7%9A%84%E6%A1%83%E5%AD%90%EF%BC%8C%E6%9E%9C%E7%84%B6%E7%9A%84%E8%A1%8C%E4%B8%BA%E6%A1%83%E5%AD%90%E7%9A%84%E5%8F%8D%E5%BA%94%E6%98%AF%E6%BF%80%E7%83%88%EF%BC%8C%E4%B8%80%E6%98%AF%E5%A5%B9%E5%8F%97%E8%BF%87%E7%B1%BB%E4%BC%BC%E7%9A%84%E4%BC%A4%E5%AE%B3%EF%BC%8C%E8%BA%AB%E8%BE%B9%E8%BF%99%E7%A7%8D%E4%BA%8B%E4%B9%9F%E5%8F%91%E7%94%9F%E8%BF%87%EF%BC%8C%E4%BA%8C..." title="转发评论至QQ空间" class="qzone"><em>QQ空间</em></a>
+							<a target="_blank"  charset="411-9-9" href="http://widget.renren.com/dialog/share?message=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%3A%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%83%8F%E8%8B%8F%E9%9D%92%E8%BF%99%E6%A0%B7%E6%98%8E%E7%99%BD%E4%BA%8B%E7%90%86%E7%9A%84%E5%A5%B3%E4%BA%BA%EF%BC%8C%E7%94%B7%E4%BA%BA%E6%98%AF%E4%B8%8D%E4%BC%9A%E7%9C%9F%E6%AD%A3%E6%87%82%E7%8F%8D%E6%83%9C%E7%9A%84%EF%BC%8C%E5%B0%B1%E5%83%8F%E5%BD%93%E5%B9%B4%E8%B7%9F%E6%9D%8E%E5%A8%81%E5%9C%A8%E4%B8%80%E8%B5%B7%E7%9A%84%E6%A1%83%E5%AD%90%EF%BC%8C%E6%9E%9C%E7%84%B6%E7%9A%84%E8%A1%8C%E4%B8%BA%E6%A1%83%E5%AD%90%E7%9A%84%E5%8F%8D%E5%BA%94%E6%98%AF%E6%BF%80%E7%83%88%EF%BC%8C%E4%B8%80%E6%98%AF%E5%A5%B9%E5%8F%97%E8%BF%87%E7%B1%BB%E4%BC%BC%E7%9A%84%E4%BC%A4%E5%AE%B3%EF%BC%8C%E8%BA%AB%E8%BE%B9%E8%BF%99%E7%A7%8D%E4%BA%8B%E4%B9%9F%E5%8F%91%E7%94%9F%E8%BF%87%EF%BC%8C%E4%BA%8C...&resourceUrl=http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html" class="renren" title="转发评论至人人网"><em>人人网</em></a>
+							<a target="_blank"  charset="411-9-10"  href="http://v.t.qq.com/share/share.php?appkey=e7ad0b0199994bda85ecc0a44ce9915f&site=www.youku.com&assname=youku2010&url=http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2043%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E7%8E%B0%E5%AE%9E%E4%B8%AD%E5%83%8F%E8%8B%8F%E9%9D%92%E8%BF%99%E6%A0%B7%E6%98%8E%E7%99%BD%E4%BA%8B%E7%90%86%E7%9A%84%E5%A5%B3%E4%BA%BA%EF%BC%8C%E7%94%B7%E4%BA%BA%E6%98%AF%E4%B8%8D%E4%BC%9A%E7%9C%9F%E6%AD%A3%E6%87%82%E7%8F%8D%E6%83%9C%E7%9A%84%EF%BC%8C%E5%B0%B1%E5%83%8F%E5%BD%93%E5%B9%B4%E8%B7%9F%E6%9D%8E%E5%A8%81%E5%9C%A8%E4%B8%80%E8%B5%B7%E7%9A%84%E6%A1%83%E5%AD%90%EF%BC%8C%E6%9E%9C%E7%84%B6%E7%9A%84%E8%A1%8C%E4%B8%BA%E6%A1%83%E5%AD%90%E7%9A%84%E5%8F%8D%E5%BA%94%E6%98%AF%E6%BF%80%E7%83%88%EF%BC%8C%E4%B8%80%E6%98%AF%E5%A5%B9%E5%8F%97%E8%BF%87%E7%B1%BB%E4%BC%BC%E7%9A%84%E4%BC%A4%E5%AE%B3%EF%BC%8C%E8%BA%AB%E8%BE%B9%E8%BF%99%E7%A7%8D%E4%BA%8B%E4%B9%9F%E5%8F%91%E7%94%9F%E8%BF%87%EF%BC%8C%E4%BA%8C... http://v.youku.com/v_show/id_XNjI1MzQwNDAw.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%EF%BC%89" title="转发评论至腾讯微博" class="tencent_weibo"><em>腾讯微博</em></a>
+						</span>
+					</span>
+				</div>	
+				<div class="clear"></div>
+			</div>
+			<span class="timestamp">8天前</span>
+			<span class="via">来自<a href="http://mobile.youku.com" target="_blank">iPad客户端</a></span>
+		</div><!--.panel-->
+		
+	</div><!--.content-->
+	<div class="clear"></div>
+</div>
+ <div class="comment" id="comment604029714">
+	
+	<div class="user">
+		
+					<div class="photo"><a href="http://u.youku.com/user_show/id_UMTMzNTU0MTUzMg==.html" target="_blank" ><img  src="http://static.youku.com/user/img/avatar/50/18.jpg"></a></div>
+			</div>
+	<div class="content">
+		<h3 class="username">
+					 <a href="http://u.youku.com/user_show/id_UMTMzNTU0MTUzMg==.html" target="_blank" id>小熙儿妈咪</a>
+				</h3><!--.username-->
+		<div class="summary">
+			<div class="text">
+				<p id="content_604029714">真心觉得不错的一部电视剧，喜欢海波跟圆圆的表演，很多台词挺实际的，希望他们会有更棒的作品。亲情，友情，爱情，很好的展示了这几点。河北人民也发来贺电！终于圆满结局。<br /> </p>
+				<span style="color:#909090">(评论自：<a charset="411-9-12" href="http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html" target="_blank" style="color:#99ccee;">咱们结婚吧 50</a>)</span>			</div>
+		</div><!--.summary-->
+		<div class="panel">
+			<div class="handle">
+				<div class="com_reply"><a onclick="y.comment.showReply(604029714, 156344641, '52a811c58f89bb9066000001', '52a811c58f89bb9066000001', false);return false;" href="javascript:;">回复</a></div>
+				<div class="com_share" onmouseover="y.comment.changeStyle(this, true)" onmouseout="y.comment.changeStyle(this, false)">
+					<label>转发</label>
+					<span class="share_list" style="width:1px">
+						<span class="share_list_inner">
+							<a target="_blank"  charset="411-9-7"  href="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&ralateUid=2580607742&source=%E4%BC%98%E9%85%B7%E7%BD%91&sourceUrl=http%3A%2F%2Fwww.youku.com%2F&content=utf8&url=http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2050%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E7%9C%9F%E5%BF%83%E8%A7%89%E5%BE%97%E4%B8%8D%E9%94%99%E7%9A%84%E4%B8%80%E9%83%A8%E7%94%B5%E8%A7%86%E5%89%A7%EF%BC%8C%E5%96%9C%E6%AC%A2%E6%B5%B7%E6%B3%A2%E8%B7%9F%E5%9C%86%E5%9C%86%E7%9A%84%E8%A1%A8%E6%BC%94%EF%BC%8C%E5%BE%88%E5%A4%9A%E5%8F%B0%E8%AF%8D%E6%8C%BA%E5%AE%9E%E9%99%85%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E4%BB%96%E4%BB%AC%E4%BC%9A%E6%9C%89%E6%9B%B4%E6%A3%92%E7%9A%84%E4%BD%9C%E5%93%81%E3%80%82%E4%BA%B2%E6%83%85%EF%BC%8C%E5%8F%8B%E6%83%85%EF%BC%8C%E7%88%B1%E6%83%85%EF%BC%8C%E5%BE%88%E5%A5%BD%E7%9A%84%E5%B1%95%E7%A4%BA%E4%BA%86%E8%BF%99%E5%87%A0%E7%82%B9%E3%80%82%E6%B2%B3%E5%8C%97%E4%BA%BA%E6%B0%91%E4%B9%9F%E5%8F%91%E6%9D%A5%E8%B4%BA%E7%94%B5%EF%BC%81%E7%BB%88%E4%BA%8E%E5%9C%86%E6%BB%A1... http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%E8%AF%84%E8%AE%BA%EF%BC%89" title="转发评论至新浪微博" class="sina_weibo"><em>新浪微博</em></a>
+							<a target="_blank"  charset="411-9-8"  href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html&desc=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E7%9C%9F%E5%BF%83%E8%A7%89%E5%BE%97%E4%B8%8D%E9%94%99%E7%9A%84%E4%B8%80%E9%83%A8%E7%94%B5%E8%A7%86%E5%89%A7%EF%BC%8C%E5%96%9C%E6%AC%A2%E6%B5%B7%E6%B3%A2%E8%B7%9F%E5%9C%86%E5%9C%86%E7%9A%84%E8%A1%A8%E6%BC%94%EF%BC%8C%E5%BE%88%E5%A4%9A%E5%8F%B0%E8%AF%8D%E6%8C%BA%E5%AE%9E%E9%99%85%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E4%BB%96%E4%BB%AC%E4%BC%9A%E6%9C%89%E6%9B%B4%E6%A3%92%E7%9A%84%E4%BD%9C%E5%93%81%E3%80%82%E4%BA%B2%E6%83%85%EF%BC%8C%E5%8F%8B%E6%83%85%EF%BC%8C%E7%88%B1%E6%83%85%EF%BC%8C%E5%BE%88%E5%A5%BD%E7%9A%84%E5%B1%95%E7%A4%BA%E4%BA%86%E8%BF%99%E5%87%A0%E7%82%B9%E3%80%82%E6%B2%B3%E5%8C%97%E4%BA%BA%E6%B0%91%E4%B9%9F%E5%8F%91%E6%9D%A5%E8%B4%BA%E7%94%B5%EF%BC%81%E7%BB%88%E4%BA%8E%E5%9C%86%E6%BB%A1..." title="转发评论至QQ空间" class="qzone"><em>QQ空间</em></a>
+							<a target="_blank"  charset="411-9-9" href="http://widget.renren.com/dialog/share?message=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%3A%E7%9C%9F%E5%BF%83%E8%A7%89%E5%BE%97%E4%B8%8D%E9%94%99%E7%9A%84%E4%B8%80%E9%83%A8%E7%94%B5%E8%A7%86%E5%89%A7%EF%BC%8C%E5%96%9C%E6%AC%A2%E6%B5%B7%E6%B3%A2%E8%B7%9F%E5%9C%86%E5%9C%86%E7%9A%84%E8%A1%A8%E6%BC%94%EF%BC%8C%E5%BE%88%E5%A4%9A%E5%8F%B0%E8%AF%8D%E6%8C%BA%E5%AE%9E%E9%99%85%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E4%BB%96%E4%BB%AC%E4%BC%9A%E6%9C%89%E6%9B%B4%E6%A3%92%E7%9A%84%E4%BD%9C%E5%93%81%E3%80%82%E4%BA%B2%E6%83%85%EF%BC%8C%E5%8F%8B%E6%83%85%EF%BC%8C%E7%88%B1%E6%83%85%EF%BC%8C%E5%BE%88%E5%A5%BD%E7%9A%84%E5%B1%95%E7%A4%BA%E4%BA%86%E8%BF%99%E5%87%A0%E7%82%B9%E3%80%82%E6%B2%B3%E5%8C%97%E4%BA%BA%E6%B0%91%E4%B9%9F%E5%8F%91%E6%9D%A5%E8%B4%BA%E7%94%B5%EF%BC%81%E7%BB%88%E4%BA%8E%E5%9C%86%E6%BB%A1...&resourceUrl=http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html" class="renren" title="转发评论至人人网"><em>人人网</em></a>
+							<a target="_blank"  charset="411-9-10"  href="http://v.t.qq.com/share/share.php?appkey=e7ad0b0199994bda85ecc0a44ce9915f&site=www.youku.com&assname=youku2010&url=http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2050%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E7%9C%9F%E5%BF%83%E8%A7%89%E5%BE%97%E4%B8%8D%E9%94%99%E7%9A%84%E4%B8%80%E9%83%A8%E7%94%B5%E8%A7%86%E5%89%A7%EF%BC%8C%E5%96%9C%E6%AC%A2%E6%B5%B7%E6%B3%A2%E8%B7%9F%E5%9C%86%E5%9C%86%E7%9A%84%E8%A1%A8%E6%BC%94%EF%BC%8C%E5%BE%88%E5%A4%9A%E5%8F%B0%E8%AF%8D%E6%8C%BA%E5%AE%9E%E9%99%85%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E4%BB%96%E4%BB%AC%E4%BC%9A%E6%9C%89%E6%9B%B4%E6%A3%92%E7%9A%84%E4%BD%9C%E5%93%81%E3%80%82%E4%BA%B2%E6%83%85%EF%BC%8C%E5%8F%8B%E6%83%85%EF%BC%8C%E7%88%B1%E6%83%85%EF%BC%8C%E5%BE%88%E5%A5%BD%E7%9A%84%E5%B1%95%E7%A4%BA%E4%BA%86%E8%BF%99%E5%87%A0%E7%82%B9%E3%80%82%E6%B2%B3%E5%8C%97%E4%BA%BA%E6%B0%91%E4%B9%9F%E5%8F%91%E6%9D%A5%E8%B4%BA%E7%94%B5%EF%BC%81%E7%BB%88%E4%BA%8E%E5%9C%86%E6%BB%A1... http://v.youku.com/v_show/id_XNjI1Mzc4NTY0.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%EF%BC%89" title="转发评论至腾讯微博" class="tencent_weibo"><em>腾讯微博</em></a>
+						</span>
+					</span>
+				</div>	
+				<div class="clear"></div>
+			</div>
+			<span class="timestamp">12天前</span>
+			<span class="via">来自<a href="http://mobile.youku.com" target="_blank">Android Pad客户端</a></span>
+		</div><!--.panel-->
+		
+	</div><!--.content-->
+	<div class="clear"></div>
+</div>
+ <div class="comment" id="comment603891083">
+	
+	<div class="user">
+		
+					<div class="photo"><a href="http://i.youku.com/u/UMzM4ODE4MTI4" target="_blank" ><img  src="http://g3.ykimg.com/0130391F484DA7CD1E1D9D050C7D14D4D3FE18-3D69-57E2-409D-834783F81163"></a></div>
+			</div>
+	<div class="content">
+		<h3 class="username">
+					 <a href="http://i.youku.com/u/UMzM4ODE4MTI4" target="_blank" id>优酷空间</a>
+				</h3><!--.username-->
+		<div class="summary">
+			<div class="text">
+				<p id="content_603891083">最后一周获得高圆圆黄海波签名照的童鞋是 <a href="http://u.youku.com/FEELing%E8%BF%BD" target="_blank">@FEELing追</a> <a href="http://u.youku.com/Hey_Wong" target="_blank">@Hey_Wong</a> 请两位及时查看您的站内信，在本剧播出结束之前，把真实姓名，手机号码，有效快递地址，用站内信发送至 <a href="http://u.youku.com/%E4%BC%98%E9%85%B7%E7%A9%BA%E9%97%B4" target="_blank">@优酷空间</a> 逾期视为放弃奖品！感谢各位的参与哦！<br /> </p>
+				<span style="color:#909090">(评论自：<a charset="411-9-12" href="http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html" target="_blank" style="color:#99ccee;">咱们结婚吧 01</a>)</span>			</div>
+		</div><!--.summary-->
+		<div class="panel">
+			<div class="handle">
+				<div class="com_reply"><a onclick="y.comment.showReply(603891083, 156047900, '52a7cbb70bd01e304d000005', '52a7cbb70bd01e304d000005', false);return false;" href="javascript:;">回复</a></div>
+				<div class="com_share" onmouseover="y.comment.changeStyle(this, true)" onmouseout="y.comment.changeStyle(this, false)">
+					<label>转发</label>
+					<span class="share_list" style="width:1px">
+						<span class="share_list_inner">
+							<a target="_blank"  charset="411-9-7"  href="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&ralateUid=2580607742&source=%E4%BC%98%E9%85%B7%E7%BD%91&sourceUrl=http%3A%2F%2Fwww.youku.com%2F&content=utf8&url=http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2001%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E6%9C%80%E5%90%8E%E4%B8%80%E5%91%A8%E8%8E%B7%E5%BE%97%E9%AB%98%E5%9C%86%E5%9C%86%E9%BB%84%E6%B5%B7%E6%B3%A2%E7%AD%BE%E5%90%8D%E7%85%A7%E7%9A%84%E7%AB%A5%E9%9E%8B%E6%98%AF%20%5Bat%5DFEELing%E8%BF%BD%5B%2Fat%5D%20%5Bat%5DHey_Wong%5B%2Fat%5D%20%E8%AF%B7%E4%B8%A4%E4%BD%8D%E5%8F%8A%E6%97%B6%E6%9F%A5%E7%9C%8B%E6%82%A8%E7%9A%84%E7%AB%99%E5%86%85%E4%BF%A1%EF%BC%8C%E5%9C%A8%E6%9C%AC%E5%89%A7%E6%92%AD%E5%87%BA%E7%BB%93%E6%9D%9F%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E7%9C%9F%E5%AE%9E%E5%A7%93%E5%90%8D%EF%BC%8C%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%EF%BC%8C%E6%9C%89%E6%95%88%E5%BF%AB%E9%80%92%E5%9C%B0%E5%9D%80... http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%E8%AF%84%E8%AE%BA%EF%BC%89" title="转发评论至新浪微博" class="sina_weibo"><em>新浪微博</em></a>
+							<a target="_blank"  charset="411-9-8"  href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html&desc=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E6%9C%80%E5%90%8E%E4%B8%80%E5%91%A8%E8%8E%B7%E5%BE%97%E9%AB%98%E5%9C%86%E5%9C%86%E9%BB%84%E6%B5%B7%E6%B3%A2%E7%AD%BE%E5%90%8D%E7%85%A7%E7%9A%84%E7%AB%A5%E9%9E%8B%E6%98%AF%20%5Bat%5DFEELing%E8%BF%BD%5B%2Fat%5D%20%5Bat%5DHey_Wong%5B%2Fat%5D%20%E8%AF%B7%E4%B8%A4%E4%BD%8D%E5%8F%8A%E6%97%B6%E6%9F%A5%E7%9C%8B%E6%82%A8%E7%9A%84%E7%AB%99%E5%86%85%E4%BF%A1%EF%BC%8C%E5%9C%A8%E6%9C%AC%E5%89%A7%E6%92%AD%E5%87%BA%E7%BB%93%E6%9D%9F%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E7%9C%9F%E5%AE%9E%E5%A7%93%E5%90%8D%EF%BC%8C%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%EF%BC%8C%E6%9C%89%E6%95%88%E5%BF%AB%E9%80%92%E5%9C%B0%E5%9D%80..." title="转发评论至QQ空间" class="qzone"><em>QQ空间</em></a>
+							<a target="_blank"  charset="411-9-9" href="http://widget.renren.com/dialog/share?message=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%3A%E6%9C%80%E5%90%8E%E4%B8%80%E5%91%A8%E8%8E%B7%E5%BE%97%E9%AB%98%E5%9C%86%E5%9C%86%E9%BB%84%E6%B5%B7%E6%B3%A2%E7%AD%BE%E5%90%8D%E7%85%A7%E7%9A%84%E7%AB%A5%E9%9E%8B%E6%98%AF%20%5Bat%5DFEELing%E8%BF%BD%5B%2Fat%5D%20%5Bat%5DHey_Wong%5B%2Fat%5D%20%E8%AF%B7%E4%B8%A4%E4%BD%8D%E5%8F%8A%E6%97%B6%E6%9F%A5%E7%9C%8B%E6%82%A8%E7%9A%84%E7%AB%99%E5%86%85%E4%BF%A1%EF%BC%8C%E5%9C%A8%E6%9C%AC%E5%89%A7%E6%92%AD%E5%87%BA%E7%BB%93%E6%9D%9F%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E7%9C%9F%E5%AE%9E%E5%A7%93%E5%90%8D%EF%BC%8C%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%EF%BC%8C%E6%9C%89%E6%95%88%E5%BF%AB%E9%80%92%E5%9C%B0%E5%9D%80...&resourceUrl=http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html" class="renren" title="转发评论至人人网"><em>人人网</em></a>
+							<a target="_blank"  charset="411-9-10"  href="http://v.t.qq.com/share/share.php?appkey=e7ad0b0199994bda85ecc0a44ce9915f&site=www.youku.com&assname=youku2010&url=http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2001%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E6%9C%80%E5%90%8E%E4%B8%80%E5%91%A8%E8%8E%B7%E5%BE%97%E9%AB%98%E5%9C%86%E5%9C%86%E9%BB%84%E6%B5%B7%E6%B3%A2%E7%AD%BE%E5%90%8D%E7%85%A7%E7%9A%84%E7%AB%A5%E9%9E%8B%E6%98%AF%20%5Bat%5DFEELing%E8%BF%BD%5B%2Fat%5D%20%5Bat%5DHey_Wong%5B%2Fat%5D%20%E8%AF%B7%E4%B8%A4%E4%BD%8D%E5%8F%8A%E6%97%B6%E6%9F%A5%E7%9C%8B%E6%82%A8%E7%9A%84%E7%AB%99%E5%86%85%E4%BF%A1%EF%BC%8C%E5%9C%A8%E6%9C%AC%E5%89%A7%E6%92%AD%E5%87%BA%E7%BB%93%E6%9D%9F%E4%B9%8B%E5%89%8D%EF%BC%8C%E6%8A%8A%E7%9C%9F%E5%AE%9E%E5%A7%93%E5%90%8D%EF%BC%8C%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81%EF%BC%8C%E6%9C%89%E6%95%88%E5%BF%AB%E9%80%92%E5%9C%B0%E5%9D%80... http://v.youku.com/v_show/id_XNjI0MTkxNjAw.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%EF%BC%89" title="转发评论至腾讯微博" class="tencent_weibo"><em>腾讯微博</em></a>
+						</span>
+					</span>
+				</div>	
+				<div class="clear"></div>
+			</div>
+			<span class="timestamp">12天前</span>
+			<span class="via">来自<a href="http://www.youku.com/" target="_blank">优酷</a></span>
+		</div><!--.panel-->
+		
+	</div><!--.content-->
+	<div class="clear"></div>
+</div>
+ <div class="comment" id="comment603618169">
+	
+	<div class="user">
+		
+					<div class="photo"><a href="http://i.youku.com/u/UNTgyOTQyMzg0" target="_blank" ><img  src="http://static.youku.com/user/img/avatar/50/49.jpg"></a></div>
+			</div>
+	<div class="content">
+		<h3 class="username">
+					 <a href="http://i.youku.com/u/UNTgyOTQyMzg0" target="_blank" id>张代军3356756</a>
+				</h3><!--.username-->
+		<div class="summary">
+			<div class="text">
+				<p id="content_603618169">有一种魅力叫杨桃，有一种执着叫果然，有一种理解叫苏青，有一种忏悔叫西风，有一种闺蜜叫焦阳，有一种追随叫七星，有一种背叛叫广美，有一种欺骗叫李威，有一种不要脸叫邓佳佳 。有一种爱情叫咱们结婚吧。. 多好的一段话写出了一段故事的总结。<br /> </p>
+				<span style="color:#909090">(评论自：<a charset="411-9-12" href="http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html" target="_blank" style="color:#99ccee;">咱们结婚吧 48</a>)</span>			</div>
+		</div><!--.summary-->
+		<div class="panel">
+			<div class="handle">
+				<div class="com_reply"><a onclick="y.comment.showReply(603618169, 156342087, '52a72dda4973d0b42a000000', '52a72b7aaaa1f79c16000000', false);return false;" href="javascript:;">回复</a></div>
+				<div class="com_share" onmouseover="y.comment.changeStyle(this, true)" onmouseout="y.comment.changeStyle(this, false)">
+					<label>转发</label>
+					<span class="share_list" style="width:1px">
+						<span class="share_list_inner">
+							<a target="_blank"  charset="411-9-7"  href="http://v.t.sina.com.cn/share/share.php?appkey=2684493555&ralateUid=2580607742&source=%E4%BC%98%E9%85%B7%E7%BD%91&sourceUrl=http%3A%2F%2Fwww.youku.com%2F&content=utf8&url=http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2048%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E6%9C%89%E4%B8%80%E7%A7%8D%E9%AD%85%E5%8A%9B%E5%8F%AB%E6%9D%A8%E6%A1%83%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%89%A7%E7%9D%80%E5%8F%AB%E6%9E%9C%E7%84%B6%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E7%90%86%E8%A7%A3%E5%8F%AB%E8%8B%8F%E9%9D%92%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E5%BF%8F%E6%82%94%E5%8F%AB%E8%A5%BF%E9%A3%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E9%97%BA%E8%9C%9C%E5%8F%AB%E7%84%A6%E9%98%B3%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%BF%BD%E9%9A%8F%E5%8F%AB%E4%B8%83%E6%98%9F%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%83%8C%E5%8F%9B%E5%8F%AB%E5%B9%BF%E7%BE%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%AC%BA%E9%AA%97%E5%8F%AB%E6%9D%8E%E5%A8%81%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E4%B8%8D%E8%A6%81%E8%84%B8... http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%E8%AF%84%E8%AE%BA%EF%BC%89" title="转发评论至新浪微博" class="sina_weibo"><em>新浪微博</em></a>
+							<a target="_blank"  charset="411-9-8"  href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html&desc=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E6%9C%89%E4%B8%80%E7%A7%8D%E9%AD%85%E5%8A%9B%E5%8F%AB%E6%9D%A8%E6%A1%83%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%89%A7%E7%9D%80%E5%8F%AB%E6%9E%9C%E7%84%B6%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E7%90%86%E8%A7%A3%E5%8F%AB%E8%8B%8F%E9%9D%92%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E5%BF%8F%E6%82%94%E5%8F%AB%E8%A5%BF%E9%A3%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E9%97%BA%E8%9C%9C%E5%8F%AB%E7%84%A6%E9%98%B3%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%BF%BD%E9%9A%8F%E5%8F%AB%E4%B8%83%E6%98%9F%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%83%8C%E5%8F%9B%E5%8F%AB%E5%B9%BF%E7%BE%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%AC%BA%E9%AA%97%E5%8F%AB%E6%9D%8E%E5%A8%81%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E4%B8%8D%E8%A6%81%E8%84%B8..." title="转发评论至QQ空间" class="qzone"><em>QQ空间</em></a>
+							<a target="_blank"  charset="411-9-9" href="http://widget.renren.com/dialog/share?message=%E5%9C%A8%E4%BC%98%E9%85%B7%E4%B8%8A%E7%9C%8B%E8%A7%81%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%3A%E6%9C%89%E4%B8%80%E7%A7%8D%E9%AD%85%E5%8A%9B%E5%8F%AB%E6%9D%A8%E6%A1%83%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%89%A7%E7%9D%80%E5%8F%AB%E6%9E%9C%E7%84%B6%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E7%90%86%E8%A7%A3%E5%8F%AB%E8%8B%8F%E9%9D%92%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E5%BF%8F%E6%82%94%E5%8F%AB%E8%A5%BF%E9%A3%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E9%97%BA%E8%9C%9C%E5%8F%AB%E7%84%A6%E9%98%B3%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%BF%BD%E9%9A%8F%E5%8F%AB%E4%B8%83%E6%98%9F%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%83%8C%E5%8F%9B%E5%8F%AB%E5%B9%BF%E7%BE%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%AC%BA%E9%AA%97%E5%8F%AB%E6%9D%8E%E5%A8%81%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E4%B8%8D%E8%A6%81%E8%84%B8...&resourceUrl=http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html" class="renren" title="转发评论至人人网"><em>人人网</em></a>
+							<a target="_blank"  charset="411-9-10"  href="http://v.t.qq.com/share/share.php?appkey=e7ad0b0199994bda85ecc0a44ce9915f&site=www.youku.com&assname=youku2010&url=http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html&title=%E3%80%90%E8%A7%86%E9%A2%91%EF%BC%9A%E5%92%B1%E4%BB%AC%E7%BB%93%E5%A9%9A%E5%90%A7%2048%E3%80%91%E7%9A%84%E8%BF%99%E6%9D%A1%E8%AF%84%E8%AE%BA%E4%B8%8D%E9%94%99%EF%BC%9A%E6%9C%89%E4%B8%80%E7%A7%8D%E9%AD%85%E5%8A%9B%E5%8F%AB%E6%9D%A8%E6%A1%83%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%89%A7%E7%9D%80%E5%8F%AB%E6%9E%9C%E7%84%B6%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E7%90%86%E8%A7%A3%E5%8F%AB%E8%8B%8F%E9%9D%92%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E5%BF%8F%E6%82%94%E5%8F%AB%E8%A5%BF%E9%A3%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E9%97%BA%E8%9C%9C%E5%8F%AB%E7%84%A6%E9%98%B3%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%BF%BD%E9%9A%8F%E5%8F%AB%E4%B8%83%E6%98%9F%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E8%83%8C%E5%8F%9B%E5%8F%AB%E5%B9%BF%E7%BE%8E%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E6%AC%BA%E9%AA%97%E5%8F%AB%E6%9D%8E%E5%A8%81%EF%BC%8C%E6%9C%89%E4%B8%80%E7%A7%8D%E4%B8%8D%E8%A6%81%E8%84%B8... http://v.youku.com/v_show/id_XNjI1MzY4MzQ4.html%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20%40%E4%BC%98%E9%85%B7%EF%BC%89" title="转发评论至腾讯微博" class="tencent_weibo"><em>腾讯微博</em></a>
+						</span>
+					</span>
+				</div>	
+				<div class="clear"></div>
+			</div>
+			<span class="timestamp">12天前</span>
+			<span class="via">来自<a href="http://mobile.youku.com" target="_blank">iPhone客户端</a></span>
+		</div><!--.panel-->
+		
+	</div><!--.content-->
+	<div class="clear"></div>
+</div>
+ 	
+			</div><!-- .commens -->
+		</div><!-- .commentArea	-->
+	</div>
+</div>
+</div></div>
+						
+					</div> <!--.opus-->
+				</div><!--.bd-->
+				<div id="subnav_wrap"><div id="subnav"><div class="hd"> 
+	<ul class="tb" id="tab_movie">
+				<li class="current" id="subnav_showInfo">
+						<a charset="411-11-1" href="javascript:;" onclick="y.tab.change(this,'showInfo')">剧集列表
+									</a>
+		</li>
+				<li  id="subnav_point">
+						<a charset="411-11-2" href="javascript:;" onclick="y.tab.change(this,'point')">分集剧情
+									</a>
+		</li>
+				<li  id="subnav_around_type_2_title_%E9%A2%84%E5%91%8A%E7%89%87">
+						<a charset="411-11-3" href="javascript:;" onclick="y.tab.change(this,'around_type_2_title_%E9%A2%84%E5%91%8A%E7%89%87')">预告片
+									</a>
+		</li>
+				<li  id="subnav_around_type_3_title_%E8%8A%B1%E7%B5%AE">
+						<a charset="411-11-4" href="javascript:;" onclick="y.tab.change(this,'around_type_3_title_%E8%8A%B1%E7%B5%AE')">花絮
+									</a>
+		</li>
+				<li  id="subnav_around_type_4_title_%E8%B5%84%E8%AE%AF">
+						<a charset="411-11-5" href="javascript:;" onclick="y.tab.change(this,'around_type_4_title_%E8%B5%84%E8%AE%AF')">资讯
+									</a>
+		</li>
+				<li  id="subnav_around_type_6_title_MV">
+						<a charset="411-11-6" href="javascript:;" onclick="y.tab.change(this,'around_type_6_title_MV')">MV
+									</a>
+		</li>
+				<li  id="subnav_comment">
+						<a charset="411-11-7" href="javascript:;" onclick="y.tab.change(this,'comment')">评论
+									</a>
+		</li>
+				<li  id="subnav_doubanComment">
+						<a charset="411-11-8" href="javascript:;" onclick="y.tab.change(this,'doubanComment')">豆瓣
+									</a>
+		</li>
+			</ul>
+	<div class="extend"></div>
+</div></div></div>
+			</div> <!--.overview-->
+		</div><!--.box nBox-->
+	</div><!--left end-->
+	<div class="right">
+		<div style="display:none"><div id='ab_101485'></div></div>
+		<div class="ADBR" id="ADBR">
+			<div class="AD_Brand">
+				<h3 class="title"  id="LOGO_TITLE"></h3>
+				<div class="bLogo"  id="AD_LOGO"></div>
+			</div><!--AD_Brand end-->
+			<div id="AD_Recommend"><div class="box qBox"></div></div><!--.AD_Recommend-->
+		</div><!--.ADBR-->
+		<div id='ab_855'></div>
+		<div id="prevue_wrap"><div id="prevue"></div></div>
+		<div id="cast_wrap"><div id="cast"><div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">演职员表</h3></div>				
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="showstaff">
+			<div class="uListColl_s">
+				<div class="uFollow" id="uFollow">
+					<div class="users">
+																												<ul 0>
+							<li class="avatar"><a  target="_blank"  title="黄海波" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjkxODg=.html"><img src="http://r4.ykimg.com/0513000050E6486A979273661D08E4C0" alt="黄海波" /></a></li>
+							<li class="username">
+								<a target="_blank" title="黄海波" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjkxODg=.html">黄海波</a>
+							</li>
+																							<li class="portray" title="果然">
+																			果然
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UNjkxODg=' /></li>
+						</ul>
+																								<ul 1>
+							<li class="avatar"><a  target="_blank"  title="高圆圆" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjg5MDQ=.html"><img src="http://r2.ykimg.com/051300004EFD7C8897927373BC09087B" alt="高圆圆" /></a></li>
+							<li class="username">
+								<a target="_blank" title="高圆圆" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjg5MDQ=.html">高圆圆</a>
+							</li>
+																							<li class="portray" title="杨桃">
+																			杨桃
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UNjg5MDQ=' /></li>
+						</ul>
+																								<ul 2>
+							<li class="avatar"><a  target="_blank"  title="张凯丽" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjIyMjA=.html"><img src="http://r2.ykimg.com/0513000050D93D0097927345F00421F1" alt="张凯丽" /></a></li>
+							<li class="username">
+								<a target="_blank" title="张凯丽" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjIyMjA=.html">张凯丽</a>
+							</li>
+																							<li class="portray" title="薛素梅">
+																			薛素梅
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UNjIyMjA=' /></li>
+						</ul>
+						<div class="clear"></div>																		<ul 3>
+							<li class="avatar"><a  target="_blank"  title="王彤" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODU4MjA=.html"><img src="http://r2.ykimg.com/051300004FC33803979273624F00D61E" alt="王彤" /></a></li>
+							<li class="username">
+								<a target="_blank" title="王彤" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODU4MjA=.html">王彤</a>
+							</li>
+																							<li class="portray" title="苏青">
+																			苏青
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UODU4MjA=' /></li>
+						</ul>
+																								<ul 4>
+							<li class="avatar"><a  target="_blank"  title="柳岩" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTMxOTYyNA==.html"><img src="http://r3.ykimg.com/051300004F35C9C69792732B8B0534FC" alt="柳岩" /></a></li>
+							<li class="username">
+								<a target="_blank" title="柳岩" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTMxOTYyNA==.html">柳岩</a>
+							</li>
+																							<li class="portray" title="蓝未未">
+																			蓝未未
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTMxOTYyNA==' /></li>
+						</ul>
+																								<ul 5>
+							<li class="avatar"><a  target="_blank"  title="大左" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQ2Njk2OA==.html"><img src="http://r4.ykimg.com/051300004F4454F6979273598F0C9C38" alt="大左" /></a></li>
+							<li class="username">
+								<a target="_blank" title="大左" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQ2Njk2OA==.html">大左</a>
+							</li>
+																							<li class="portray" title="焦阳">
+																			焦阳
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTQ2Njk2OA==' /></li>
+						</ul>
+						<div class="clear"></div>												<div id="ex" style="display:none;">						<ul 6>
+							<li class="avatar"><a  target="_blank"  title="傅佳" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODQ4MDQ=.html"><img src="http://r2.ykimg.com/0513000052A55BDF6758391673088548" alt="傅佳" /></a></li>
+							<li class="username">
+								<a target="_blank" title="傅佳" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODQ4MDQ=.html">傅佳</a>
+							</li>
+																							<li class="portray" title="段西风">
+																			段西风
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UODQ4MDQ=' /></li>
+						</ul>
+																								<ul 7>
+							<li class="avatar"><a  target="_blank"  title="寒青" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMzE1Mzc0MA==.html"><img src="http://r1.ykimg.com/0513000052846B5067583952AC069F51" alt="寒青" /></a></li>
+							<li class="username">
+								<a target="_blank" title="寒青" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMzE1Mzc0MA==.html">寒青</a>
+							</li>
+																							<li class="portray" title="胡七星">
+																			胡七星
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMzE1Mzc0MA==' /></li>
+						</ul>
+																								<ul 8>
+							<li class="avatar"><a  target="_blank"  title="徐松子" charset="411-14-2" href="http://www.youku.com/star_page/uid_UOTEzODQ=.html"><img src="http://r1.ykimg.com/051300004EC1F80497927321810D56C7" alt="徐松子" /></a></li>
+							<li class="username">
+								<a target="_blank" title="徐松子" charset="411-14-2" href="http://www.youku.com/star_page/uid_UOTEzODQ=.html">徐松子</a>
+							</li>
+																							<li class="portray" title="冯兰芝">
+																			冯兰芝
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UOTEzODQ=' /></li>
+						</ul>
+						<div class="clear"></div>																		<ul 9>
+							<li class="avatar"><a  target="_blank"  title="白志迪" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODU3MTI=.html"><img src="http://r4.ykimg.com/051300004E41FB7997927343DA06AC7E" alt="白志迪" /></a></li>
+							<li class="username">
+								<a target="_blank" title="白志迪" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODU3MTI=.html">白志迪</a>
+							</li>
+																							<li class="portray" title="果长山">
+																			果长山
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UODU3MTI=' /></li>
+						</ul>
+																								<ul 10>
+							<li class="avatar"><a  target="_blank"  title="李心敏" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODIxMDky.html"><img src="http://r2.ykimg.com/0513000050C19E279792736C20093C1E" alt="李心敏" /></a></li>
+							<li class="username">
+								<a target="_blank" title="李心敏" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODIxMDky.html">李心敏</a>
+							</li>
+																							<li class="portray" title="李兆先">
+																			李兆先
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UODIxMDky' /></li>
+						</ul>
+																								<ul 11>
+							<li class="avatar"><a  target="_blank"  title="田岷" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNDc0MTI=.html"><img src="http://r2.ykimg.com/051300005003DC84979273342A0CB7EE" alt="田岷" /></a></li>
+							<li class="username">
+								<a target="_blank" title="田岷" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNDc0MTI=.html">田岷</a>
+							</li>
+																							<li class="portray" title="蓝彩平">
+																			蓝彩平
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UNDc0MTI=' /></li>
+						</ul>
+						<div class="clear"></div>																		<ul 12>
+							<li class="avatar"><a  target="_blank"  title="周扬" charset="411-14-2" href="http://www.youku.com/star_page/uid_UOTQyNDA=.html"><img src="http://r4.ykimg.com/0513000050762D41979273312C017F00" alt="周扬" /></a></li>
+							<li class="username">
+								<a target="_blank" title="周扬" charset="411-14-2" href="http://www.youku.com/star_page/uid_UOTQyNDA=.html">周扬</a>
+							</li>
+																							<li class="portray" title="广美">
+																			广美
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UOTQyNDA=' /></li>
+						</ul>
+																								<ul 13>
+							<li class="avatar"><a  target="_blank"  title="郝爱民" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTUyMDMxNg==.html"><img src="http://r1.ykimg.com/0513000050F7C2369792732E5309D124" alt="郝爱民" /></a></li>
+							<li class="username">
+								<a target="_blank" title="郝爱民" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTUyMDMxNg==.html">郝爱民</a>
+							</li>
+																							<li class="portray" title="郝团长">
+																			郝团长
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTUyMDMxNg==' /></li>
+						</ul>
+																								<ul 14>
+							<li class="avatar"><a  target="_blank"  title="樊昱君" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTY1NjY0MA==.html"><img src="http://r3.ykimg.com/051300004ECEFEB79792736DD607E144" alt="樊昱君" /></a></li>
+							<li class="username">
+								<a target="_blank" title="樊昱君" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTY1NjY0MA==.html">樊昱君</a>
+							</li>
+																							<li class="portray" title="飘飘">
+																			飘飘
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTY1NjY0MA==' /></li>
+						</ul>
+						<div class="clear"></div>																		<ul 15>
+							<li class="avatar"><a  target="_blank"  title="高亚麟" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODg0MDQ=.html"><img src="http://r4.ykimg.com/051300004F98B86E97927376D10B6FF6" alt="高亚麟" /></a></li>
+							<li class="username">
+								<a target="_blank" title="高亚麟" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODg0MDQ=.html">高亚麟</a>
+							</li>
+																							<li class="portray" title="孙总">
+																			孙总
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UODg0MDQ=' /></li>
+						</ul>
+																								<ul 16>
+							<li class="avatar"><a  target="_blank"  title="张一鸾" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQ4MzkyNA==.html"><img src="http://r3.ykimg.com/051300004E1ECD47000001125606E5A9" alt="张一鸾" /></a></li>
+							<li class="username">
+								<a target="_blank" title="张一鸾" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQ4MzkyNA==.html">张一鸾</a>
+							</li>
+																							<li class="portray" title="邓佳佳">
+																			邓佳佳
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTQ4MzkyNA==' /></li>
+						</ul>
+																								<ul 17>
+							<li class="avatar"><a  target="_blank"  title="王策" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTMwNTIxNg==.html"><img src="http://r2.ykimg.com/051300004F090C9397927370350372D6" alt="王策" /></a></li>
+							<li class="username">
+								<a target="_blank" title="王策" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTMwNTIxNg==.html">王策</a>
+							</li>
+																							<li class="portray" title="李葵">
+																			李葵
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTMwNTIxNg==' /></li>
+						</ul>
+						<div class="clear"></div>																		<ul 18>
+							<li class="avatar"><a  target="_blank"  title="范明" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjg3Mjg=.html"><img src="http://r2.ykimg.com/051300004E72E9859792730C1901CC16" alt="范明" /></a></li>
+							<li class="username">
+								<a target="_blank" title="范明" charset="411-14-2" href="http://www.youku.com/star_page/uid_UNjg3Mjg=.html">范明</a>
+							</li>
+																							<li class="portray" title="金总">
+																			金总
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UNjg3Mjg=' /></li>
+						</ul>
+																								<ul 19>
+							<li class="avatar"><a  target="_blank"  title="涂松岩" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODUyNjA=.html"><img src="http://r3.ykimg.com/0513000050B8199B9792733B290BD0C7" alt="涂松岩" /></a></li>
+							<li class="username">
+								<a target="_blank" title="涂松岩" charset="411-14-2" href="http://www.youku.com/star_page/uid_UODUyNjA=.html">涂松岩</a>
+							</li>
+																							<li class="portray" title="高建">
+																			高建
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UODUyNjA=' /></li>
+						</ul>
+																								<ul 20>
+							<li class="avatar"><a  target="_blank"  title="大鹏" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTI5MDQ5Mg==.html"><img src="http://r2.ykimg.com/051300004F2CDD0297927336060B0711" alt="大鹏" /></a></li>
+							<li class="username">
+								<a target="_blank" title="大鹏" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTI5MDQ5Mg==.html">大鹏</a>
+							</li>
+																							<li class="portray" title="张言">
+																			张言
+																											</li>
+																						<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTI5MDQ5Mg==' /></li>
+						</ul>
+						<div class="clear"></div>																													<ul 21>
+							<li class="avatar"><a  target="_blank"  title="刘江" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTI1NjQzNg==.html"><img src="http://r1.ykimg.com/051300004DC8F08B979273486F0653BC" alt="刘江" /></a></li>
+							<li class="username">
+								<a target="_blank" title="刘江" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTI1NjQzNg==.html">刘江</a>
+							</li>
+															<li class="portray" title="导演">导演</li>
+														<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTI1NjQzNg==' /></li>
+						</ul>
+																																			<ul 22>
+							<li class="avatar"><a  target="_blank"  title="孟瑶" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTMyMjg0OA==.html"><img src="http://r2.ykimg.com/051300005195A8AF97927376390C6F02" alt="孟瑶" /></a></li>
+							<li class="username">
+								<a target="_blank" title="孟瑶" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTMyMjg0OA==.html">孟瑶</a>
+							</li>
+															<li class="portray" title="编剧">编剧</li>
+														<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTMyMjg0OA==' /></li>
+						</ul>
+																																			<ul 23>
+							<li class="avatar"><a  target="_blank"  title="张子扬" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQxMTU5Mg==.html"><img src="http://r2.ykimg.com/051300005176013E97927338BC0AC048" alt="张子扬" /></a></li>
+							<li class="username">
+								<a target="_blank" title="张子扬" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQxMTU5Mg==.html">张子扬</a>
+							</li>
+															<li class="portray" title="监制">监制</li>
+														<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTQxMTU5Mg==' /></li>
+						</ul>
+						<div class="clear"></div>																		<ul 24>
+							<li class="avatar"><a  target="_blank"  title="罗立平" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQyMDAwNA==.html"><img src="http://r2.ykimg.com/051300005107283A97927372E50519A4" alt="罗立平" /></a></li>
+							<li class="username">
+								<a target="_blank" title="罗立平" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTQyMDAwNA==.html">罗立平</a>
+							</li>
+															<li class="portray" title="监制">监制</li>
+														<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTQyMDAwNA==' /></li>
+						</ul>
+																								<ul 25>
+							<li class="avatar"><a  target="_blank"  title="朱向阳" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMzExODA3Mg==.html"><img src="http://r3.ykimg.com/05130000509739F19792734DFC0C4C14" alt="朱向阳" /></a></li>
+							<li class="username">
+								<a target="_blank" title="朱向阳" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMzExODA3Mg==.html">朱向阳</a>
+							</li>
+															<li class="portray" title="监制">监制</li>
+														<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMzExODA3Mg==' /></li>
+						</ul>
+																								<ul 26>
+							<li class="avatar"><a  target="_blank"  title="刘向群" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTU3Mzk1Mg==.html"><img src="http://r3.ykimg.com/051300004F4310B197927361D306AE2E" alt="刘向群" /></a></li>
+							<li class="username">
+								<a target="_blank" title="刘向群" charset="411-14-2" href="http://www.youku.com/star_page/uid_UMTU3Mzk1Mg==.html">刘向群</a>
+							</li>
+															<li class="portray" title="监制">监制</li>
+														<li class="select"><input type="checkbox" checked="chedked" name='fperson' value='UMTU3Mzk1Mg==' /></li>
+						</ul>
+						<div class="clear"></div>																	</div>						<div class="clear"></div>
+					</div><!--.users-->
+					<div class="panel">
+						<div class="state">
+							<div class="form_btn form_btn_s form_btnmaj_s" id="Btn">
+								<span class="form_btn_text" onclick="(new Image()).src = 'http://hz.youku.com/red/click.php?tp=1&cp=4006745&cpp=1000515&url=';y.checkLogin(y.followed.batch)">一键订阅</span>
+							</div>
+							<span class="followed" id="FollowSpan" style="display:none">已订阅选中的明星</span>
+						</div>
+												<div class="expand">
+							<a charset="411-14-3" onclick='yshow.toggle(this,"ex", "更多演员<span class=\"ico_more\"></span>", "隐藏<span class=\"ico_more_up\"></span>");'>更多演员<span class='ico_more'></span></a>
+						</div>
+												<div class="clear"></div>
+					</div><!--.panel-->
+				</div><!--uFollow endd -->
+			</div><!--userColl end-->
+		</div>
+	</div><!--body end-->
+</div></div></div>
+		<div id="relation_wrap"><div id="relation"><div class="box nBox">
+	<div class="head">
+	<div class="caption"><h3 class="title">相关推荐</h3></div>				
+
+</div><!--head end-->
+	
+	<div class="body">
+		<div class="showrelated">
+			<div class="colllist1s">
+				<div class="items">
+											<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-2" title="特种兵之火凤凰 TV版" target="_blank" href="http://www.youku.com/show_page/id_z37d66582d70311e29748.html"></a></li>
+	<li class="p_thumb"><img alt="特种兵之火凤凰 TV版" src="http://r4.ykimg.com/050D0000526614D5675839786104B32A"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-3" title="特种兵之火凤凰 TV版" target="_blank" href="http://www.youku.com/show_page/id_z37d66582d70311e29748.html">特种兵之火凤凰 TV版</a></li>			
+		<li class="p_"><span>浴火凤凰涅槃重生</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratenull"></em><em class="num">8.0</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-4" href="http://www.youku.com/star_page/uid_UMTE3MTI0NA==.html" target="_blank">徐佳</a>
+			 / 				<a  charset="411-15-5" href="http://www.youku.com/star_page/uid_UOTMyNzA4.html" target="_blank">程愫</a>
+			 / 				<a  charset="411-15-6" href="http://www.youku.com/star_page/uid_UODc4MDA=.html" target="_blank">刘晓洁</a>
+							</li>
+			<li>
+		集数: 62集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-7" title="最美的时光 TV版" target="_blank" href="http://www.youku.com/show_page/id_zf2d7cbbc510311e38b3f.html"></a></li>
+	<li class="p_thumb"><img alt="最美的时光 TV版" src="http://r4.ykimg.com/050D0000528C1B4F6758395EBD07AD7E"></li>	
+	<li class="p_ishd">
+						<span class="ico__HD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-8" title="最美的时光 TV版" target="_blank" href="http://www.youku.com/show_page/id_zf2d7cbbc510311e38b3f.html">最美的时光 TV版</a></li>			
+		<li class="p_"><span>腹黑金领情场"禁欲"</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">8.9</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-9" href="http://www.youku.com/star_page/uid_UNjM3OTY=.html" target="_blank">钟汉良</a>
+			 / 				<a  charset="411-15-10" href="http://www.youku.com/star_page/uid_UNzc3NjA=.html" target="_blank">张钧甯</a>
+			 / 				<a  charset="411-15-11" href="http://www.youku.com/star_page/uid_UOTEyODA=.html" target="_blank">贾乃亮</a>
+							</li>
+			<li>
+		集数: 47集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-12" title="继承者们" target="_blank" href="http://www.youku.com/show_page/id_z952a93a0a5a511e2a19e.html"></a></li>
+	<li class="p_thumb"><img alt="继承者们" src="http://r4.ykimg.com/050D0000525378676758397B860B873A"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-13" title="继承者们" target="_blank" href="http://www.youku.com/show_page/id_z952a93a0a5a511e2a19e.html">继承者们</a></li>			
+		<li class="p_"><span>高富帅遇灰姑娘擦爱火</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">9.4</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-14" href="http://www.youku.com/star_page/uid_UNTQxMjg=.html" target="_blank">李敏镐</a>
+			 / 				<a  charset="411-15-15" href="http://www.youku.com/star_page/uid_UNzQwOTY=.html" target="_blank">朴信惠</a>
+			 / 				<a  charset="411-15-16" href="http://www.youku.com/star_page/uid_UMTYxMjYzNg==.html" target="_blank">金宇彬</a>
+							</li>
+			<li>
+		集数: 20集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-17" title="千金归来" target="_blank" href="http://www.youku.com/show_page/id_z945187f0b93111e296ac.html"></a></li>
+	<li class="p_thumb"><img alt="千金归来" src="http://r4.ykimg.com/050D00005232DF3F67583963E30571A6"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-18" title="千金归来" target="_blank" href="http://www.youku.com/show_page/id_z945187f0b93111e296ac.html">千金归来</a></li>			
+		<li class="p_"><span>娇女逆袭职场女强人</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratenull"></em><em class="num">8.0</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-19" href="http://www.youku.com/star_page/uid_UMTQxMTk2NA==.html" target="_blank">李沁</a>
+			 / 				<a  charset="411-15-20" href="http://www.youku.com/star_page/uid_UMTM5MjU1Ng==.html" target="_blank">李易峰</a>
+			 / 				<a  charset="411-15-21" href="http://www.youku.com/star_page/uid_UNDg4OTI=.html" target="_blank">赵文瑄</a>
+							</li>
+			<li>
+		集数: 50集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-22" title="法外风云" target="_blank" href="http://www.youku.com/show_page/id_zaa40b32c429611e2b16f.html"></a></li>
+	<li class="p_thumb"><img alt="法外风云" src="http://r4.ykimg.com/050D0000525E078D6758397C6E00A069"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-23" title="法外风云" target="_blank" href="http://www.youku.com/show_page/id_zaa40b32c429611e2b16f.html">法外风云</a></li>			
+		<li class="p_"><span>黎耀祥陈豪律师档</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">8.9</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-24" href="http://www.youku.com/star_page/uid_UNjQxNDA=.html" target="_blank">陈豪</a>
+			 / 				<a  charset="411-15-25" href="http://www.youku.com/star_page/uid_UNDk4NTY=.html" target="_blank">黎耀祥</a>
+			 / 				<a  charset="411-15-26" href="http://www.youku.com/star_page/uid_UNzk0ODg=.html" target="_blank">陈法拉</a>
+							</li>
+			<li>
+		集数: 32集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-27" title="王的女人" target="_blank" href="http://www.youku.com/show_page/id_z100c220ef4aa11e0a046.html"></a></li>
+	<li class="p_thumb"><img alt="王的女人" src="http://r4.ykimg.com/050D0000518B21469792736A45060E38"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-28" title="王的女人" target="_blank" href="http://www.youku.com/show_page/id_z100c220ef4aa11e0a046.html">王的女人</a></li>			
+		<li class="p_"><span>陈乔恩变身"一代毒后"</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratenull"></em><em class="num">8.0</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-29" href="http://www.youku.com/star_page/uid_UNzc2MTY=.html" target="_blank">明道</a>
+			 / 				<a  charset="411-15-30" href="http://www.youku.com/star_page/uid_UNjcxMjA=.html" target="_blank">陈乔恩</a>
+			 / 				<a  charset="411-15-31" href="http://www.youku.com/star_page/uid_UMTI3OTE4NA==.html" target="_blank">罗晋</a>
+							</li>
+			<li>
+		集数: 32集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-32" title="未婚妻 TV版" target="_blank" href="http://www.youku.com/show_page/id_z2f4e0c18c4a211e1b2ac.html"></a></li>
+	<li class="p_thumb"><img alt="未婚妻 TV版" src="http://r4.ykimg.com/050D000051930D61670C4A1AE00D170A"></li>	
+	<li class="p_ishd">
+						<span class="ico__HD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-33" title="未婚妻 TV版" target="_blank" href="http://www.youku.com/show_page/id_z2f4e0c18c4a211e1b2ac.html">未婚妻 TV版</a></li>			
+		<li class="p_"><span>未婚妈妈幸福奋斗记</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratenull"></em><em class="num">7.5</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-34" href="http://www.youku.com/star_page/uid_UNjU1NzI=.html" target="_blank">丹尼斯·吴</a>
+			 / 				<a  charset="411-15-35" href="http://www.youku.com/star_page/uid_UMTQxMDAwNA==.html" target="_blank">马思纯</a>
+			 / 				<a  charset="411-15-36" href="http://www.youku.com/star_page/uid_UMzE1NzM4NA==.html" target="_blank">法图麦天缘</a>
+							</li>
+			<li>
+		集数: 20集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-37" title="嘻哈四重奏 第五季" target="_blank" href="http://www.youku.com/show_page/id_z92e9b836ee8511e28b3f.html"></a></li>
+	<li class="p_thumb"><img alt="嘻哈四重奏 第五季" src="http://r4.ykimg.com/050D0000521319F1675839344F0AADF9"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-38" title="嘻哈四重奏 第五季" target="_blank" href="http://www.youku.com/show_page/id_z92e9b836ee8511e28b3f.html">嘻哈四重奏 第五季</a></li>			
+		<li class="p_"><span>经典无厘头再续前缘</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratenull"></em><em class="num">8.4</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-39" href="http://www.youku.com/star_page/uid_UMTIwMTkzMg==.html" target="_blank">卢正雨</a>
+			 / 				<a  charset="411-15-40" href="http://www.youku.com/star_page/uid_UMTI5MDA1Mg==.html" target="_blank">杨晴瑄</a>
+			 / 				<a  charset="411-15-41" href="http://www.youku.com/star_page/uid_UMzIwMzE3Ng==.html" target="_blank">蔡文静</a>
+							</li>
+			<li>
+		集数: 20集		更新至18	</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-42" title="行尸走肉 第四季" target="_blank" href="http://www.youku.com/show_page/id_z0182161cc08711e2b16f.html"></a></li>
+	<li class="p_thumb"><img alt="行尸走肉 第四季" src="http://r4.ykimg.com/050D000052299E026758393B8708101E"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-43" title="行尸走肉 第四季" target="_blank" href="http://www.youku.com/show_page/id_z0182161cc08711e2b16f.html">行尸走肉 第四季</a></li>			
+		<li class="p_"><span>最受期待剧集强势再袭</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="num">9.5</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-44" href="http://www.youku.com/star_page/uid_UMjE4MDcy.html" target="_blank">安德鲁·林肯</a>
+			 / 				<a  charset="411-15-45" href="http://www.youku.com/star_page/uid_UMjkwMjk2MA==.html" target="_blank">钱德勒·里格斯</a>
+			 / 				<a  charset="411-15-46" href="http://www.youku.com/star_page/uid_UMTEyNzg1Mg==.html" target="_blank">达娜·贾克赛·古瑞拉</a>
+							</li>
+			<li>
+		集数: 16集		更新至8	</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-47" title="万万没想到" target="_blank" href="http://www.youku.com/show_page/id_zd1d065eafb1411e2a705.html"></a></li>
+	<li class="p_thumb"><img alt="万万没想到" src="http://r4.ykimg.com/050D0000520C94C26758392AFF03D605"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-48" title="万万没想到" target="_blank" href="http://www.youku.com/show_page/id_zd1d065eafb1411e2a705.html">万万没想到</a></li>			
+		<li class="p_"><span>叫兽真人版日和无节操</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">9.4</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-49" href="http://www.youku.com/star_page/uid_UMzE1Mjc2MA==.html" target="_blank">白客</a>
+			 / 				<a  charset="411-15-50" href="http://www.youku.com/star_page/uid_UMzE0NDc3Ng==.html" target="_blank">刘循子墨</a>
+			 / 				<a  charset="411-15-51" href="http://www.youku.com/star_page/uid_UMjk2NzcwMA==.html" target="_blank">叫兽易小星</a>
+							</li>
+			<li>
+		集数: 15集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-52" title="On Call 36小时 Ⅱ" target="_blank" href="http://www.youku.com/show_page/id_z6c9e24d2435e11e2b16f.html"></a></li>
+	<li class="p_thumb"><img alt="On Call 36小时 Ⅱ" src="http://r4.ykimg.com/050D0000526F84A267583979E000DF26"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-53" title="On Call 36小时 Ⅱ" target="_blank" href="http://www.youku.com/show_page/id_z6c9e24d2435e11e2b16f.html">On Call 36小时 Ⅱ</a></li>			
+		<li class="p_"><span>医者行医救人的真谛</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">9.0</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-54" href="http://www.youku.com/star_page/uid_UNDY3NjA=.html" target="_blank">吴启华</a>
+			 / 				<a  charset="411-15-55" href="http://www.youku.com/star_page/uid_UNjQwNjQ=.html" target="_blank">马国明</a>
+			 / 				<a  charset="411-15-56" href="http://www.youku.com/star_page/uid_UNjQwODQ=.html" target="_blank">杨怡</a>
+							</li>
+			<li>
+		集数: 30集			</li>
+	</ul>
+<ul class="p pshv">	
+	<li class="p_link"><a  charset="411-15-57" title="My盛Lady" target="_blank" href="http://www.youku.com/show_page/id_z085433aaf4ce11e2a705.html"></a></li>
+	<li class="p_thumb"><img alt="My盛Lady" src="http://r4.ykimg.com/050D0000528F18CA67583973180CFF81"></li>	
+	<li class="p_ishd">
+						<span class="ico__SD"></span>
+				</li>	
+		<li class="p_title"><a  charset="411-15-58" title="My盛Lady" target="_blank" href="http://www.youku.com/show_page/id_z085433aaf4ce11e2a705.html">My盛Lady</a></li>			
+		<li class="p_"><span>为剩女解决爱情烦恼</span></li>
+		<li class="p_rating"><label>评分:</label><span class="rating"><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratefull"></em><em class="ico__ratepart"></em><em class="num">9.1</em></span></li>
+		<li class="p_actor"><label>主演:</label>
+					<a  charset="411-15-59" href="http://www.youku.com/star_page/uid_UNDcxODQ=.html" target="_blank">黄子华</a>
+			 / 				<a  charset="411-15-60" href="http://www.youku.com/star_page/uid_UNjQxNTY=.html" target="_blank">徐子珊</a>
+			 / 				<a  charset="411-15-61" href="http://www.youku.com/star_page/uid_UNDk1MTY=.html" target="_blank">陈敏之</a>
+							</li>
+			<li>
+		集数: 20集			</li>
+	</ul>
+	
+									</div>
+			</div>
+		</div>
+	</div><!--body end-->
+</div></div></div>
+		<div id='ab_856'></div>
+	</div><!--right end-->
+	<div class="clear"></div>
+</div><!--s_main end-->
+</div><!--s_body end-->
+
+<link rel="stylesheet" type="text/css" href="http://static.youku.com/v1.0.0914/index/css/qfooter.css" />
+<div class="yk-footer" id="qfooter">
+    <div class="yk-footer-con">
+        <div class="footer-link">
+            <ul>
+                <li><label>资源</label></li>
+                <li>
+					<a href="http://www.youku.com/">首页</a>
+					<a href="http://tv.youku.com/">电视剧</a>
+					<a href="http://movie.youku.com/">电影</a>
+					<a href="http://zy.youku.com/">综艺</a>
+					<a href="http://www.youku.com/v/">视频</a>
+				</li>
+                <li><label>用户</label></li>
+                <li>
+					<a href="http://i.youku.com/u/home">个人中心</a>
+					<a href="http://i.youku.com/u/official">视频官网</a>
+					<a href="http://share.youku.com/">分享计划</a>
+				</li>
+            </ul>
+            <ul>
+                <li><label>分类</label></li>
+                <li>
+					<a href="http://news.youku.com/">资讯</a>
+					<a href="http://mobile.youku.com/">拍客</a>
+					<a href="http://sports.youku.com/">体育</a>
+					<a href="http://auto.youku.com/">汽车</a>
+					<a href="http://tech.youku.com/">科技</a>
+					<a href="http://finance.youku.com/">财经</a>
+				</li>
+                <li>
+					<a href="http://www.youku.com/v_showlist/t2d1c102.html">广告</a>
+					<a href="http://ent.youku.com/">娱乐</a>
+					<a href="http://dv.youku.com/">原创</a>
+					<a href="http://music.youku.com/">音乐</a>
+					<a href="http://game.youku.com/">游戏</a>
+					<a href="http://aixin.youku.com/">公益</a>
+				</li>
+                <li>
+					<a href="http://life.youku.com">生活</a>
+					<a href="http://fashion.youku.com/">时尚</a>
+					<a href="http://edu.youku.com/">教育</a>
+					<a href="http://travel.youku.com/">旅游</a>
+					<a href="http://fun.youku.com/">搞笑</a>
+				</li>
+            </ul>
+            <ul>
+                <li><label>软件</label></li>
+                <li><a href="http://mobile.youku.com/index/pc" target="_blank">PC客户端</a></li>
+                <li><a href="http://mobile.youku.com/index/wireless" target="_blank">手机客户端</a><a href="http://mobile.youku.com/index/paike" target="_blank">拍客</a></li>
+                <li><a href="http://labs.youku.com/" target="_blank">实验室</a><a href="http://open.youku.com/" target="_blank">开放平台</a></li>
+            </ul>
+            <ul>
+                <li><label>支持</label></li>
+                <li><a id="sttrans" href="javascript:void(0);">繁体版</a></li>
+                <li><a href="http://www.youku.com/service/feed/" target="_blank">在线反馈</a></li>
+                <li><a href="http://www.youku.com/help/" target="_blank">帮助中心</a></li>
+            </ul>
+            <ul class="narrow">
+                <li><label><a href="http://c.youku.com/aboutcn/youtu" target="_blank">优酷土豆集团</a></label></li>
+                <li><label><a href="http://c.youku.com/abouteg/youtu" target="_blank">Youku Tudou Inc.</a></label></li>
+                <li><a href="http://c.youku.com/aboutcn/youku" target="_blank">关于优酷</a></li>
+                <li><a href="http://c.youku.com/link" target="_blank">友情链接</a></li>
+            </ul>
+            <ul class="narrow">
+            	<li><a href="http://c.youku.com/aboutcn/youku" target="_blank">优酷</a></li>
+                <li><a href="http://c.youku.com/abouteg/youku" target="_blank">Youku.com</a></li>
+				<li><a href="http://index.youku.com" target="_blank">优酷指数</a></li>
+				<li><a href="http://special.zhaopin.com/bj/2013/hywl030666/jobs.htm" target="_blank">工作机会</a></li>
+			</ul>
+            <ul>
+                <li><a href="http://www.tudou.com/about/cn/" target="_blank">土豆网</a></li>
+                <li><a href="http://www.tudou.com/about/en/" target="_blank">Tudou.com</a></li>    
+                <li><a href="http://i.youku.com/u/official/list/187" target="_blank">媒体合作</a></li>
+                <li><a href="http://www.youku.com/about/cn/adservice/" target="_blank">广告服务</a></li>
+            </ul>
+        </div>
+        <div class="cert">
+            <div class="cert-list">
+                <p><span class="icon-footer-icp"></span> <a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202006082400023" target="_blank">经营性网站备案信息</a></p>
+                <p><span class="icon-footer-union"></span> <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1786197705" target="_blank">中国互联网诚信联盟</a></p>
+                <p><span class="icon-footer-report"></span> <a href="http://net.china.com.cn/" target="_blank">不良信息举报中心</a></p>
+                <p><span class="icon-ICP"></span><a href="http://www.bjjubao.org/" target="_blank">北京互联网举报中心</a></p>
+            </div>
+            <div class="cert-list">
+                <p><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证060288号</a></p>
+                <p><a href="http://c.youku.com/0108283" target="_blank">网络视听许可证0108283号</a></p>
+                <p><a href="http://www.bj.cyberpolice.cn/index.htm" target="_blank">网络110报警服务</a></p>
+                <p><a href="http://www.bjwhzf.gov.cn/accuse.do" target="_blank">北京12318文化市场举报热线</a></p>
+            </div>
+            <div class="cert-list">
+                <p><a href="http://c.youku.com/licence/" target="_blank">网络文化经营许可证 文网文[2011]0088-037号</a></p>
+                <p><a href="http://c.youku.com/2012license/index" target="_blank">新出网证(京)字160号</a> 节目制作经营许可证京字670号</p>
+                <p><a href="http://www.youku.com/pub/youku/service/20096.shtml" target="_blank">京卫审字[2009]6号</a> 京公网安备110000000017号</p>
+                <p>药品服务许可证(京)-经营-2010-0048</p>
+            </div>
+            <div class="cert-list">
+                <a class="qcode" target="_blank" href="http://hz.youku.com/red/click.php?tp=1&amp;cp=4007955&amp;cpp=1000703&amp;url=http://mobile.youku.com/index/wireless">
+                    <span class="wrap"><span class="title">优酷App</span><br><span class="desc">扫描或点击下载</span></span>
+                </a>
+            </div>
+        </div>
+        <div class="copyright" style="text-align:left;width:549px;margin:0 auto;">
+            本网站主办方已经对本网站内全部正版授权的视频内容，采取了必要的反盗版和防盗链等技术措施，并且添加、设置权利管理电子信息。任何单位或个人，未经本网站主办方的许可，不得以任何方式（包括但不限于：盗链、冗余盗取等）直接或间接地盗取相关视频内容、不得以任何方式（包括但不限于：隐藏或者修改本网站域名、播放器软件、优酷标识等）删除或者改变相关视频内容的权利管理电子信息。否则，本网站主办方将保留进一步追究侵权者法律责任的权利。
+        </div>
+        <div class="copyright">
+            请使用者仔细阅读优酷<a target="_blank" href="http://www.youku.com/pub/youku/service/agreement.shtml">使用协议</a>和<b><a target="_blank" href="http://c.youku.com/copyright/">版权声明</a></b>&nbsp;Copyright&copy;2013 优酷 youku.com 版权所有
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var transjs = "http://static.youku.com/v1.0.0914/index/js/sttrans.js";
+
+window.nova_init_hook_sttrans = function() {
+	var cstt = Nova.Cookie.get('stt'),handler = $('sttrans');
+	var _trans = function() {
+		var t = $A(arguments).shift();
+		if(typeof(trans) == 'undefined') {
+			var jselm = document.createElement('script');
+			jselm = $$('head')[0].appendChild(jselm);
+			if(typeof(jselm) != 'undefined') {
+				jselm.onreadystatechange = function() {
+					if(this.readyState == 'loaded' || this.readyState == 'complete') {
+						try {trans(t)} catch(e){}
+					}
+				}
+				jselm.onload = function() {trans(t);}
+			}
+			jselm.src = transjs;
+		} else { trans(t); }
+	}
+	if(cstt) {
+		_trans(); if(handler) handler.innerHTML = '简体版';
+	}
+	if(!handler) return;
+	var _evth = function () {
+		if(Nova.Cookie.get('stt')) {
+			_trans(true);handler.innerHTML = '繁體版';
+			Nova.Cookie.set('stt', '', -1);
+		} else {
+			_trans();handler.innerHTML = '简体版';
+			Nova.Cookie.set('stt', 1, 10);
+		}
+	}.bind(handler);
+	Event.observe(handler, 'click', _evth);
+}
+</script>
+
+
+<script src="http://static.youku.com/v1.0.0914/index/js/iresearch.js"></script>
+<script src="http://static.youku.com/v1.0.0914/paycenter/js/cps.js"></script>
+<!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:7293931,
+    c3:window.catId?window.catId:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7293931&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag --></div><!--screen end-->
+</div><!--window end-->
+<div  id="QR" style="display:none;width:105px;height:147px;z-index:9999;position:fixed;_position:absolute;bottom:320px;right:5px;z-index:100;">
+	<div title="关闭" style="cursor:pointer;position:absolute;top:0;right:0;width:24px;height:24px;" onclick="Log.log(1, 'tp=1&cp=4007961&cpp=1000703', 0);this.parentNode.style.display='none';Nova.Cookie.set('ad_qr', '1', 1, '/', '');"></div>
+	<a title="下载优酷App" href="http://hz.youku.com/red/click.php?tp=1&cp=4007958&cpp=1000703&url=http://mobile.youku.com/index/wireless" target="_blank" style="display:block;width:100%;height:100%;background-image:url(http://res.mfs.ykimg.com/051000005189C8F06714C04995038C15);background-position:0px 0px;"></a>
+</div>
+<script type="text/javascript">
+
+window['nova_init_hook_adver_qr'] = function(){
+	var qr = Nova.Cookie.get('ad_qr');
+	//Nova.Cookie.remove('ad_qr');
+
+	if(qr==undefined || qr ==null || qr==""){
+		document.getElementById('QR').style.display = '';
+	}
+}
+
+</script>
+<div class="show_handle YK_gotop" style="display:none">
+	<div class="gotop"><a href="javascript:;" class="btnShow btngotop"><em>返回顶部</em></a></div>
+</div>
+
+<script type="text/javascript">var cateStr = '97';</script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/js/prototype.js"></script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/index/js/common.js"></script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/index/js/playlist.js"></script>
+<script type="text/javascript" src='http://static.youku.com/v1.0.0914/v/js/swfobject.js'></script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/show/js/ikuadapter.js"></script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/show/js/show.js"></script>
+<script type="text/javascript">
+window.nova_init_hook_ab854 = function(){
+    Nova.addScript("http://html.atm.youku.com/html?p=854,855,856,101485,101486&s=270792&k=z1d6f8e9a07be11e2b356&sid=" + window.logPvid);
+}
+</script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/show/js/showV4.js"></script>
+<script type="text/javascript">
+
+    window.nova_init_hook_show_subscribe = function(){
+	            y.subscribe.init();
+		        }
+
+</script>
+
+<script id="trailer-template" type="text/youku">
+	<div class="trailerLayer" id="trailerLayer">
+		<div class="head">
+			<h3 class="title">[[videoName]]</h3>
+		</div>
+		<div class="body">
+			<div class="player" id="player" style="z-index:2001;"></div><!--player end-->
+			<div class="interactArea">
+				<div class="fns">
+					@if([[paid]])
+					<div class="fn fn_disabled"><span><em class="ico__info" id="fn_share1"></em>　　该视频不支持转发</span></div>
+					@else
+					<div class="fn" id="fn_share">
+						<span class="handle" id="fn_share1"><a href="#" link="null">转发到</a></span>
+						<span class="options">
+						<a title="转发到QQ空间" href="javascript:;" onclick="y.video.btnClick('http://hz.youku.com/red/click.php?tp=1&cp=4005218&cpp=1000501&url=http%3A%2F%2Fsns.qzone.qq.com%2Fcgi-bin%2Fqzshare%2Fcgi_qzshare_onekey%3Furl%3Dhttp%3A%2F%2Fwww.youku.com%2Fshow_page%2Fid_z1d6f8e9a07be11e2b356.html%26pics%3Dhttp%3A%2F%2Fr4.ykimg.com%2F050E000051930CE8670C4A1ADB040B22%26title%3D%25E7%25BB%2599%25E5%25A4%25A7%25E5%25AE%25B6%25E5%2588%2586%25E4%25BA%25AB%25E3%2580%258A%25E5%2592%25B1%25E4%25BB%25AC%25E7%25BB%2593%25E5%25A9%259A%25E5%2590%25A7%25E3%2580%258B%252C%25E8%25AF%25A6%25E7%25BB%2586%25E8%25B5%2584%25E6%2596%2599%25E5%259C%25A8%25E8%25BF%2599%25E9%2587%258C');"><img src="http://static.youku.com/v1.0.0914/v/img/ico_Qzone.png"></a>
+						<a title="转发到新浪微博" href="javascript:;" onclick="y.video.btnClick('http://hz.youku.com/red/click.php?tp=1&cp=4005218&cpp=1000501&url=http%3A%2F%2Fv.t.sina.com.cn%2Fshare%2Fshare.php%3Furl%3Dhttp%3A%2F%2Fwww.youku.com%2Fshow_page%2Fid_z1d6f8e9a07be11e2b356.html%26sourceUrl%3Dhttp%3A%2F%2Fwww.youku.com%2Fshow_page%2Fid_z1d6f8e9a07be11e2b356.html%26pic%3Dhttp%3A%2F%2Fr4.ykimg.com%2F050E000051930CE8670C4A1ADB040B22%26title%3D%25E7%25BB%2599%25E5%25A4%25A7%25E5%25AE%25B6%25E5%2588%2586%25E4%25BA%25AB%25E3%2580%258A%25E5%2592%25B1%25E4%25BB%25AC%25E7%25BB%2593%25E5%25A9%259A%25E5%2590%25A7%25E3%2580%258B%252C%25E8%25AF%25A6%25E7%25BB%2586%25E8%25B5%2584%25E6%2596%2599%25E5%259C%25A8%25E8%25BF%2599%25E9%2587%258C%26appkey%3D2684493555%26content%3Dutf8')"><img src="http://static.youku.com/v1.0.0914/v/img/ico_sina.gif"></a>
+						<a title="转发到人人网" href="javascript:;" onclick="y.video.btnClick('http://hz.youku.com/red/click.php?tp=1&cp=4005218&cpp=1000501&url=http%3A%2F%2Fwidget.renren.com%2Fdialog%2Fshare%3FresourceUrl%3Dhttp%3A%2F%2Fwww.youku.com%2Fshow_page%2Fid_z1d6f8e9a07be11e2b356.html%26pic%3Dhttp%3A%2F%2Fr4.ykimg.com%2F050E000051930CE8670C4A1ADB040B22%26title%3D%25E7%25BB%2599%25E5%25A4%25A7%25E5%25AE%25B6%25E5%2588%2586%25E4%25BA%25AB%25E3%2580%258A%25E5%2592%25B1%25E4%25BB%25AC%25E7%25BB%2593%25E5%25A9%259A%25E5%2590%25A7%25E3%2580%258B%252C%25E8%25AF%25A6%25E7%25BB%2586%25E8%25B5%2584%25E6%2596%2599%25E5%259C%25A8%25E8%25BF%2599%25E9%2587%258C') ;"><img src="http://static.youku.com/v1.0.0914/v/img/ico_renren.gif"></a>
+						<a title="转发到腾讯微博" href="javascript:;" onclick="y.video.btnClick('http://hz.youku.com/red/click.php?tp=1&cp=4005218&cpp=1000501&url=http%3A%2F%2Fshare.v.t.qq.com%2Findex.php%3Fc%3Dshare%26a%3Dindex%26title%3D%25E7%25BB%2599%25E5%25A4%25A7%25E5%25AE%25B6%25E5%2588%2586%25E4%25BA%25AB%25E3%2580%258A%25E5%2592%25B1%25E4%25BB%25AC%25E7%25BB%2593%25E5%25A9%259A%25E5%2590%25A7%25E3%2580%258B%252C%25E8%25AF%25A6%25E7%25BB%2586%25E8%25B5%2584%25E6%2596%2599%25E5%259C%25A8%25E8%25BF%2599%25E9%2587%258C%26url%3Dhttp%3A%2F%2Fwww.youku.com%2Fshow_page%2Fid_z1d6f8e9a07be11e2b356.html%26appkey%3De7ad0b0199994bda85ecc0a44ce9915f%26site%3Dwww.youku.com%26assname%3Dyouku2010%26pic%3Dhttp%3A%2F%2Fr4.ykimg.com%2F050E000051930CE8670C4A1ADB040B22');"><img src="http://static.youku.com/v1.0.0914/v/img/ico_qq_t.png"></a>
+						</span>
+					</div>
+					@/if
+					<div class="fn" id="fn_favodownload">
+						<div class="fn2nd"><a href="javascript:;" onclick="y.video.btnClick('http://hz.youku.com/red/click.php?tp=1&cp=4005219&cpp=1000501&url=[[videoUrl]]')">评论</a></div>
+					</div>
+					<div style="float:right;margin-right:0;height:30px;padding:0;">
+						<div class="form_btn form_btn_m form_btnmaj_m"><a href="javascript:;" onclick="y.video.btnClick('http://hz.youku.com/red/click.php?tp=1&cp=4005220&cpp=1000501&url=[[videoUrl]]');" class="form_btn_text">播放页播放</a></div>
+					</div>
+				</div><!--fns end-->
+			</div>
+		</div><!--body end-->
+	</div>	
+</script>
+<script type="text/javascript" src="http://static.youku.com/v1.0.0914/index/js/tdstat.js"></script> 
+</body>
+</html>

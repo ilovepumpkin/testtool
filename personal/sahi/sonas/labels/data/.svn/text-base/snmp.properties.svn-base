@@ -1,0 +1,8 @@
+$lb_newsnmp='New SNMP Server'
+$lb_statuschange='Status change:'
+$lb_utilthre='Utilization thresholds:'
+$lb_gui='GUI:'
+$lb_portnum='Port number:'
+$lb_snmpserver='SNMP server (IP address):'
+$lb_comm='Community:'
+$lb_testsnmp='Test SNMP'

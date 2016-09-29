@@ -1,0 +1,11 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+ 91  1204   91  1172    0     0   1941      0 --:--:-- --:--:-- --:--:--  1941 91  1204   91  1174    0     0   1376      0 --:--:-- --:--:-- --:--:--     8 91  1204   91  1174    0     0   1069      0  0:00:01  0:00:01 --:--:--     4
+curl: (18) transfer closed with 30 bytes remaining to read
+<HTML><HEAD><TITLE>Authentication Proxy Login Page</TITLE><script language="JavaScript"><!-- Begin
+var pxypromptwindow1;var pxysubmitted = false;function doreload() {if(pxypromptwindow1.closed) {window.location.reload(true);} else {reloadtimeout=setTimeout("doreload()", 500);}}function submitreload() {if(pxysubmitted == false) {pxypromptwindow1=window.open('', 'pxywindow1','resizable=no,width=300,height=300,scrollbars=yes');reloadtimeout=setTimeout("doreload()", 1000);pxysubmitted = true;return true;} else {alert("This page can not be submitted twice.");return false;}}// -->
+</script>
+</HEAD>
+<BODY onLoad="document.AuthenForm.uname.focus()" BGCOLOR="#FFFFFF" LINK="#ffcc00" ALINK="#ffffff" VLINK="#ffcc00" ><H1>BSO login to the Mainz R&D BSO Zone NE using IBM Intranet ID.  <BR><BR>  HTTPS Authentication<BR><BR><p><FORM name="AuthenForm" method=post action="https://9.155.106.204:443" target="pxywindow1"><input type=hidden name=au_pxytimetag value="1959922530">Username: <input type=text name=uname><BR><BR>Password: <input type=password name=pwd><BR><BR><input type=submit name=ok value=OK onClick="return submitreload()"></H1></FORM></script></BODY></HTML>
+
+

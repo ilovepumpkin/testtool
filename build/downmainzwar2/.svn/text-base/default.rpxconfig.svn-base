@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rpxconfig ISO-639="en" ISO-3166="US">
+  <settings version="1.2">
+    <option key="Message Display Type">Console</option>
+    <option key="Results File Name">/root/testtool/build/downmainzwar/RPX-Messages.txt</option>
+    <option key="Show Errors">true</option>
+    <option key="Show Warnings">true</option>
+    <option key="Show Info">true</option>
+  </settings>
+  <files />
+  <translator name="Bookended Translator" version="1.3">
+    <option key="Beginning Bookend">ABC</option>
+    <option key="Ending Bookend">XYZ</option>
+    <option key="Extend String">true</option>
+    <option key="Extending Character">~</option>
+    <option key="Ignore Empty Strings">true</option>
+    <option key="Ignore Integer-only Strings">true</option>
+    <option key="Ignore non-English Strings">true</option>
+    <option key="Move Breaks Left">true</option>
+    <option key="Move Breaks Right">true</option>
+    <option key="Move Escapes Left">true</option>
+    <option key="Move Escapes Right">true</option>
+  </translator>
+  <handlers>
+    <handler name="Direct Copy " version="1.3">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name=".NET Text File" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Shireen RC File" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Clear Font Information">true</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Font Name" />
+      <option key="Font Size" />
+      <option key="Declared codepage" />
+      <option key="LANG Value" />
+      <option key="SUBLANG Value" />
+      <option key="AFX Target Value">ENU</option>
+    </handler>
+    <handler name="Properties Analyzer" version="1.0">
+      <option key="Default Extension">properties</option>
+    </handler>
+    <handler name="RESX" version="2.0">
+      <option key="Default Extension">resx</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+    </handler>
+    <handler name="IBM-IBMXPG4" version="1.6">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="IBM-IBMA4MSG" version="1.1">
+      <option key="Default Extension">msgcmds</option>
+    </handler>
+    <handler name="FourTXmlAnalyzer" version="1.0">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name="Generic Image" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="X Image">true</option>
+      <option key="Add file name">true</option>
+      <option key="Color red">255</option>
+      <option key="Color green">0</option>
+      <option key="Color blue">0</option>
+      <option key="Color transparency">255</option>
+    </handler>
+    <handler name="IBM-IBMUJAVH" version="1.1">
+      <option key="Default Extension">hs</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!indexitem!text!">true</option>
+      <option key="!indexitem!!">true</option>
+      <option key="!label!!">true</option>
+      <option key="!title!!">true</option>
+      <option key="!tocitem!text!">true</option>
+      <option key="!tocitem!!">true</option>
+    </handler>
+    <handler name="JPEG Image" version="1.2">
+      <option key="Default Extension">jpe?g</option>
+      <option key="X Image">true</option>
+      <option key="Add file name">true</option>
+      <option key="Color red">255</option>
+      <option key="Color green">0</option>
+      <option key="Color blue">0</option>
+      <option key="Color transparency">255</option>
+    </handler>
+    <handler name="IBM-IBMMCMSG" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Set language">English</option>
+      <option key="Set language names">ENGLISH=0x409</option>
+    </handler>
+    <handler name="IBM-IBMSTMSG" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMXMIWI" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="!alt!description!">true</option>
+      <option key="!eventDescription!description!">true</option>
+      <option key="!itemDescription!description!">true</option>
+      <option key="!itemSetDescription!description!">true</option>
+      <option key="!alt!lang!">true</option>
+      <option key="!eventDescription!lang!">true</option>
+      <option key="!itemDescription!lang!">true</option>
+      <option key="!itemSetDescription!lang!">true</option>
+      <option key="!iwidget!lang!">true</option>
+      <option key="!alt!title!">true</option>
+    </handler>
+    <handler name="Candle Handler" version="1.5">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">false</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="IBM-IBMEQUAL" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMUJDK1" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="WRC Handler" version="1.0">
+      <option key="Default Extension">wrc</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">filename</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-EQFALINE" version="1.3">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+    </handler>
+    <handler name="CTC file" version="1.3">
+      <option key="Default Extension">ctc</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Amy Shi Properties" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="IBM-IBMJDK11_PRB" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="FourTJavaScriptHandler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Begin Quote Translate Marker">START QUOTE TRANSLATABLE</option>
+      <option key="End Quote Translate Marker">END QUOTE TRANSLATABLE</option>
+    </handler>
+    <handler name="BOM XML" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!StringEntry!value!">true</option>
+    </handler>
+    <handler name="IBM-IBMNCLPD" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">UTF-8</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="IBM-IBMBIOS" version="1.1">
+      <option key="Default Extension">xx</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-RCHHPJ" version="1.0">
+      <option key="Default Extension">hpj</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="JSP File" version="1.5">
+      <option key="Default Extension">jsp</option>
+      <option key="File encoding">UTF8</option>
+      <option key="Declared charset">UTF-8</option>
+      <option key="Ignore whitespace">true</option>
+      <option key="Begin do not translate block">START NON-TRANSLATABLE</option>
+      <option key="End do not translate block">END NON-TRANSLATABLE</option>
+      <option key="Change LTR to RTL">false</option>
+    </handler>
+    <handler name="IBM-IBMXMRDF" version="1.1">
+      <option key="Default Extension">rdf</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!author!">true</option>
+      <option key="!*!displayName!">true</option>
+      <option key="!*!name!">true</option>
+      <option key="!*!emptysearchtext!">true</option>
+      <option key="!*!name!">true</option>
+      <option key="!*!title!">true</option>
+    </handler>
+    <handler name="XHTML" version="1.0">
+      <option key="Default Extension">xhtml</option>
+      <option key="File encoding">UTF8</option>
+      <option key="Declared charset">UTF-8</option>
+      <option key="Ignore whitespace">true</option>
+      <option key="Begin do not translate block">START NON-TRANSLATABLE</option>
+      <option key="End do not translate block">END NON-TRANSLATABLE</option>
+      <option key="Change LTR to RTL">false</option>
+    </handler>
+    <handler name="Properties" version="3.45">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="Custom_Common_Lanuchpad_Handler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">UTF-8</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="BigFix_Yml" version="1.0">
+      <option key="Default Extension">yml</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Encoding">utf8</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="IBM_IBMRVSCC" version="1.0">
+      <option key="Default Extension">csv</option>
+    </handler>
+    <handler name="Andy Properties" version="1.23">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="File Substitution" version="1.0">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name="IBM-IBM4690M" version="1.1">
+      <option key="Default Extension">dat</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Windows Message File" version="1.51">
+      <option key="Default Extension">mc</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Set language">English</option>
+      <option key="Set language names">ENGLISH=0x409</option>
+    </handler>
+    <handler name="Android_Resource" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF-8</option>
+      <option key="Format XML output">false</option>
+    </handler>
+    <handler name="XML" version="4.32">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="Java List Resource Bundle" version="2.5">
+      <option key="Default Extension">java|jav</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do not translate|LocalizationItem|MNEMONIC</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Parse Content as HTML">false</option>
+      <option key="Ignore HTML Tags">false</option>
+    </handler>
+    <handler name="IBM-IBMXMECL" version="2.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!label!">true</option>
+      <option key="!*!alt!">true</option>
+      <option key="!*!LABEL!">true</option>
+      <option key="!*!ALT!">true</option>
+      <option key="!*!TOOLTIP!">true</option>
+      <option key="!*!tooltip!">true</option>
+      <option key="!ENTRY!KEYWORD!">true</option>
+      <option key="!entry!keyword!">true</option>
+      <option key="!EXTENSIONCONTEXT!NAME!">true</option>
+      <option key="!extensionContent!name!">true</option>
+      <option key="!CONTEXT!TITLE!">true</option>
+      <option key="!context!title!">true</option>
+      <option key="!TOPIC!TITLE!">true</option>
+      <option key="!topic!title!">true</option>
+    </handler>
+    <handler name="IBM-EQFLINE" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+    </handler>
+    <handler name="IBM-IBMXMWEL" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!subitem!label!">true</option>
+      <option key="!*!title!">true</option>
+    </handler>
+    <handler name="JavaScript" version="2.0">
+      <option key="Default Extension">js</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Begin Quote Translate Marker">START QUOTE TRANSLATABLE</option>
+      <option key="End Quote Translate Marker">END QUOTE TRANSLATABLE</option>
+    </handler>
+    <handler name="IBM-IBMIDDOC" version="2.0">
+      <option key="Default Extension">id[ed]</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Ignore Pseudo Translate Tags" />
+    </handler>
+    <handler name="IBM-DTL" version="1.0">
+      <option key="Default Extension">dtl</option>
+    </handler>
+    <handler name="IBM-IBMVBASC" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMUPOMS" version="2.0">
+      <option key="Default Extension">null</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Encoding">utf8</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="IBM-IBMMQMSG" version="1.3">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+    </handler>
+    <handler name="Tivoli InstallAnywhere Handler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">imageName=|imagePath=|defaultValue=</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBMBFXLT" version="1.0">
+      <option key="Default Extension">xlat</option>
+    </handler>
+    <handler name="MSG" version="1.52">
+      <option key="Default Extension">msg</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="Tivoli Properties Analyzer" version="1.0">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name="Tivoli LRB Analyzer" version="1.0">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name="Basic Text List" version="1.7">
+      <option key="Default Extension">lst</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="UNIX Message" version="1.3">
+      <option key="Default Extension">m</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Nalini Properties Handler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="Grp File Handler" version="1.1">
+      <option key="Default Extension">grp</option>
+    </handler>
+    <handler name="IBM-IBMISWI" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="BigFix_Xml" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!ResourceBundle!locale!">true</option>
+      <option key="!Value!language!">true</option>
+      <option key="!Regex!!">false</option>
+      <option key="Root Node Name">LocalizationCache|ResourceBundle|ResourceBundles</option>
+      <option key="Add Locale to Filename">false</option>
+    </handler>
+    <handler name="IBM-IBMJDK11" version="1.3">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name="IBM-IBMXUXML" version="1.1">
+      <option key="Default Extension">jhm|\Amap</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="Shl File" version="1.41">
+      <option key="Default Extension">shl</option>
+      <option key="Encoding">utf8</option>
+      <option key="Same Line Marker">_not_to_be_translated_</option>
+      <option key="Set Language">0009</option>
+    </handler>
+    <handler name="Simple Text List" version="1.7">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="RFTXMAP" version="1.0">
+      <option key="Default Extension">rftxmap</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">false</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="HTML File" version="3.8">
+      <option key="Default Extension">html?</option>
+      <option key="File encoding">UTF8</option>
+      <option key="Declared charset">UTF-8</option>
+      <option key="Ignore whitespace">true</option>
+      <option key="Begin do not translate block">START NON-TRANSLATABLE</option>
+      <option key="End do not translate block">END NON-TRANSLATABLE</option>
+      <option key="Change LTR to RTL">false</option>
+    </handler>
+    <handler name="IBM-IBMXMEXL" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!c:Caption!">true</option>
+      <option key="!Author!!">true</option>
+      <option key="!LastAuthor!!">true</option>
+      <option key="!Created!!">false</option>
+      <option key="!LastSaved!!">false</option>
+      <option key="!Company!!">true</option>
+      <option key="!Version!!">false</option>
+      <option key="!WindowHeight!!">false</option>
+      <option key="!WindowWidth!!">false</option>
+      <option key="!WindowTopX!!">false</option>
+      <option key="!WindowTopY!!">false</option>
+      <option key="!ProtectStructure!!">false</option>
+      <option key="!ProtectWindows!!">false</option>
+      <option key="!ProtectObjects!!">false</option>
+      <option key="!ProtectScenarios!!">false</option>
+      <option key="!Data!!">true</option>
+      <option key="!ErrorMessage!!">true</option>
+      <option key="!ErrorTitle!!">true</option>
+      <option key="!ss:Data!!">true</option>
+      <option key="!WIDGET_NAME!!">true</option>
+    </handler>
+    <handler name="IBM-IBMXMCGN" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!aka!!">false</option>
+      <option key="!audience!!">false</option>
+      <option key="!bv_cognos!!">false</option>
+      <option key="!bv_copyright_year!!">false</option>
+      <option key="!bv_copyright_year_initial!!">false</option>
+      <option key="!bv_cover_third_party_logos!!">false</option>
+      <option key="!bv_html_about_filename!!">false</option>
+      <option key="!bv_html_qtour_filename!!">false</option>
+      <option key="!bv_html_readme_filename!!">false</option>
+      <option key="!bv_output_formats!!">false</option>
+      <option key="!bv_product!!">false</option>
+      <option key="!bv_product_version!!">false</option>
+      <option key="!bv_soln_prod_line!!">false</option>
+      <option key="!bv_third_party_graphics!!">false</option>
+      <option key="!bv_third_prty_text!!">false</option>
+      <option key="!bv_watermark!!">false</option>
+      <option key="!draft-comment!!">false</option>
+      <option key="!ebnfcharacter!!">false</option>
+      <option key="!ebnfcharacterrange!!">false</option>
+      <option key="!ebnfchoice!!">false</option>
+      <option key="!ebnfdifference!!">false</option>
+      <option key="!ebnfgroup!!">false</option>
+      <option key="!ebnfnonterminal!!">false</option>
+      <option key="!ebnfrule!!">false</option>
+      <option key="!ebnfsequence!!">false</option>
+      <option key="!ebnfterminal!!">false</option>
+      <option key="!internalmarker!!">false</option>
+      <option key="!requiredcleanup!!">false</option>
+      <option key="!platform!!">false</option>
+      <option key="!prodname!!">false</option>
+      <option key="!series!!">false</option>
+      <option key="!topicalias!!">false</option>
+      <option key="!topic-meta!!">false</option>
+      <option key="!vrm!!">false</option>
+      <option key="!vrmlist!!">false</option>
+      <option key="!writer-comment!!">false</option>
+      <option key="!*!sortas!">true</option>
+    </handler>
+    <handler name="FourTHtmlHandler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="File encoding">UTF8</option>
+      <option key="Declared charset">UTF-8</option>
+      <option key="Ignore whitespace">true</option>
+      <option key="Begin do not translate block">START NON-TRANSLATABLE</option>
+      <option key="End do not translate block">END NON-TRANSLATABLE</option>
+      <option key="Change LTR to RTL">false</option>
+    </handler>
+    <handler name="IBM-IBMA4DDS" version="1.0">
+      <option key="Default Extension">dds|DDS</option>
+    </handler>
+    <handler name="Bitmap Image" version="1.2">
+      <option key="Default Extension">bmp</option>
+      <option key="X Image">true</option>
+      <option key="Add file name">true</option>
+      <option key="Color red">255</option>
+      <option key="Color green">0</option>
+      <option key="Color blue">0</option>
+      <option key="Color transparency">255</option>
+    </handler>
+    <handler name="IBM-RCHCNT" version="1.0">
+      <option key="Default Extension">cnt</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBMMANPG" version="1.0">
+      <option key="Default Extension">1</option>
+      <option key="Use BOM Encoding">false</option>
+      <option key="Encoding">utf8</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="Text Analyzer" version="1.4">
+      <option key="Default Extension">txt</option>
+    </handler>
+    <handler name="FourTProperiesHandler" version="1.8">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="IBM-CSAIXRF" version="1.1">
+      <option key="Default Extension">rf</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMXML" version="1.11">
+      <option key="Default Extension">bbl</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="IBM-IBMJDK11_LRB" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do not translate|LocalizationItem|MNEMONIC</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Parse Content as HTML">false</option>
+      <option key="Ignore HTML Tags">true</option>
+    </handler>
+    <handler name="FourTXmlHandler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="IBM-IBMJAVHP" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!indexitem!text!">true</option>
+      <option key="!indexitem!!">true</option>
+      <option key="!label!!">true</option>
+      <option key="!title!!">true</option>
+      <option key="!tocitem!text!">true</option>
+      <option key="!tocitem!!">true</option>
+    </handler>
+    <handler name="IBM-IBMSQL" version="1.1">
+      <option key="Default Extension">sql</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="XLIFF" version="2.4">
+      <option key="Default Extension">xlf|xliff</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Respect MaxWidth Attributes">true</option>
+      <option key="target-language">en</option>
+      <option key="Skip HTML Tag">false</option>
+      <option key="Skip Head or Tail Tags">false</option>
+    </handler>
+    <handler name="RMD" version="1.1">
+      <option key="Default Extension">rmd</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!shortDescription!">true</option>
+    </handler>
+    <handler name="Ibm-IBMA4AUI" version="1.0">
+      <option key="Default Extension">null</option>
+    </handler>
+    <handler name="NLSPros Analyzer" version="1.0">
+      <option key="Default Extension">nlsprops|NLSPROPS</option>
+    </handler>
+    <handler name="Ibm-IBMA4AUI_LRB" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do not translate|"@</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Parse Content as HTML">false</option>
+      <option key="Ignore HTML Tags">true</option>
+    </handler>
+    <handler name="tvt_properties" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Use BOM Encoding">false</option>
+      <option key="Encoding">ascii</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="IBM-IBMA4UIM" version="1.1">
+      <option key="Default Extension">uim</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="tvt_js" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Encoding">utf8</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="XML Analyzer" version="1.15">
+      <option key="Default Extension">xml</option>
+    </handler>
+    <handler name="IBM-EQFDQUOT" version="1.3">
+      <option key="Default Extension">dqu</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMNIF" version="1.21">
+      <option key="Default Extension">nif</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMMSMSG" version="1.21">
+      <option key="Default Extension">scr</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Set language">ENUN</option>
+    </handler>
+    <handler name="IBM-IBMXMDPM" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!cflabel!">true</option>
+      <option key="!*!colLabel0!">true</option>
+      <option key="!*!colLabel1!">true</option>
+      <option key="!*!colLabel2!">true</option>
+      <option key="!*!colLabel3!">true</option>
+      <option key="!*!colLabel4!">true</option>
+      <option key="!*!colLabel5!">true</option>
+      <option key="!*!colLabel6!">true</option>
+      <option key="!*!colLabel7!">true</option>
+      <option key="!*!colLabel8!">true</option>
+      <option key="!*!colLabel9!">true</option>
+      <option key="!*!label!">true</option>
+      <option key="!*!name!">true</option>
+      <option key="!*!slabel!">true</option>
+      <option key="!*!toolTipText!">true</option>
+    </handler>
+    <handler name="Yoshi Format" version="1.2">
+      <option key="Default Extension">yoshi</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="iOS_Resource" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF16</option>
+    </handler>
+    <handler name="IBM-CSAIXTXT" version="1.21">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+    </handler>
+    <handler name="FourT_IBMXMWEL" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!subitem!label!">true</option>
+      <option key="!*!title!">true</option>
+    </handler>
+    <handler name="IBM-IBMDITA" version="2.0">
+      <option key="Default Extension">dita|ditaval|ditamap</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">false</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!alt!">true</option>
+      <option key="!othermeta!content!">true</option>
+      <option key="!*!height!">true</option>
+      <option key="!*!lang!">true</option>
+      <option key="!lq!reftitle!">true</option>
+      <option key="!*!title!">true</option>
+      <option key="!param!value!">true</option>
+      <option key="!state!value!">true</option>
+      <option key="!*!width!">true</option>
+      <option key="!*!navtitle!">true</option>
+    </handler>
+    <handler name="IBM-EQFMRI" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Clear Font Information">true</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Font Name" />
+      <option key="Font Size" />
+      <option key="Declared codepage" />
+      <option key="LANG Value" />
+      <option key="SUBLANG Value" />
+      <option key="AFX Target Value" />
+      <option key="StringFileInfo Block Lang CharSet" />
+      <option key="VarFileInfo Block Language" />
+      <option key="VarFileInfo Block CharSet" />
+      <option key="Include Language Prefix" />
+      <option key="Locale Name" />
+      <option key="Append Language to Target FileName">false</option>
+    </handler>
+    <handler name="Charles XLIFF Handler" version="1.4">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="IBM-IBMPYTHN" version="2.0">
+      <option key="Default Extension">po</option>
+      <option key="Use BOM Encoding">true</option>
+      <option key="Encoding">utf8</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+    </handler>
+    <handler name="IBM-IBMXMHHT" version="1.1">
+      <option key="Default Extension">hht</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!TITLE!">true</option>
+      <option key="!*!DESCRIPTION!">true</option>
+      <option key="!KEYWORD!!">true</option>
+    </handler>
+    <handler name="IBM-IBMBSTPL" version="1.1">
+      <option key="Default Extension">tpl</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+    </handler>
+    <handler name="IBM-IBMJSUHT" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="File encoding">UTF8</option>
+      <option key="Declared charset">UTF-8</option>
+      <option key="Ignore whitespace">true</option>
+      <option key="Begin do not translate block">START NON-TRANSLATABLE</option>
+      <option key="End do not translate block">END NON-TRANSLATABLE</option>
+      <option key="Change LTR to RTL">false</option>
+    </handler>
+    <handler name="IBM-IBMFXNHP" version="1.1">
+      <option key="Default Extension">.help</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMXUXSL" version="1.1">
+      <option key="Default Extension">xslt?</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="Header file" version="1.2">
+      <option key="Default Extension">h</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Tivoli XLIFF" version="1.6">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF8</option>
+      <option key="Respect MaxWidth Attributes">true</option>
+      <option key="target-language">en</option>
+      <option key="Skip HTML Tag">false</option>
+      <option key="Skip Head or Tail Tags">false</option>
+    </handler>
+    <handler name="IBM-IBMCIWUI" version="1.1">
+      <option key="Default Extension">wui</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="FourTXhtmlHandler" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="File encoding">UTF8</option>
+      <option key="Declared charset">UTF-8</option>
+      <option key="Ignore whitespace">true</option>
+      <option key="Begin do not translate block">START NON-TRANSLATABLE</option>
+      <option key="End do not translate block">END NON-TRANSLATABLE</option>
+      <option key="Change LTR to RTL">false</option>
+    </handler>
+    <handler name="BlackBerry_Resource" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">UTF-8</option>
+    </handler>
+    <handler name="IBM-IBMOLAPM" version="1.1">
+      <option key="Default Extension">mtx</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMAEQUA" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMXMCAT" version="1.1">
+      <option key="Default Extension">catshow|catsim</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">false</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">false</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!meta!content!">true</option>
+      <option key="!text!value!">true</option>
+      <option key="!*!instructions!">true</option>
+      <option key="!*!objective!">true</option>
+      <option key="!*!precomment!">true</option>
+      <option key="!*!stamp!">true</option>
+    </handler>
+    <handler name="IBM-XLATEWIN" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Clear Font Information">true</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Font Name" />
+      <option key="Font Size" />
+      <option key="Declared codepage" />
+      <option key="LANG Value" />
+      <option key="SUBLANG Value" />
+      <option key="AFX Target Value" />
+      <option key="StringFileInfo Block Lang CharSet" />
+      <option key="VarFileInfo Block Language" />
+      <option key="VarFileInfo Block CharSet" />
+      <option key="Include Language Prefix" />
+      <option key="Locale Name" />
+      <option key="Append Language to Target FileName">false</option>
+    </handler>
+    <handler name="IBM-EQFBOOK" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="FourT_IBMXMECL" version="1.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!*!label!">true</option>
+      <option key="!*!alt!">true</option>
+      <option key="!*!LABEL!">true</option>
+      <option key="!*!ALT!">true</option>
+      <option key="!*!TOOLTIP!">true</option>
+      <option key="!*!tooltip!">true</option>
+      <option key="!ENTRY!KEYWORD!">true</option>
+      <option key="!entry!keyword!">true</option>
+      <option key="!EXTENSIONCONTEXT!NAME!">true</option>
+      <option key="!extensionContent!name!">true</option>
+      <option key="!CONTEXT!TITLE!">true</option>
+      <option key="!context!title!">true</option>
+      <option key="!TOPIC!TITLE!">true</option>
+      <option key="!topic!title!">true</option>
+    </handler>
+    <handler name="Lei Ren Properties" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="PNG Image" version="1.1">
+      <option key="Default Extension">png</option>
+      <option key="X Image">true</option>
+      <option key="Add file name">true</option>
+      <option key="Color red">255</option>
+      <option key="Color green">0</option>
+      <option key="Color blue">0</option>
+      <option key="Color transparency">255</option>
+    </handler>
+    <handler name="Tivoli Properties Handler" version="2.1">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">END NON-TRANSLATABLE</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Ibm-IBMA4AUI_PRB" version="1.0">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="IBM-DDSIPF" version="1.1">
+      <option key="Default Extension">ipf</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Reg Handler" version="1.0">
+      <option key="Default Extension">reg</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMXMDXL" version="2.0">
+      <option key="Default Extension">dxl</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">true</option>
+      <option key="xml_lang attribute value">en-US</option>
+      <option key="!DNT!!">false</option>
+      <option key="!datetime!!">false</option>
+      <option key="!rawitemdata!!">false</option>
+      <option key="!javascript!!">false</option>
+      <option key="!formula!!">false</option>
+      <option key="!lotusscript!!">false</option>
+      <option key="!gif!!">false</option>
+      <option key="!action!title!">true</option>
+    </handler>
+    <handler name="PS Handler" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-EQFAMRI" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Clear Font Information">true</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Font Name" />
+      <option key="Font Size" />
+      <option key="Declared codepage" />
+      <option key="LANG Value" />
+      <option key="SUBLANG Value" />
+      <option key="AFX Target Value" />
+      <option key="StringFileInfo Block Lang CharSet" />
+      <option key="VarFileInfo Block Language" />
+      <option key="VarFileInfo Block CharSet" />
+      <option key="Include Language Prefix" />
+      <option key="Locale Name" />
+      <option key="Append Language to Target FileName">false</option>
+    </handler>
+    <handler name="IBM-IBMPWMSG" version="1.2">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">ascii</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Ignore HTML Tags">true</option>
+      <option key="Source Encoding">ascii</option>
+      <option key="Parse Content as HTML">false</option>
+    </handler>
+    <handler name="Conf Handler" version="1.0">
+      <option key="Default Extension">conf</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMTIVDF" version="1.41">
+      <option key="Default Extension">df</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Not to be Translated</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="IBM-IBMXMTVP" version="2.1">
+      <option key="Default Extension">null</option>
+      <option key="Translate Unknown Attributes">false</option>
+      <option key="Translate Unknown Elements">true</option>
+      <option key="Format XML Output">true</option>
+      <option key="Include XML declaration">true</option>
+      <option key="Begin Block Marker">Start do not translate block|START NON-TRANSLATABLE</option>
+      <option key="End Block Marker">End do not translate block|END NON-TRANSLATABLE</option>
+      <option key="Do not translate parent elements">false</option>
+      <option key="xml_lang attribute value">en-US</option>
+    </handler>
+    <handler name="RC File" version="3.0">
+      <option key="Default Extension">rc2?</option>
+      <option key="Encoding">utf8</option>
+      <option key="Clear Font Information">true</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Font Name" />
+      <option key="Font Size" />
+      <option key="Declared codepage" />
+      <option key="LANG Value" />
+      <option key="SUBLANG Value" />
+      <option key="AFX Target Value" />
+      <option key="StringFileInfo Block Lang CharSet" />
+      <option key="VarFileInfo Block Language" />
+      <option key="VarFileInfo Block CharSet" />
+      <option key="Include Language Prefix" />
+      <option key="Locale Name" />
+      <option key="Append Language to Target FileName">false</option>
+    </handler>
+    <handler name="Install Shield String Table" version="1.6">
+      <option key="Default Extension">null</option>
+      <option key="Encoding">utf8</option>
+      <option key="Only Translate Marked Strings">false</option>
+      <option key="Same Line Marker">Do_Not_Translate</option>
+      <option key="Next Line Marker">Do not translate next line</option>
+      <option key="Begin Block Marker">Begin do not translate block</option>
+      <option key="End Block Marker">End do not translate block</option>
+      <option key="Use BOM Encoding">true</option>
+    </handler>
+    <handler name="Unknown Handler" version="2.3">
+      <option key="Default Extension">null</option>
+      <option key="Make direct copy">false</option>
+    </handler>
+  </handlers>
+</rpxconfig>
+

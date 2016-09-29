@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+set hostname [lindex $argv 0]
+set username [lindex $argv 1]
+set password [lindex $argv 2]
+
+set timeout 10
+
+spawn telnet $hostname
+expect {
+	"Username:" { send -- "$username\r" }
+	"telnet: Unable to connect to remote host: Connection refused" {puts "You may already passed the firewall";exit}
+	timeout {puts "You may already passed the firewall";exit}
+}
+expect {
+	"Password:" { send -- "$password\r" }
+}
+expect eof 

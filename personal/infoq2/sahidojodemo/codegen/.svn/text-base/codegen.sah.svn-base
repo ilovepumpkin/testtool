@@ -1,0 +1,253 @@
+<browser>
+function WidgetMetaData(name,searchPattern,handleClassName){
+    this.name=name
+    this.searchPattern=searchPattern
+    this.handleClassName=handleClassName
+}
+
+function AppObjsCodeGen(){
+    var metaData=[]
+    metaData.push(new WidgetMetaData("textbox","dijitValidationTextBox","DojoTextbox"))
+    metaData.push(new WidgetMetaData("slider","dijitSlider","DojoSlider"))
+    metaData.push(new WidgetMetaData("combobox","dijitComboBox","DojoCombobox"))
+    metaData.push(new WidgetMetaData("button","dijitButton","DojoButton"))
+
+    this.gen=function(userGenWidgetTypes){
+ 	var widgetNames=userGenWidgetTypes;
+	if(!widgetNames){
+	    widgetNames=this._defaultWidgetNames();
+	}
+        var stmtArr=this._formContent(widgetNames)
+        var content=this._format(stmtArr)
+        _log(content,'success')
+        return content
+    }
+
+    this._format=function(arr){
+        var content="";
+        for(var i=0;i<arr.length;i++){
+            content=content+arr[i]+"\n"
+        }
+        return content
+    }
+
+    this._formContent=function(widgetNames){
+        var statements=[];
+
+        for(var i=0;i<widgetNames.length;i++){
+            var widgetName=widgetNames[i]
+            var widgetMetaData=this._findWidgetMetaData(widgetName)
+            var searchPattern=widgetMetaData.searchPattern
+            var handleClassName=widgetMetaData.handleClassName
+            
+            var nodes=dojo.query("[class~='"+searchPattern+"']")
+
+            for(var j=0;j<nodes.length;j++){
+                var node=nodes[j]
+                if(!node.getAttribute("widgetid")){
+                    continue
+                }
+                var handle=eval("new "+handleClassName+"(node)")
+                var statement=handle.getStatement()
+                if(statement){
+                    statements.push(statement)
+                }
+            }
+        }
+        return statements
+    }
+
+    this._findWidgetMetaData=function(widgetName){
+        for(var i=0;i<metaData.length;i++){
+           var widgetMetaData=metaData[i]
+           if(widgetName==widgetMetaData.name){
+                return widgetMetaData
+           }
+        }
+    }
+
+    this._defaultWidgetNames=function(){
+	var names=[];
+	for(var i=0; i<metaData.length; i++) {
+            var widgetMetaData=metaData[i];
+	    names.push(widgetMetaData.name);
+	}
+	return names;
+    }
+}
+
+function DojoWidget(domNode){
+	this.domNode=domNode;
+	this.byLabelTemplate='var {varName}=findByLabel("{label}",{className})'
+        this.byAttrTemplate='var {varName}=new {className}({innerElem})'
+
+        this.guessByName=function(elem){
+	    if(!elem){
+		return null;
+	    }
+            var attrValue=elem.getAttribute("name");
+	    if(attrValue){
+		return "name="+attrValue;
+	   }
+	}
+	this.guessById=function(elem){
+	    if(!elem){
+		return null;
+	    }
+            var attrValue=elem.getAttribute("id");
+	    if(attrValue){
+		return "id="+attrValue;
+	   }
+	}
+
+        this.guessByLabel=function(elem){
+            var idValue=elem.getAttribute("id")
+            if(idValue){
+                var label=dojo.query('label[for="'+idValue+'"]')[0]
+            }
+            
+            if(!label){
+                var label=this.domNode.previousSibling.previousSibling
+            }
+
+            if(label){
+        	return "label="+_getText(label);
+            }
+	}
+	
+	this.guess=function(elem,userGuessFuncs){
+            var guessFuncs=userGuessFuncs
+            if(!guessFuncs){
+                guessFuncs=[this.guessById,this.guessByName,this.guessByLabel] 
+            }
+	    for(var i=0; i<guessFuncs.length; i++) {
+                var guessFunc=guessFuncs[i];
+		rt=guessFunc.call(this,elem)
+		if(rt){
+	            return rt;
+		}
+	    }
+	}
+
+        this._formVarName=function(text){
+            var varName='$'+text.replace(' ','').replace('*','').toLowerCase()
+            return varName
+        }
+        this._escape=function(html){
+            return html.replace(new RegExp("<","gm"),"&lt;").replace(new RegExp(">","gm"),"&gt;");
+        }
+        this.getStatement=function(){
+            var stmt=""
+            this.identifier=this._getIdentifier() 
+            if(!this.identifier || this.identifier.substr(-1)=="="){
+                 _log("Failed to guess the method for "+this._escape(this._outerHTML(domNode)),"error");
+                return;
+            }
+
+            var idKey=this._idKeyValue()[0]
+            var idValue=this._idKeyValue()[1]
+            var varName=this._formVarName(idValue)
+            if(idKey=="label"){
+                stmt=this.byLabelTemplate.replace('{className}',this._getClassName()).replace('{label}',idValue).replace('{varName}',varName)
+            }else{
+                var innerElemSahi=this._getSahiFuncName()+'("'+idValue+'")'
+                stmt=this.byAttrTemplate.replace('{className}',this._getClassName()).replace('{innerElem}',innerElemSahi).replace('{varName}',varName) 
+                return stmt
+            }
+            return stmt
+        }
+        
+        this._outerHTML=function(elem){
+		if(_isFF()){
+		    if(typeof elem === 'string') elem = document.getElementById(elem);
+		    var div = document.createElement('div');
+		    div.appendChild(elem.cloneNode(true));
+		    return div.innerHTML;
+		}else{
+			return elem.outerHTML;
+		}
+	}
+
+        this._idKeyValue=function(){
+            var idKey=this.identifier.split("=")[0];
+            var idValue=this.identifier.split("=")[1];
+            return [idKey,idValue];
+        }
+
+}
+function DojoTextbox(domNode){
+    DojoWidget.call(this,domNode)
+
+    this._getIdentifier=function(){
+        var elem=_textbox("dijitReset dijitInputInner",_in(this.domNode));
+        return this.guess(elem);
+    }
+
+    this._getClassName=function(){
+        return "$DojoTextbox"
+    }
+
+    this._getSahiFuncName=function(){
+        return "_textbox" 
+    }
+}
+
+function DojoSlider(domNode){
+    DojoWidget.call(this,domNode)
+
+    this._getIdentifier=function(){
+        var elem=this.domNode;
+        return this.guess(elem,[this.guessByLabel]);
+    }
+
+    this._getClassName=function(){
+        return "$DojoSlider"
+    }
+
+    this._getSahiFuncName=function(){
+        return "_table" 
+    }
+}
+
+function DojoCombobox(domNode){
+    DojoWidget.call(this,domNode)
+
+    this._getIdentifier=function(){
+        var elem=_textbox("dijitReset dijitInputInner",_in(this.domNode));
+        return this.guess(elem,[this.guessByLabel]);
+    }
+
+    this._getClassName=function(){
+        return "$DojoComboBox"
+    }
+
+    this._getSahiFuncName=function(){
+        return "_textbox" 
+    }
+}
+
+function DojoButton(domNode){
+    DojoWidget.call(this,domNode)
+
+    this._getIdentifier=function(){
+        var elem=this.domNode;
+        return this.guess(elem,[this.guessByText]);
+    }
+
+    this.guessByText=function(elem){
+        var widgetId=elem.getAttribute("widgetid")
+        var labelId=widgetId+"_label"
+        var label=_span(labelId,_in(elem))
+        var buttonText=_getText(label)
+        return "text="+buttonText 
+    }   
+
+    this._getClassName=function(){
+        return "$DojoButton"
+    }
+
+    this._getSahiFuncName=function(){
+        return "_span" 
+    }
+}
+</browser>

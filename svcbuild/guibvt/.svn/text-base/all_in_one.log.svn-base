@@ -1,0 +1,14 @@
+=======================================================================================================
+Usage:  ./down_build.sh [build_dir] [build_type] [release1,release2] [platform1,platform2] (build_level)
+
+Example ./down_build.sh /root/testtool/svcbuild/download buildboxes lodestone740,lodestone730 2145,2076
+=======================================================================================================
+Main script is starting ... 
+Build release: build lodestone730
+2076_140411.tgz.gpg exists already. Skip the download
+md5sums exists
+2076_140411.tgz.gpg passed MD5Checksum!
+2076_140411_ug1.tgz.gpg passed MD5Checksum!
+version failed MD5Checksum!
+version file exists
+Cleaning old builds ...

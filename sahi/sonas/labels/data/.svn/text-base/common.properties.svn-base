@@ -1,0 +1,5 @@
+$lb_ok='OK'
+$lb_close='Close'
+$lb_cancel='Cancel'
+$lb_warning_critical='Warning, Critical'
+$lb_task_completed='The task completed.'

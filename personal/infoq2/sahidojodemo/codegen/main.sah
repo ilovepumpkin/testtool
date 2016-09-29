@@ -1,0 +1,7 @@
+_include("./codegen.sah");
+
+var $filePath='generated/appobjscode.sah'
+_set($fileContent,new AppObjsCodeGen().gen());
+_writeFile($fileContent,$filePath,true);
+
+

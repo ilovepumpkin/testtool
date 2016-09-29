@@ -1,0 +1,66 @@
+8
+
+dir
+3370
+svn://9.123.196.241/svcbuild/svcdown/conf
+svn://9.123.196.241
+
+
+
+2015-03-26T03:02:08.755131Z
+3370
+shenrui
+
+
+svn:special svn:externals svn:needs-lock
+
+build750.conf
+file
+
+
+
+
+2015-03-26T01:48:27.000000Z
+0424aae1a06863c87eb4bc936bb18f53
+2015-03-26T03:02:08.755131Z
+3370
+shenrui
+has-props
+
+cluster217.conf
+file
+
+
+
+
+2015-03-26T01:48:10.000000Z
+741cd29c6c70ef457b237bf75ef17015
+2015-03-26T03:02:08.755131Z
+3370
+shenrui
+
+cluster219.conf
+file
+
+
+
+
+2015-03-26T01:50:44.000000Z
+3470768ce014205d40559d08a71a21ad
+2015-03-26T03:02:08.755131Z
+3370
+shenrui
+
+build740.conf
+file
+
+
+
+
+2015-03-23T03:43:57.000000Z
+8b521085d8663b3e78433b02b654024e
+2015-03-26T03:02:08.755131Z
+3370
+shenrui
+has-props
+

@@ -1,0 +1,14 @@
+_include("../core.sah")
+/*
+var $school=new Slider(_table("school"))
+var $name=new Textbox(_div("widget_name"))
+var $address=new Textbox(_textbox("address"))
+var $state=new ComboBox(_textbox("state"))
+var $btnOK=new Button(_span("OK"))
+*/
+var $school=findByLabel("Education level",$DojoSlider)
+var $name=findByLabel("Name *",$DojoTextbox)
+var $address=findByLabel("Address *",$DojoTextbox)
+var $state=findByLabel("State",$DojoComboBox)
+var $btnOK=new $DojoButton(_span("OK"))
+var $zip=findByLabel("Zip *",$DojoTextbox)

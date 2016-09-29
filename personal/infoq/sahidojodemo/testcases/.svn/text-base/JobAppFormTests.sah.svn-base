@@ -1,0 +1,29 @@
+_include("../tasks/JobAppFormTasks.sah")
+
+function setUp(){
+    _navigateTo("http://demos.dojotoolkit.org/demos/form/demo.html",true)
+}
+
+function testSimple(){
+    /*
+    var $eduValue="masters"
+    var $nameValue="my name"
+    var $addressValue="Shanghai"
+    var $stateValue="California"
+    fillForm($nameValue,$eduValue,$addressValue,$stateValue)
+    */
+    var $data=_readCSVFile("./testdata.csv") 
+    _dataDrive(fillForm,$data)
+}
+
+function testValidationError(){
+    $name.setValue("")
+    $name.blur()
+    _assertTrue($name.hasError())
+    
+    $zip.setValue("abcdefg")
+    $zip.blur()
+    _assertTrue($zip.hasError())
+}
+
+_runUnitTests()

@@ -1,0 +1,7 @@
+_setValue(_textbox("login"), "admin");
+_setValue(_password("password"), "admin");
+_click(_div("go sprite"));
+_click(_link("Events222"));
+_click(_link("File Sets"));
+_click(_span("New File Set"));
+_click(_span("Cancel"));

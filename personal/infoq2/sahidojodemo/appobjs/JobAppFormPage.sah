@@ -1,0 +1,10 @@
+_include("../core.sah")
+
+var $name=findByLabel("Name *",$DojoTextbox)
+var $address=findByLabel("Address *",$DojoTextbox)
+var $zip=findByLabel("Zip *",$DojoTextbox)
+var $educationlevel=findByLabel("Education level",$DojoSlider)
+var $city=findByLabel("City *",$DojoComboBox)
+var $state=findByLabel("State",$DojoComboBox)
+var $dob=findByLabel("DOB *",$DojoComboBox)
+var $ok=new $DojoButton(_span("OK"))

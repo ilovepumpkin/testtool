@@ -1,0 +1,17 @@
+_include('../labels/common.properties');
+_include('../labels/snmp.properties');
+_include('common.sah');
+
+$btn_new=button($lb_newsnmp);
+$sel_statuschange=new dropdown($lb_statuschange);
+$sel_utilthre=new dropdown($lb_utilthre);
+$sel_gui=new dropdown($lb_gui);
+$top=new dialog($lb_newsnmp);
+$ck_statuschange=checkbox($lb_statuschange,$top);
+$ck_utilthre=checkbox($lb_utilthre,$top);
+$ck_gui=checkbox($lb_gui,$top);
+$pn=nspinner($lb_portnum,$top);
+$server=textbox($lb_snmpserver,$top);
+$community=textbox($lb_comm,$top);
+$testsnmp=button($lb_testsnmp,$top);
+$ok=button($lb_ok,$top);

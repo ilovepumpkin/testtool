@@ -1,0 +1,4 @@
+_include('../labels/common.properties')
+_include('../tasks/snmp.sah')
+
+createSNMPServer('9.186.9.100','222','public',$lb_warning_critical,null,null,true);

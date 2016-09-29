@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+set type [lindex $argv 0] 
+set release [lindex $argv 1] 
+set version [lindex $argv 2]
+set password hello=1234
+set timeout -1
+
+spawn bash -c "ssh likezhao@9.71.44.38 cat /$type/$release/$version/src/gui/svn_revision"
+match_max 100000
+expect "*?password:"
+send -- "$password\r"
+send -- "\r"
+expect eof

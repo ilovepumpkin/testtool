@@ -1,0 +1,6 @@
+dijitValidationTextBox  $DojoTextbox
+dijitComboBox       $DojoComboBox
+dijitSlider     $DojoSlider
+dijitButton $DojoButton
+
+http://demos.dojotoolkit.org/demos/form/demo.html

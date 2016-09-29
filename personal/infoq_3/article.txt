@@ -1,0 +1,140 @@
+Sahi案例分享：谷歌音乐批量下载
+
+本文将要想大家分享一个能够批量下载谷歌试听音乐的脚本。程序语言使用的是Shell脚本和Sahi脚本。该脚本很好得像大家展示了Sahi在除了Web UI自动化测试以外的实际应用。在阅读本文前，您最好能对Sahi有一个初步的了解。你可以阅读我的另一篇文章《使用Sahi测试Dojo应用》(http://www.infoq.com/cn/articles/sr-sahi-test-dojo)，也可以直接访问Sahi的官方网站（http://sahi.co.in/w/）。
+
+背景介绍
+写这个脚本的渊源来自于我想往我的Pad里放一些mp3，在我上下班的路上听。可是我又不想一首一首的点开歌曲链接下载，所以我就想找一个能批量从谷歌音乐下载音乐的软件。当时，我发现了一个很不错的开源软件叫gmbox(http://code.google.com/p/gmbox/)。它是一款用Python写得小软件，放在Google Code上。但是，用了不久，就发现它存在一个问题。gmbox最终是得到并发送如下的一个URL从而得到mp3的下载链接以及歌词与专辑封面的下载链接的。在这个URL中有一个参数sid，很显然它是一串经过加密的字符串。在阅读了gmbox的源码后，不难发现它的生成方法。问题就出现在flashplayer_key上，谷歌每过一段时间就会修改这个key的值，于是gmbox相关的功能就无法工作了，比如试听音乐下载以及歌词和专辑封面下载。于是，我想到了用Sahi来解决这个问题。
+http://www.google.cn/music/songstreaming?id=Sb085ad586f0447da&cad=localUser_player&cd&sig=
+87cd90dde819885241640b3d9cc7271a&output=xml
+
+            flashplayer_key = "a3230bc2ef1939edabc39ddd03009439"
+                        sig = hashlib.md5(flashplayer_key + self.id).hexdigest()
+
+核心原理
+本文采用解决方案最核心的部分就是如何解决sid的问题，它利用了Sahi的自身配置。在文章《使用Sahi测试Dojo应用》（http://www.infoq.com/cn/articles/sr-sahi-test-dojo）中已经跟大家介绍过Sahi的工作原理。Sahi通过一个自己实现的Proxy服务器，在HTTP请求与响应中注入Sahi的脚本，以此来操纵浏览器的工作。为了便于开发者调试代码，Sahi提供一个配置从而能够记录所有HTTP请求响应在被它修改前和修改后的状态（traffic log）。该谷歌试听音乐下载脚本就是启用了这个选项，从而获得了上面提到的那个用来获取音乐信息的URL从而绕过了flashplayer_key的问题。当然，真正实现整个的下载过程也并非易事，具体请阅读“代码详解”部分。
+
+使用方法
+在开始讲解代码之前，先让我们来看看如何运行这个脚本。请遵循以下步骤。
+1）下载及安装Sahi（http://sahi.co.in/w/using-sahi）。
+2）把googlemusic.zip解压缩到你喜欢任意目录下。
+3) 设置环境变量SAHI_HOME以指向你的SAHI安装目录。
+4) 在$SAHI_HOME/userdata/config/userdata.properties中添加如下代码行。这一步就是用来启用Sahi记录traffic log。
+debug.traffic.log.unmodified=true
+5) 在$SAHI_HOME/userdata/scripts目录下建立一个软链接到刚才包含脚本的目录。例如，如果你把压缩包解压到你的home目录下，你就运行“ln sf ~/googlemusic/”。另外一种方法是直接把压缩包解压到$SAHI_HOME/userdata/scripts下，这样，就省去创建软链接的步骤。
+6) 该脚本假设你安装了Chrome并且它在browser_types.xml的name是"chrome"。如果，你没有安装Chrome或者其name属性不是chrome的话，需要修改googlemusic.sh中的browser变量为相应的值。
+7) 进入某个你想要保存音乐文件的目录，然后运行"~/googlemusic/googlemusic.sh "阿黛尔(Adele)""(这里假设你的代码在你的home目录下)。为了确保最后下载歌曲的准确性，如果你想下载某位歌手的全部歌曲，你最好先到谷歌音乐上去尝试这搜索一下。例如，你如果在http://www.google.cn/music/homepage中输入“阿黛尔(Adele)”，就会发现搜索结果只包含阿黛尔的歌曲。但你若输入“Adele”，结果就相当混乱。
+
+如果一切正常，在执行完以上的步骤之后，脚本会自动启动Sahi的Dashboard，然后打开谷歌音乐的在线播放器页面，执行搜索。接着，你会看到歌曲列表会一首一首被“播放”。所谓“播放”，只是让浏览器发送获取歌曲的URL从而使Sahi记录下来，所以，“播放”事实上是很短暂的过程。直到最后一首歌曲被“播放”完，Sahi的Dashboard自动关闭。紧接着，会看到wget开始下载mp3文件和lrc文件（如果有的话）。所有mp3以及歌词文件会被下载到以搜索关键字命名的目录下。为了能够在为下载完的情况下下次能够继续下载而无需重新启动Sahi获取URL，所有获取歌曲信息的URL被保存在当前目录下的songs.txt中。你可以运行“~/googlemusic/download.sh songs.txt "阿黛尔(Adele)"”继续之前未完的下载。第二个参数是下载目录，download会在下载前检查文件是否已经存在，如果存在就跳过。因此，你如果想完全重新下载所有歌曲，也可以指定一个新的目录。
+
+代码详解
+googlemusic.zip中包含了三个脚本文件。
+1）googlemusic.sh: 负责自动启动关闭Sahi服务器，运行googlemusic.sah之后解析traffic log文件并将结果保存到songs.txt文件，最后调用download.sh执行下载。
+2）download.sh: 执行mp3与歌词文件下载。
+3）googlemusic.sah: 模拟用户在谷歌音乐在线播放器中的搜索播放操作。
+
+googlemusic.sh代码讲解
+googlemusic.sh的工作流程如下：
+1）检查环境变量SAHI_HOME是否设置
+2）清理之前运行的残余文件
+3）判断是否已经有Sahi的进程在运行，如果有，就Kill掉。
+判断的方法是通过lsof检查运行在端口9999上进程（Sahi服务器默认的端口是9999）。结合grep和awk命令获取pid并kill掉该进程。关于lsof命令的使用，请阅读lsof的man page。
+4）启动Sahi服务器，并把进程pid保存到变量sahi_pid中。
+获取sahi_pid的方法与上相同。
+5）执行googlemusic.sah脚本。
+明明谷歌在线播放器的URL是http://g.top100.cn/16667639/html/player.html#loaded，而脚本却使用的是http://www.google.cn/music/top100/player_page？这是实验的结果。第一次弹出在线播放器的时候，会出现一个“服务条款”页面，在使用第一个URL的时候Sahi无论如何无法点击到“同意”按钮。通过查看DOM tree，该页面有很多iframe构成，于是我尝试用http://www.google.cn/music/player，于是Sahi成功地点击了“同意”按钮进入播放器界面。
+<图片 online_player.jpeg>
+<图片 iframe.jpeg>
+
+6）Kill Sahi进程（通过sahi_pid变量）。
+7）从traffic log文件中提取音乐信息URL保存到songs.txt文件中。
+这里也是结合了grep和awk两个命令并把结果导出到songs.txt文件中。关于grep和awk命令的使用，请阅读grep和awk的man page。
+8）执行download.sh下载mp3及歌词文件。
+
+download.sh代码讲解
+下面这个URL是songs.txt中的一行。
+http://www.google.cn/music/songstreaming?id=S82816ab0c2814785&cad=localUser_player&cd&sig=1ccf866dca1cdc1853fb921e01f0438a&output=xml
+脚本中通过curl的调用得到如下请求结果：
+<results>
+<songStreaming>
+<id>S82816ab0c2814785</id>
+<songUrl>
+http://audio2.top100.cn/201205262149/63C7DB9ECEC3287F9F6DB0423C4F81F9/streaming1/Special_101259/M0101259012.mp3
+</songUrl>
+<lyricsUrl>
+http://lyric.top100.cn/Special_101259/M0101259012.lrc
+</lyricsUrl>
+<albumThumbnailLink>
+http://lh6.googleusercontent.com/public/_AMNePcsm5yfz_WxM_iSmJUvYa0aIyP7W5bTih_z5XmDOGmfA7SpTh3gdPe2tDFqk2x5rGzr1pToVWmPpnjzucip7WCxoS35zqEQvFtprb-cUPk_e3Sd0fUXYFT0aXW7oqUR
+</albumThumbnailLink>
+<label>索尼音乐娱乐（中国）</label>
+<labelHash>ca646574dfb918889fcc1ed02d933f6c</labelHash>
+<providerId>M0101259012</providerId>
+<artistId>A37ef8fc531bca276</artistId>
+<language>en</language>
+<genre>rnb</genre>
+<genre>pop</genre>
+</songStreaming>
+</results>
+从中我们已经能够得到mp3的下载地址了(songUrl节点)，也就是脚本中的变量songUrl。但是我们要保存mp3文件还需要歌曲名和歌手名，所以我们又用curl请求了另一个URL"http://www.google.cn/music/song?id=$songId&output=xml"，这里的$songId是S82816ab0c2814785。于是我们得到如下的XML。
+<results>
+<songList>
+<!-- freemusic/song/result/S82816ab0c2814785 -->
+<song>
+<id>S82816ab0c2814785</id>
+<name>Who Is It</name>
+<artist>迈克尔 杰克逊(Michael Jackson)</artist>
+<artistId>A37ef8fc531bca276</artistId>
+<album>King Of Pop CD1</album>
+<duration>241.0</duration>
+<canBeDownloaded>true</canBeDownloaded>
+<hasFullLyrics>true</hasFullLyrics>
+<canBeStreamed>true</canBeStreamed>
+<albumId>B8cacd47437481c83</albumId>
+<hasSimilarSongs>true</hasSimilarSongs>
+<hasRecommendation>false</hasRecommendation>
+</song>
+</songList>
+<estimatedResultCount>1</estimatedResultCount>
+</results>
+readXmlAttr()函数用来从指定的XML文档中读取指定的节点的值，这里使用的方法是用sed命令把“</”都替换成“<”然后用“awk -F”把制定的节点标签作为分割符对文档进行分割并取出第2个元素值。
+
+googlemusic.sah代码讲解
+googlemusic.sah脚本的运行过程如下：
+1）检查有没有文本是“同意”的div，如果有，就点击，没有，便跳过（说明“服务条款”之前已被接受过）。
+2）如果之前你有在播放器里搜索过歌曲，这些歌曲在你再次打开播放器时，它们仍将显示在歌曲列表里。所以，我们需要先清除所有已有的歌曲。如果$count的值大于0就说明有歌曲显示。每首歌曲都会显示在一个class为"artist-cell"的td里显示歌手名称，因此统计这类td的数目就可以知道有多少首歌曲当前显示在列表里。接着就是点击“全选”checkbox。这里用的是_near函数，还有一种方法是"_checkbox(_count("_checkbox",'')-1)"，也就是说得到最后一个checkbox，这个checkbox就是“全选”。然后点“删除”按钮并在跳出的确认对话框里点“Yes”(因为是简体中文网页，谷歌事实上应该在这里显示“是”)。
+    var $count=_count('_cell','artist-cell')
+        if($count>0){
+               // _click(_checkbox(_count("_checkbox",'')-1));
+                      // _click(_div("goog-inline-block goog-custom-button-inner-box[3]"));
+                             _click(_checkbox(0,_near(_span("全选")))) 
+                                    _click(_div("删除"))
+                                           _click(_submit("Yes"))
+                                               }
+3）搜索歌曲。因为.sah文件在被调用时无法传参数，所以只有把keyword通过一个文本文件来传递。
+var $keyword=_readFile("/tmp/googlemusic_keyword.txt")
+
+这部分大多数代码大家通过Sahi Controllor或者Chrome 的Developer Tools都很容易理解。需要稍微解释一下的是下面这一段。搜索结果是一种增量的方式显示的，所以我们必须模拟“滚动”操作来显示出所有结果，判断的标准就是看页面上是否出现了“_div("已经到达最后一条搜索结果")”这个元素。模拟“滚动”的操作并不难，但是根据Sahi脚本的编写要求，这类操作必须放在browser标签中，所以，这里定义了一个scrollOnce函数。
+    var $done=false;
+        while(!$done){
+               _set($test,scrollOnce());
+                      $done=_isVisible(_div("已经到达最后一条搜索结果"));
+                          }
+
+
+<browser>
+function scrollOnce(){
+       var $list=_div("list-content");
+              $list.scrollTop=$list.scrollHeight;
+              }
+              </browser>
+4）“播放”所有歌曲。前面已经讲过，所谓“播放”只是为了发送音乐信息URL的请求以便Sahi记录下来。首先，得到歌曲总数，然后对“下一首”按钮（id为“:4”的一个div）进行相应次数的点击。
+     var $count=_count('_cell','artist-cell')
+          _log($count,'custom1')
+               while($count>0){
+                       _click(_div(':4'))
+                               $count=$count-1
+                                    }
+
+
+后记
+整个脚本的开发是一个不断尝试和探索的过程。比如，最初我是考虑用dsniff来记录URL的，而且当时部分的代码是用Python写的。后来，意识到这样增加了很多额外的依赖，于是把dsniff换成Sahi自己的logging机制，并且把Python实现的逻辑用Shell重写。用Sahi脚本下载谷歌音乐显然不是最好的解决方案，因为它存在一些用户体验的问题。第一，有浏览器窗口弹出，第二，逐一地点击歌曲生成歌曲URL并记录的方式通常会花费较长时间（跟你当时的网络速度也存在一定关系）。关于第一个问题，通过Xvfb可以不弹出浏览器窗口（http://sahi.co.in/w/configuring-sahi-with-xvbf）。关于第二个问题，我曾经试图能够直接在DOM tree上拿到歌曲的URL，但是最终还是没有找到，有兴趣的读者可以研究一下。但是无论如何，对于学习Sahi来讲，这仍是一个很好的实践。更有趣的是发现Sahi不仅仅能够用在Web UI自动化测试的工作中。

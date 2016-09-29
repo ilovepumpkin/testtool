@@ -1,0 +1,39 @@
+_include('../appobjs/snmp.sah');
+
+function createSNMPServer($ip,$port,$comm,$statuschange_value,$gui_value,$utilthre_value,$is_testsnmp){
+    _click($btn_new);
+    _setValue($pn,$port);
+    _log(_getValue($pn),'info');
+
+    if($statuschange_value!=null){
+        _check($ck_statuschange);
+        $sel_statuschange.select($statuschange_value);
+    }
+    if($gui_value!=null){
+        _check($ck_gui);
+        $sel_gui.select($gui_value);
+    }
+    if($utilthre_value!=null){
+        _check($ck_utilthre);
+        $sel_utilthre.select($utilthre_value);
+    }
+    
+    _setValue($server,$ip);
+    _setValue($community,$comm);
+
+    if($is_testsnmp){
+        _click($testsnmp)
+        $pd=new progressdlg();
+        $pd.waitfor_taskdone();
+        $pd.close();
+    }
+
+    _click($ok);
+    $pd.waitfor_taskdone();
+    $pd.close();
+
+    _assertExists(_cell($ip));
+    _assert(_isVisible(_cell($ip)));
+}
+
+

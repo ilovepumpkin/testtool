@@ -1,0 +1,329 @@
+status: 200
+content-length: 37915
+content-location: http://www.baobao88.com/
+vary: Accept-Encoding
+server: Microsoft-IIS/6.0
+-content-encoding: gzip
+date: Wed, 03 Jul 2013 07:18:29 GMT
+content-type: text/html
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>宝宝吧 - 儿童歌曲，儿童游戏，儿童故事，育儿知识- 学习、游戏伴随宝宝每一天</title>
+<meta content="宝宝,儿童歌曲,儿童故事,儿歌,儿童游戏,宝宝护理,宝宝食谱" name="Keywords" />
+<meta content="宝宝吧 - 为儿童提供儿童歌曲、儿童故事和各类有趣的学习、游戏动画，家长在这里可以学习教育宝宝的知识，宝宝吧是所有宝宝和妈妈共同的家！" name="Description" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/all.css" />
+<link rel="stylesheet" type="text/css" href="/css/index.css" />
+<script type="text/javascript" language="javascript" src="/css/dialog.js"></script>
+<script type="text/javascript" language="javascript" src="/css/jquery-latest.pack.js"></script>
+</head>
+
+<body>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+<script type="text/javascript" language="javascript" src="/css/jcarousellite.js"></script>
+<div class="top">
+  <div class="logo"><a href="http://www.baobao88.com/"><img src="/img/logo.gif" alt="宝宝吧首页" width="250" height="80" border="0" /></a></div>
+  <div id="topnav">
+<div class="prev"></div>
+<div  class="anyClass">
+<ul id="nav">
+<li id="nav1"><a href="http://www.baobao88.com/">首页</a></li>
+<li id="nav2"><a href="http://www.baobao88.com/bbmusic/">儿童歌曲</a></li>
+<li id="nav6"><a href="http://www.baobao88.com/youshen/">故事·学习</a></li>
+<li id="nav3"><a href="http://www.baobao88.com/bbgame/">游戏·动画</a></li>
+<li id="nav4"><a href="http://www.baobao88.com/mov/">儿童影院</a></li>
+<li id="nav8"><a href="http://pic.baobao88.com/" target="_blank">绘本·图片</a></li>
+<li id="nav7"><a href="http://home.baobao88.com" target="_blank"><strong>宝宝乐园</strong></a></li>
+<li id="nav5"><a href="http://www.baobao88.com/mama/">育儿</a></li>
+</ul>
+</div>
+<div class="next"></div>
+</div>
+  <div class="fav" onclick="window.external.AddFavorite('http://www.baobao88.com','【宝宝吧】- 宝宝的天地，妈妈的家园！')"></div>
+</div>
+<!--[if lt IE 7]>
+	<script type="text/javascript" src="/css/unitpngfix.js"></script>
+    <style type="text/css">
+        .clearfix {height:1px;}
+    </style>
+<![endif]-->
+<div id="open_close"><a href="#" rel="toggle[jason]" data-openimage="/img/menu_close.gif" data-closedimage="/img/menu_open.gif"><img src="/img/menu_close.gif" alt="折叠菜单" width="60" height="60" border="0"/></a></div>
+<div class="search1" id="jason">
+  <div class="search1_left">
+    <div class="search1_left_1">
+	<div class="form1">
+	<form action="http://www.baobao88.com/plus/search.php" name="formsearch">
+	<input type="hidden" name="kwtype" value="0" />
+	<input name="keyword" id="keyword2" type="text" size="30" maxlength="20" class="form1_input1" />
+	<input type="image" src="/img/s_4.gif" class="form1_go" />
+	</form>
+<script type="text/javascript">
+animatedcollapse.addDiv('jason', 'fade=0,speed=400,group=pets,persist=1')
+animatedcollapse.init()
+$(function() {
+    $(".anyClass").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+});
+</script>
+		<span class="diy1">&nbsp;热门：<a href="http://www.baobao88.com/bbmusic/erge/">儿歌童谣</a>&nbsp;&nbsp;<a href="http://www.baobao88.com/bbmusic/yaolanqu/">摇篮曲</a></span></div>
+    </div>
+    <div class="search1_left_2">
+	<div class="ad728" id="dd1">
+	<ul class="sl2_ul ulbg1">
+	<li class="sl2_li1"><a href="http://www.baobao88.com/bbmusic/" class="cRed">听一听</a></li>
+	<li><a href="http://www.baobao88.com/bbmusic/erge/">听儿歌</a></li><li><a href="http://www.baobao88.com/bbmusic/faege/">FLASH儿歌</a></li><li><a href="http://www.baobao88.com/bbstory/tgs/">听故事</a></li><li><a href="http://www.baobao88.com/bbmusic/yaolanqu/">摇篮曲</a></li><li><a href="http://www.baobao88.com/bbmusic/taijiao/">胎教音乐</a></li><li><a href="http://www.baobao88.com/bbmusic/eerge/">英文儿歌</a></li><li><a href="http://www.baobao88.com/youshen/youshengxiaoshuo/">儿童小说</a></li><li><a href="http://www.baobao88.com/lianbo/" class="cRed">儿歌连播</a></li><li><a href="http://www.baobao88.com/lianbo/index_2.html" class="cRed">故事连播</a></li></ul>
+	<ul class="sl2_ul ulbg2"><li class="sl2_li2"><a href="http://www.baobao88.com/bbgame/" class="cRed">玩一玩</a></li><li><a href="http://www.baobao88.com/bbgame/xiuxian/">休闲游戏</a></li><li><a href="http://www.baobao88.com/bbgame/tianse/">填色游戏</a></li><li><a href="http://www.baobao88.com/bbgame/pingtu/">拼图游戏</a></li><li><a href="http://www.baobao88.com/bbgame/zhuangban/">装扮游戏</a></li><li><a href="http://www.baobao88.com/bbgame/yizi/">益智游戏</a></li><li><a href="http://www.baobao88.com/bbgame/en/">英语游戏</a></li><li><a href="http://www.baobao88.com/bbgame/shuxue/">数学游戏</a></li><li><a href="http://www.baobao88.com/bbgame/yuwen/">语文游戏</a></li><li><a href="http://www.baobao88.com/bbgame/nengli/">能力练习</a></li></ul>
+	<ul class="sl2_ul ulbg1"><li class="sl2_li3"><a href="http://www.baobao88.com/babybook/" class="cRed">读一读</a></li>
+	<li><a href="http://www.baobao88.com/bbstory/">少儿故事</a></li><li><a href="http://www.baobao88.com/babybook/tangshi/">唐诗宋词</a></li><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/">小学作文</a></li><li><a href="http://www.baobao88.com/bbka/">益智卡片</a></li><li class="sl2_li6"><a href="http://pic.baobao88.com/" class="cRed" target="_blank">儿童图库</a></li><li><a href="http://pic.baobao88.com/jianbihua/">简笔画</a></li><li><a href="http://pic.baobao88.com/huiben/">图书绘本</a></li><li class="sl2_li5"><a href="http://www.baobao88.com/mov/" class="cRed">儿童影院</a></li></ul>
+	<ul class="sl2_ul ulbg2"><li class="sl2_li5"><a href="http://www.baobao88.com/kejian/" class="cRed">学一学</a></li><li><a href="http://www.baobao88.com/kejian/xueyinyu/">学英语</a></li><li><a href="http://www.baobao88.com/kejian/xueyuwen/">学语文</a></li><li><a href="http://www.baobao88.com/kejian/xueshuxue/">学数学</a></li><li><a href="http://www.baobao88.com/kejian/xuechangshi/">学常识</a></li><li><a href="http://zj.baobao88.com/" class="cRed">宝宝学习</a></li><li><a href="http://www.baobao88.com/mama/huli/">宝宝护理</a></li><li><a href="http://www.baobao88.com/mama/jiaoyu/">宝宝教育</a></li><li><a href="http://www.baobao88.com/mama/shipu/">营养食谱</a></li><li class="sl2_li4"><a href="http://home.baobao88.com" target="_blank" class="cRed">博客/相册</a></li>
+	</ul>
+	</div>
+	<div class="ad728" id="dd2"></div>
+	<div class="ad728" id="dd3"></div>
+	<div class="ad728" id="dd4"></div>
+	<div class="ad728" id="dd5"></div>
+	<div class="ad728" id="dd6"></div>
+    </div>
+  </div>
+  <div class="search1_right">
+  </div>
+</div>
+<div class="count">
+<div class="ztdh">
+<div class="ztdv1"></div>
+<div class="ztpr"></div>
+<div class="ztdv2">
+<ul>
+<li><a href="http://zj.baobao88.com/" title="熊猫识字" target="_blank" class="tip"><img src="http://www.baobao88.com/zt/img/sm/26.gif" width="40" height="40" alt="熊猫识字" /></a></li>
+<li><a href="http://www.baobao88.com/zt/xiyangyang/" title="喜羊羊和灰太狼" class="tip"><img src="http://www.baobao88.com/zt/img/sm/9.jpg" width="40" height="40"  alt="喜羊羊和灰太狼"/></a></li>
+<li><a href="http://www.baobao88.com/zt/qiaohu/" title="巧虎" class="tip"><img src="http://www.baobao88.com/zt/img/sm/1.jpg" width="40" height="40" alt="巧虎"/></a></li>
+<li><a href="http://www.baobao88.com/zt/duola/" title="朵拉" class="tip"><img src="http://www.baobao88.com/zt/img/sm/8.jpg" width="40" height="40" alt="朵拉"/></a></li>
+<li><a href="http://www.baobao88.com/zt/milaoshu/" title="米老鼠和唐老鸭" class="tip"><img src="http://www.baobao88.com/zt/img/sm/4.jpg" width="40" height="40" alt="米老鼠和唐老鸭"/></a></li>
+<li><a href="http://www.baobao88.com/zt/aoteman/" title="奥特曼" class="tip"><img src="http://www.baobao88.com/zt/img/sm/10.jpg" width="40" height="40" alt="奥特曼"/></a></li>
+<li><a href="http://www.baobao88.com/zt/zhihuishu/" title="智慧树" class="tip"><img src="http://www.baobao88.com/zt/img/sm/2.jpg" width="40" height="40" alt="智慧树"/></a></li>
+<li><a href="http://www.baobao88.com/zt/maohelaoshu/" title="猫和老鼠" class="tip"><img src="http://www.baobao88.com/zt/img/sm/19.jpg" width="40" height="40" alt="猫和老鼠"/></a></li>
+<li><a href="http://www.baobao88.com/zt/tianxianbaobao/" title="天线宝宝" class="tip"><img src="http://www.baobao88.com/zt/img/sm/6.jpg" width="40" height="40" alt="天线宝宝"/></a></li>
+<li><a href="http://www.baobao88.com/zt/haimianbaobao/" title="海绵宝宝" class="tip"><img src="http://www.baobao88.com/zt/img/sm/7.jpg" width="40" height="40" alt="海绵宝宝"/></a></li>
+<li><a href="http://www.baobao88.com/zt/zhizhuxia/" title="蜘蛛侠" class="tip"><img src="http://www.baobao88.com/zt/img/sm/24.jpg" width="40" height="40" alt="蜘蛛侠"/></a></li>
+<li><a href="http://www.baobao88.com/zt/jiqimao/" title="哆啦A梦" class="tip"><img src="http://www.baobao88.com/zt/img/sm/11.jpg" width="40" height="40" alt="哆啦A梦"/></a></li>
+<li><a href="http://www.baobao88.com/zt/yingrui/" title="英蕊幼儿英语" class="tip"><img src="http://www.baobao88.com/zt/img/sm/26.jpg" width="40" height="40" alt="英蕊幼儿英语"/></a></li>
+<li><a href="http://www.baobao88.com/zt/lanmao/" title="蓝猫" class="tip"><img src="http://www.baobao88.com/zt/img/sm/12.jpg" width="40" height="40" alt="蓝猫"/></a></li>
+<li><a href="http://www.baobao88.com/zt/sanzijing/" title="三字经" class="tip"><img src="http://www.baobao88.com/zt/img/sm/3.jpg" width="40" height="40" alt="三字经"/></a></li>
+<li><a href="http://www.baobao88.com/zt/hongmaolantu/" title="虹猫蓝兔" class="tip"><img src="http://www.baobao88.com/zt/img/sm/13.jpg" width="40" height="40" alt="虹猫蓝兔"/></a></li>
+<li><a href="http://www.baobao88.com/zt/xiaoxiongweini/" title="小熊维尼" class="tip"><img src="http://www.baobao88.com/zt/img/sm/5.jpg" width="40" height="40" alt="小熊维尼"/></a></li>
+<li><a href="http://www.baobao88.com/zt/babi/" title="芭比" class="tip"><img src="http://www.baobao88.com/zt/img/sm/18.jpg" width="40" height="40" alt="芭比"/></a></li>
+<li><a href="http://www.baobao88.com/zt/xingjibaobei/" title="星际宝贝" class="tip"><img src="http://www.baobao88.com/zt/img/sm/37.jpg" width="40" height="40" alt="星际宝贝"/></a></li>
+<li><a href="http://www.baobao88.com/zt/labixiaoxin/" title="蜡笔小新" class="tip"><img src="http://www.baobao88.com/zt/img/sm/14.jpg" width="40" height="40" alt="蜡笔小新" /></a></li>
+<li><a href="http://www.baobao88.com/zt/baixuegongzhu/" title="白雪公主" class="tip"><img src="http://www.baobao88.com/zt/img/sm/15.jpg" width="40" height="40" alt="白雪公主"/></a></li>
+<li><a href="http://www.baobao88.com/zt/huiguniang/" title="灰姑娘" class="tip"><img src="http://www.baobao88.com/zt/img/sm/16.jpg" width="40" height="40" alt="灰姑娘"/></a></li>
+<li><a href="http://www.baobao88.com/zt/shengdan/" title="圣诞节" class="tip"><img src="http://www.baobao88.com/zt/img/sm/17.jpg" width="40" height="40" alt="圣诞节"/></a></li>
+<li><a href="http://www.baobao88.com/zt/xinnian/" title="新年儿歌" class="tip"><img src="http://www.baobao88.com/zt/img/sm/25.jpg" width="40" height="40" alt="新年儿歌"/></a></li>
+</ul>
+</div>
+<div class="ztnx"></div>
+<div class="ztdv3"><a href="http://home.baobao88.com"><img src="http://www.baobao88.com/img/none.gif" alt="宝宝乐园" width="200" height="50" /></a></div>
+</div>
+<script type="text/javascript">
+$(function() {
+    $(".ztdv2").jCarouselLite({
+        btnNext: ".ztpr",
+        btnPrev: ".ztnx",
+		visible:13,scroll:5,
+		start:0
+		    });
+});
+  </script>
+
+  <div id="ileft">
+  <div class="y250"></div>
+  <div class="login" id="loginfrm"><div class="load_"><img src="/img/ajax-loader.gif"  alt="登陆信息载入" width="16" height="16"/>登陆信息载入...</div>
+</div>
+  <div class="lbox">
+    <div class="lbox_tit1"></div>
+    <div class="lbox_nr1">
+	<div class="lef"><ul>
+	<li><a href="http://www.baobao88.com/mama/shipu/3y/06/26113562.html" target="_blank"><img height="50" alt="孩子越吃越聪明" src="http://img2.baobao88.com/bbfile/litimg/130626/1Q54515137.jpg" width="80" border="0" /></a><br />
+<a href='http://www.baobao88.com/mama/shipu/3y/06/26113562.html' target="_blank">孩子越吃越聪明</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/06/26113561.html" target="_blank"><img height="50" alt="金银花茶助孩子" src="http://img2.baobao88.com/bbfile/litimg/130626/1P23211450.jpg" width="80" border="0" /></a><br />
+<a href='http://www.baobao88.com/mama/shipu/3y/06/26113561.html' target="_blank">金银花茶助孩子</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/06/17112728.html" target="_blank"><img height="50" alt="自制健康雪糕步" src="http://img2.baobao88.com/bbfile/litimg/130617/11444419410.jpg" width="80" border="0" /></a><br />
+<a href='http://www.baobao88.com/mama/shipu/3y/06/17112728.html' target="_blank">自制健康雪糕步</a></li></ul>
+	</div>
+	<div class="rig"><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/shipu/3y/06/26113562.html" target="_blank">孩子越吃越聪明的补脑食</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/06/26113561.html" target="_blank">金银花茶助孩子预防夏季</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/06/26113554.html" target="_blank">给偏食宝宝做的11种超人</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/06/17112728.html" target="_blank">自制健康雪糕步骤</a></li><li><a href="http://www.baobao88.com/mama/shipu/1y/06/17112727.html" target="_blank">红豆薏仁黑米粥</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/06/17112726.html" target="_blank">早餐三明治做法</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/05/31111728.html" target="_blank">适合孩子吃的9道海鲜做</a></li><li><a href="http://www.baobao88.com/mama/shipu/1y/05/31111727.html" target="_blank">夏季孩子开胃菜推荐</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/05/27111558.html" target="_blank">美味补钙（莴笋炒三丝）</a></li><li><a href="http://www.baobao88.com/mama/shipu/3y/05/26111472.html" target="_blank">孩子从头到脚最需的果蔬</a></li></ul>
+	</div>
+	</div>
+  </div>
+  <div class="lbox">
+    <div class="lbox_tit2"></div>
+    <div class="lbox_nr1">
+	<div class="lef"><ul>
+	<li><a href="http://www.baobao88.com/mama/huli/weiyang/05/26111473.html" target="_blank"><img height="50" alt="三类食物会让孩" src="http://img2.baobao88.com/bbfile/litimg/130526/09130913034.jpg" width="80" border="0" /></a><br />
+<a href='http://www.baobao88.com/mama/huli/weiyang/05/26111473.html' target="_blank">三类食物会让孩</a></li><li><a href="http://www.baobao88.com/mama/huli/richang/05/14110723.html" target="_blank"><img height="50" alt="夏普关爱母婴健" src="http://img2.baobao88.com/bbfile/allimg/130514/1501140_lit.jpg" width="80" border="0" /></a><br />
+<a href='http://www.baobao88.com/mama/huli/richang/05/14110723.html' target="_blank">夏普关爱母婴健</a></li><li><a href="http://www.baobao88.com/mama/huli/weiyang/05/05110093.html" target="_blank"><img height="50" alt="宝宝有效补钙要" src="http://img2.baobao88.com/bbfile/litimg/130505/0R5021O10.jpg" width="80" border="0" /></a><br />
+<a href='http://www.baobao88.com/mama/huli/weiyang/05/05110093.html' target="_blank">宝宝有效补钙要</a></li></ul>
+	</div>
+	<div class="rig"><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/huli/richang/06/26113553.html" target="_blank">自测孩子是否上火选择题</a></li><li><a href="http://www.baobao88.com/mama/huli/xejb/06/26113552.html" target="_blank">孩子腹泻可用米汤补充体</a></li><li><a href="http://www.baobao88.com/mama/huli/richang/06/26113551.html" target="_blank">爸爸常做10件事宝宝越聪</a></li><li><a href="http://www.baobao88.com/mama/huli/weiyang/06/26113550.html" target="_blank">1岁内宝宝不能喝酸奶</a></li><li><a href="http://www.baobao88.com/mama/huli/xinli/06/26113543.html" target="_blank">跟孩子交流的技巧-深呼</a></li><li><a href="http://www.baobao88.com/mama/huli/xejb/06/17112742.html" target="_blank">手足口病家庭护理6步</a></li><li><a href="http://www.baobao88.com/mama/huli/weiyang/06/17112741.html" target="_blank">食物过敏出现的症状</a></li><li><a href="http://www.baobao88.com/mama/huli/richang/06/17112740.html" target="_blank">宝宝出牙前腹泻发热护理</a></li><li><a href="http://www.baobao88.com/mama/huli/richang/06/17112738.html" target="_blank">夏季宝宝宜穿鲜艳深色衣</a></li><li><a href="http://www.baobao88.com/mama/huli/richang/06/17112737.html" target="_blank">蚊虫叮咬后可致皮炎感染</a></li></ul>
+	</div>
+	</div>
+  </div>
+  </div>
+  <div id="icount">
+    <div class="box1">
+       <div class="box1_tit"></div>
+<div id="slide">
+      <div id="slidemain">
+<div class="sl_1">
+<ul class="zt_u1">
+<li><a href="lianbo/2.html" target="_blank">小小智慧树专辑</a></li>
+<li><a href="lianbo/808.html" target="_blank">智民好儿歌</a></li>
+<li><a href="lianbo/7.html" target="_blank">赵天鸽儿歌专辑</a></li>
+<li><a href="lianbo/263.html" target="_blank">儿童歌曲大奖赛伴奏</a></li>
+<li><a href="lianbo/283.html" target="_blank">幼儿园歌曲伴奏</a></li>
+<li><a href="lianbo/481.html" target="_blank">A-Z字母歌</a></li>
+<li><a href="lianbo/678.html" target="_blank">屋顶上的小孩</a></li>
+</ul>
+<ul class="zt_u2">
+<li><a href="lianbo/898.html" target="_blank">原来我这么棒</a></li>
+<li><a href="lianbo/668.html" target="_blank">风之王</a></li>
+<li><a href="lianbo/27.html" target="_blank">《格林童话》故事集</a></li>
+<li><a href="lianbo/831.html" target="_blank">浪漫鼠德佩罗</a></li>
+<li><a href="lianbo/24.html" target="_blank">《安徒生童话》连播</a></li>
+<li><a href="lianbo/281.html" target="_blank">好妈妈讲故事</a></li>
+<li><a href="lianbo/682.html" target="_blank">夏日历险</a></li>
+</ul>
+</div>
+<div class="sr">
+<ul>
+<li><a href="lianbo/index.html" target="_blank"><img src="http://img2.baobao88.com/lbimg/ztimg/8.gif" alt="儿童歌曲下载" width="125" height="45" /></a></li>
+<li><a href="lianbo/index_2.html" target="_blank"><img src="http://img2.baobao88.com/lbimg/ztimg/59.gif" alt="少儿故事下载"  width="125" height="45" /></a></li>
+<li><a href="lianbo/index_guoxue.html" target="_blank"><img src="http://img2.baobao88.com/lbimg/ztimg/60.gif" alt="国学启蒙"  width="125" height="45" /></a></li>
+<li><a href="lianbo/index_3.html" target="_blank"><img src="http://img2.baobao88.com/lbimg/ztimg/81.gif" alt="婴儿歌曲"  width="125" height="45" /></a></li>
+</ul>
+</div>
+
+	  </div>
+</div>
+       <div class="box1_foot"></div>
+    </div>
+    <div class="box2">
+      <div class="box2_tit"></div>
+	  <div class="img_list">
+        <div class="img_list_1">
+        <a href="http://www.baobao88.com/bbmusic/faege/06/17112677.html" target="_blank"><img height="60" alt="小星星" src="http://img2.baobao88.com/bbfile/litimg/130617/095Q012031.jpg" width="80" border="0" /></a>        </div>
+        <div class="img_list_2"><a href='http://www.baobao88.com/bbmusic/faege/06/17112677.html' target="_blank">小星星</a></div>
+      </div><div class="img_list">
+        <div class="img_list_1">
+        <a href="http://www.baobao88.com/bbmusic/faege/06/05112036.html" target="_blank"><img height="60" alt="动物园里有什么" src="http://img2.baobao88.com/bbfile/litimg/130605/13405314C0.jpg" width="80" border="0" /></a>        </div>
+        <div class="img_list_2"><a href='http://www.baobao88.com/bbmusic/faege/06/05112036.html' target="_blank">动物园里有什么</a></div>
+      </div>
+	  <div class="img_list">
+        <div class="img_list_1">
+        <a href="http://www.baobao88.com/bbgame/tianse/07/03113993.html" target="_blank"><img height="60" alt="我爱我的玩具填色" src="http://img2.baobao88.com/bbfile/litimg/130703/10151519324.jpg" width="80" border="0" /></a>        </div>
+        <div class="img_list_2"><a href='http://www.baobao88.com/bbgame/tianse/07/03113993.html' target="_blank">我爱我的玩具填色</a></div>
+      </div><div class="img_list">
+        <div class="img_list_1">
+        <a href="http://www.baobao88.com/bbgame/tianse/07/03113992.html" target="_blank"><img height="60" alt="石头小草填色图" src="http://img2.baobao88.com/bbfile/litimg/130703/10143QGX.jpg" width="80" border="0" /></a>        </div>
+        <div class="img_list_2"><a href='http://www.baobao88.com/bbgame/tianse/07/03113992.html' target="_blank">石头小草填色图</a></div>
+      </div>
+    </div>
+    <div class="box3">
+       <div class="box3_tit"></div>
+       <div class="i_nr">
+	     <div class="box150">
+		 <div class="box3_t1"></div>
+		 <div class="box150_nr"><ul><li><a href="http://www.baobao88.com/bbmusic/faege/07/01113838.html" target="_blank">我是一个粉刷匠</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/07/01113837.html" target="_blank">小小萤火虫</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/26113483.html" target="_blank">写给妈妈</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/24113340.html" target="_blank">美丽的太阳花</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/24113339.html" target="_blank">好爸爸坏爸爸</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/20113003.html" target="_blank">我的好妈妈</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/20113002.html" target="_blank">春天在哪里</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/17112678.html" target="_blank">风儿找妈妈</a></li></ul><ul><li><a href="http://www.baobao88.com/bbmusic/faege/06/17112677.html" target="_blank">小星星</a></li></ul><ul><li><a href="http://www.baobao88.com/bbstory/dhgs/06/14112519.html" target="_blank">蛤蟆种西瓜</a></li></ul>
+		 </div>
+		 </div>
+	     <div class="box150">
+		 <div class="box3_t2"></div>
+		 <div class="box150_nr"><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113987.html" target="_blank">成长的足迹</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113985.html" target="_blank">我向往这样一所中学</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113984.html" target="_blank">塑料袋里的秘密</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113983.html" target="_blank">《郎朗是这样练成》读后感</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113982.html" target="_blank">一件令我难过的事</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113981.html" target="_blank">人生需要目标</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113980.html" target="_blank">水是生命之源</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113979.html" target="_blank">了解土壤</a></li></ul><ul><li><a href="http://www.baobao88.com/babybook/wenxue/zuowen/07/03113978.html" target="_blank">给子孙留口饭吃（大地的呼</a></li></ul><ul><li><a href="http://www.baobao88.com/bbstory/tonghua/07/03113977.html" target="_blank">棕熊先生的T恤衫</a></li></ul>
+		 </div>
+		 </div>
+	     <div class="box150">
+		 <div class="box3_t3"></div>
+		 <div class="box150_nr"><ul><li><a href="http://www.baobao88.com/bbstory/tgs/07/03113974.html" target="_blank">绯红树</a></li></ul><ul><li><a href="http://www.baobao88.com/bbstory/tgs/07/03113973.html" target="_blank">帕拉帕拉山的妖怪</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/03113972.html" target="_blank">绯红树（英文版）</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/03113971.html" target="_blank">帕拉帕拉山的妖怪（英文）</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/02113970.html" target="_blank">My whole body itches</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/02113969.html" target="_blank">An allergic reaction（过</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/02113968.html" target="_blank">What’s going on</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/02113967.html" target="_blank">It’ll feel better soon</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/02113966.html" target="_blank">Mom’s not feeling well</a></li></ul><ul><li><a href="http://www.baobao88.com/youshen/en/07/02113965.html" target="_blank">Everything went wrong</a></li></ul>
+		 </div>
+		 </div>
+	   </div>
+       <div class="box3_foot"></div>
+    </div>
+  </div>
+  <div id="iright">
+       <div class="ir1"></div>
+       <div class="i_nr2">
+  <ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/jiaoyu/xwxg/06/26113558.html" target="_blank">怎样善待孩子的“顶嘴”</a></li></ul><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/jiaoyu/xwxg/06/26113557.html" target="_blank">管教孩子应学会换位思考</a></li></ul><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/jiaoyu/xwxg/06/26113556.html" target="_blank">困扰家长的10大早教难题</a></li></ul><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/jiaoyu/zili/06/26113555.html" target="_blank">哪些因素决定孩子的智商高低</a></li></ul><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/yun/chanhou/06/26113549.html" target="_blank">产后丰胸宝典</a></li></ul><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/yun/chanhou/06/26113548.html" target="_blank">生完孩子瘦肚子的技巧</a></li></ul><ul class="line_x_2"><li><a href="http://www.baobao88.com/mama/yun/yunqi/06/26113547.html" target="_blank">最适合准妈妈吃的四种水果</a></li></ul>
+	   </div>
+       <div class="ir2"></div>
+       <div class="i_nr2">
+	    <ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=7491&amp;do=blog&amp;id=39112" target="_blank">心情极差</a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=8076&amp;do=blog&amp;id=39106" target="_blank">随想随写～～</a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=8076&amp;do=blog&amp;id=38915" target="_blank">压抑的心情～～</a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=3231&amp;do=blog&amp;id=38897" target="_blank">邮局 邮局 你为毛一定要</a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=2086688&amp;do=blog&amp;id=38896" target="_blank">成长日记——五一劳动节</a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=207555&amp;do=blog&amp;id=38644" target="_blank">上了两天班又失业了</a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=3231&amp;do=blog&amp;id=38636" target="_blank">最近小忙 有段时间没来 </a></li></ul><ul class="line_x_2"><li><a href="http://home.baobao88.com/home.php?mod=space&amp;uid=207555&amp;do=blog&amp;id=38620" target="_blank">终于找到工作了</a></li></ul>
+<ul class="hm_i_1">
+<li><a href="http://www.baobao88.com/list/77/0--0--92--.html" target="_blank"><img src="/img/flash/2.gif" alt="学拼音" width="48" height="48" /></a><br />
+  <a href="http://www.baobao88.com/list/77/0--0--92--.html" target="_blank">学拼音</a></li>
+<li><a href="http://www.baobao88.com/list/77/0--0--94--.html" target="_blank"><img src="/img/flash/3.gif" alt="识字" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/list/77/0--0--94--.html" target="_blank">识字</a></li>
+<li><a href="http://www.baobao88.com/kejian/xueshuxue/" target="_blank"><img src="/img/flash/4.gif" alt="数学课件" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/kejian/xueshuxue/" target="_blank">数学课件</a></li>
+<li><a href="http://www.baobao88.com/kejian/xueyinyu/" target="_blank"><img src="/img/flash/1.gif" alt="英语课件" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/kejian/xueyinyu/" target="_blank">英语课件</a></li>
+<li><a href="http://www.baobao88.com/bbgame/yuwen/" target="_blank"><img src="/img/flash/6.gif" alt="语文游戏" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/bbgame/yuwen/" target="_blank">语文游戏</a></li>
+<li><a href="http://www.baobao88.com/bbgame/shuxue/" target="_blank"><img src="/img/flash/5.gif" alt="数学游戏" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/bbgame/shuxue/" target="_blank">数学游戏</a></li>
+<li><a href="http://www.baobao88.com/bbgame/en/" target="_blank"><img src="/img/flash/7.gif" alt="英语游戏" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/bbgame/en/" target="_blank">英语游戏</a></li>
+<li><a href="http://www.baobao88.com/bbmusic/faege/" target="_blank"><img src="/img/flash/8.gif" alt="学儿歌" width="48" height="48" /></a><br /><a href="http://www.baobao88.com/bbmusic/faege/" target="_blank">学儿歌</a></li>
+</ul>
+	   </div>
+       <div class="ir3"></div>
+  </div>
+<div id="movbox">
+  <div id="movbox_l">
+  <div id="imov_imglist"><ul>
+  <li><a href="http://www.baobao88.com/mov/youjiao/01/03102607.html" target="_blank"><img height="60" alt="小小智慧树2013年全集" src="http://img2.baobao88.com/bbfile/litimg/130103/1K02Q2311.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/youjiao/01/03102606.html" target="_blank"><img height="60" alt="智慧树2013年全集" src="http://img2.baobao88.com/bbfile/allimg/201201/010P0000101318-1.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/youjiao/02/1477407.html" target="_blank"><img height="60" alt="小小智慧树2012年全集" src="http://img2.baobao88.com/bbfile/litimg/110106/11293515003.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/youjiao/01/0375376.html" target="_blank"><img height="60" alt="智慧树2012年全集" src="http://img2.baobao88.com/bbfile/allimg/201201/010P0000101318-1.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/katong/06/2812277.html" target="_blank"><img height="60" alt="托马斯和朋友们[全集]" src="http://img2.baobao88.com/bbfile/allimg/200906/010P0000103943-1.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/katong/04/2210383.html" target="_blank"><img height="60" alt="喜羊羊与灰太狼全集[高清]" src="http://img2.baobao88.com/bbfile/allimg/200904/010P0000102J9-1.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/katong/03/269491.html" target="_blank"><img height="60" alt="葫芦兄弟（葫芦娃）全集" src="http://img2.baobao88.com/bbfile/allimg/200903/010P0000101104-1.jpg" width="80" /></a></li><li><a href="http://www.baobao88.com/mov/youjiao/03/229275.html" target="_blank"><img height="60" alt="米奇妙妙屋全集" src="http://img2.baobao88.com/bbfile/allimg/200903/010P0000103I7-1.jpg" width="80" /></a></li></ul><div class="clear"></div>
+  </div>
+  <div id="imov_classlist"><ul>
+  <li><a href='http://www.baobao88.com/mov/jucang/07/03113986.html' target="_blank">乐熊奇幻追踪</a></li><li><a href='http://www.baobao88.com/mov/katong/07/02113924.html' target="_blank">小飞狗环球旅行记2（逃出时间岛</a></li><li><a href='http://www.baobao88.com/mov/katong/06/26113559.html' target="_blank">奇境历险气模城全集</a></li><li><a href='http://www.baobao88.com/mov/youjiao/06/21113116.html' target="_blank">米卡故事歌曲知识集</a></li><li><a href='http://www.baobao88.com/mov/katong/06/18112831.html' target="_blank">猪猪侠之幸福救援队全集</a></li><li><a href='http://www.baobao88.com/mov/katong/06/17112670.html' target="_blank">蜡笔小新剧场版全集</a></li><li><a href='http://www.baobao88.com/mov/katong/06/13112420.html' target="_blank">瓢虫贝贝2（神秘工厂）</a></li><li><a href='http://www.baobao88.com/mov/katong/06/13112419.html' target="_blank">云奇飞行日记全集</a></li><li><a href='http://www.baobao88.com/mov/youjiao/06/10112359.html' target="_blank">大风车2013年全集</a></li><li><a href='http://www.baobao88.com/mov/caiyi/06/09112340.html' target="_blank">油画教程</a></li><li><a href='http://www.baobao88.com/mov/youjiao/06/09112339.html' target="_blank">中华历史五千年（记录片）</a></li><li><a href='http://www.baobao88.com/mov/caiyi/06/09112338.html' target="_blank">素描教程</a></li></ul></div>
+  </div>
+  <div id="movbox_r"><ul><li><a href="/mov/">儿童影院</a></li></ul></div>
+</div>
+</div>
+<div class="flink">
+<div class="flink_l">合作网站</div>
+<div class="flink_nr">
+<a href='http://www.fumu.com/' target='_blank'>父母网</a><a href='http://www.tom61.com/' target='_blank'>儿童资源网</a><a href='http://www.ci123.com/' target='_blank'>育儿网</a><a href='http://www.yaolan.com/' target='_blank'>摇篮网</a><a href='http://www.hao123.com/' target='_blank'>hao123网址</a><a href='http://hao.360.cn/' target='_blank'>360网址</a><a href='http://www.qbaobei.com/' target='_blank'>亲亲宝贝</a><a href='http://www.kidsdown.com/' target='_blank'>奇奇玩儿童软件</a><a href='http://www.zaojiao.com/' target='_blank'>中国早教网</a><a href='http://www.cn0-6.com' target='_blank'>中国幼儿网</a><a href='http://www.baobao88.com/bbmusic/erge/' target='_blank'>儿歌童谣</a><a href='http://www.qqbaobao.com/' target='_blank'>亲宝网</a><a href='http://www.9ye.com' target='_blank'>九叶网</a><a href='http://www.miaoke.org/' target='_blank'>林妙可网</a><a href='http://www.missyuan.com/' target='_blank'>思缘设计网站</a><a href='http://www.mama.cn/' target='_blank'>妈妈网</a><a href='http://www.61baobao.com' target='_blank'>儿歌</a><a href='http://www.aiimg.com/' target='_blank'>爱图PSD素材</a><a href='http://www.chinababy365.com/' target='_blank'>天下宝贝育儿</a><a href='http://www.pcbaby.com.cn/' target='_blank'>太平洋亲子网</a><a href='http://www.mamacn.com/' target='_blank'>妈妈网</a><a href='http://baby.ifeng.com/' target='_blank'>凤凰亲子</a><a href='http://www.kids21.cn/' target='_blank'>中国未成年人网</a><a href='http://cn.babycenter.com/' target='_blank'>宝宝中心</a><a href='http://www.daimg.com/' target='_blank'>大图网</a><a href='http://www.goodbaby.com/' target='_blank'>好孩子育儿网</a><a href='http://www.bjmama.com/' target='_blank'>北京妈妈网</a><a href='http://www.xiaoyaya.com/' target='_blank'>丫丫儿童乐园</a> <a href='http://www.5721.net' target='_blank'>中国孕育网</a><a href='http://www.beva.com/' target='_blank'>贝瓦网</a><a href='http://www.baby-edu.com/' target='_blank'>婴幼儿教育</a><a href='http://www.jkbaby.cn/' target='_blank'>健康宝贝网</a><a href='http://www.suobao8.com/' target='_blank'>索宝吧育儿</a><a href='http://www.ekumb.com/' target='_blank'>素材网</a><a href='http://www.ibabyzone.cn/' target='_blank'>亲子阅读</a><a href='http://www.babyschool.com.cn/' target='_blank'>中国育婴网</a><a href='http://www.61tg.com' target='_blank'>童果网</a><a href='http://www.ebama.net/' target='_blank'>爸妈网</a><a href='http://www.qiaohule.com/' target='_blank'>巧虎游戏</a><a href='http://www.61flash.com' target='_blank'>儿童FLASH</a><a href='http://www.enterdesk.com' target='_blank'>桌面壁纸</a><a href='http://v.61.com/' target='_blank'>动画片大全</a><a href='http://www.tonghua5.com/' target='_blank'>童话故事</a><a href='http://www.61ertong.com/' target='_blank'>六一儿童网</a><a href='http://pic.baobao88.com/jianbihua/' target='_blank'>简笔画</a><a href='http://www.sdcaiyi.com/' target='_blank'>山东才艺网</a><a href='http://www.baby611.com/' target='_blank'>妈咪爱婴网</a><a href='http://www.pinshan.com/' target='_blank'>品善网</a><a href='http://www.youban.com/' target='_blank'>儿歌视频大全</a><a href='http://www.qipaoxian.com/' target='_blank'>儿童歌曲大全</a>
+</div>  
+<div class="clear"></div>
+</div>
+<div class="bbbox"><a href="http://www.baobao88.com/box/" target="_blank"><img src="http://img2.baobao88.com/box/img/box.jpg" alt="宝宝吧动画盒下载" width="950" height="60" border="0" /></a></div>
+<div class="foot">
+<a href="http://www.baobao88.com/about/about.html" target="_blank">关于我们</a> | <a href="http://www.baobao88.com/about/lianxi.html" target="_blank">联系我们</a> | <a href="http://www.baobao88.com/about/ad.html" target="_blank">网站合作</a> | <a href="http://www.baobao88.com/about/map.html" target="_blank">网站导航</a> | <a href="http://www.baobao88.com/about/yijian.html" target="_blank">意见反馈</a> | <a href="http://www.baobao88.com/about/link.html" target="_blank">友情链接</a> |<a href="http://www.baobao88.com/plus/rssmap.html" target="_blank">RSS订阅</a> |
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/482324.js"></script>
+<br />Power by baobao88.com Copyright 2007-2009 <span class="beian">浙ICP备08016443号</span><br />
+		宝宝吧 - 听儿歌、听故事、玩游戏、学知识，宝宝的乐园，家长的最爱！
+</div>
+
+<!-- 会员工具箱开始 -->
+<div id="floatmenu" style="top:100px; left:-200px;">
+<div class="float1">
+<iframe id="scj" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"  width="200" height="400" src=""></iframe></div>
+<div class="float2"></div>
+</div>
+<script src="/tool.js" type="text/javascript"></script>
+<!-- 会员工具箱结束 -->
+
+<script src="/tool.js" type="text/javascript"></script>
+<div id="login_" style="display:none">
+<iframe marginheight ="0" marginwidth ="0"  src="/member/loginsta_index.php" scrolling="no"  frameborder="0" width="250" height="200"></iframe>
+</div>
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=1&amp;pos=right&amp;uid=110004" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+var bds_config={"bdTop":50};
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+<script type="text/javascript" language="JavaScript">   
+document.getElementById("loginfrm").innerHTML=document.getElementById("login_").innerHTML; 
+document.getElementById("login_").innerHTML="";
+</script>   
+</body>
+</html>

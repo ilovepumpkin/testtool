@@ -1,0 +1,208 @@
+本文是《使用Sahi测试Dojo应用》(http://www.infoq.com/cn/articles/sr-sahi-test-dojo)的延续。在《使用Sahi测试Dojo应用》中，我们谈到了ITCL架构（应用对象层，任务层以及测试用例层）。本文向大家介绍如何编写一个Sahi的脚本以自动生成应用对象层的代码从而简化和加速Web自动化测试用例的开发。
+
+一.概述
+之所以有可能开发一个Sahi脚本来生成应用对象层的代码，主要得益于以下几个方面：
+1）面向对象设计模式的应用
+Dojo本身将页面中的控件用面向对象的模式封装成不同的widget,而本测试框架用不同的Javascript的函数映射不同的Dojo的widget。这样的一种使用方式，使我们有可能通过探测页面中的Dojo widget从而自动生成用来实例化页面控件的代码。
+2）强大的Dojo query以及Sahi的基于上下文的API
+在后面的代码详解中，大家可以看到我们是如何依赖Dojo query以及Sahi的基于上下文的API来探测页面的Dojo widget的。并且，由于本身Sahi支持browser端的Javascript的脚本，因此在我们的代码中可以方便地将Dojo API和Sahi API混用。
+3）Sahi的基础-Rhino
+因为有了Rhino的支持，Sahi可以进行本地文件的读写，因此使我们能够将生成的结果以文件的形式保存下来。甚至如果需要的话，我们可以实现自己的代码生成模版管理。（关于模版管理，本文所附带的示例代码没有包含，如果读者感兴趣可以自行进行尝试）
+
+简单来说，这个生成代码的Sahi脚本的工作过程如下：
+1）为每种Dojo widget定义一个Javascript函数。该函数的目的是提供代码生成的元数据。
+2）使用者在调用代码生成函数时，可以传入一个数组以指定要生成的widget类型，比如按钮等。默认为生成所有支持的widget类型。
+3）当代码生成函数被调用时，它使用Dojo query遍历DOM tree以搜索Dojo widget的最外层元素（通常是DIV）。我们通过元素class属性中包含的值来识别Dojo widget。例如，如果其class属性包含“dijitValidationTextBox”，我们就认为它是一个Textbox widget；如果其class属性包含“dijitComboBox”，我们就认为它是一个Dojo Combobox widget。
+4）如何知道通过何种方式可以实例话找到的widget呢？在Dojo widget函数的公共“父类”中，定义了若干“猜测”函数，例如guessByName,guessById以及guessByLabel。如果需要的话，具体的widget函数可以定义自己的“猜测”函数，例如DojoButton函数就定义了自己的guessByText函数，因为这个函数不具备通用性。“猜测”的入口是一个叫guess的函数，具体的widget函数可以传递给guess一个数组以指定“猜测”的优先顺序，例如，[this.guessById,this.guessByLabel]就表明先看widget有没有id属性，如果有就生成通过id实例化widget的代码，如果没有的话，就继续尝试“猜测”label的方式。如果所有的“猜测”函数都失败，就在Sahi的log中打印出一条信息，告诉调用者，无法生成这个widget的实例化代码。
+5）最终，把所有生成好的代码语句拼接成一个字符串，保存到generated目录下的appobjscode.sah文件中。同时，这段代码也会打印在Sahi的log文件中。
+
+二.如何运行代码
+用来生成应用对象层代码位于压缩包的sahidojodemo/codegen目录中，有codegen.sah和main.sah两个Sahi脚本文件。codegen.sah定义了代码生成的核心逻辑而main.sah只是对其进行调用。我们使用的示例页面依旧是http://demos.dojotoolkit.org/demos/form/demo.html。读者只需在该页面是弹出Sahi控制器并运行main.sah脚本即可。具体的操作步骤请参考《使用Sahi测试Dojo应用》的“如何运行示例代码”部分。
+
+三.代码详解
+下面对代码进行详细地解释。
+1.函数概览
+在codegen.sah中有如下一些函数（或者称做“类”）。
+WidgetMetaData:定义全局widget“元数据”的结构。包含widget名称、搜索模式以及处理“类”的名称三个属性。
+AppObjsCodeGen：负责遍历页面搜索widget、调用相应的处理“类”生成代码并格式化代码。
+DojoWidget：负责代码生成的核心逻辑。定义了公共的“猜测”函数。
+DojoTextbox：“继承”自DojoWidget。提供输入域widget的元数据。
+DojoSlider：“继承”自DojoWidget。提供滑块widget的元数据。
+DojoCombobox：“继承”自DojoWidget。提供下拉框widget的元数据。
+DojoButton：“继承”自DojoWidget。提供按钮widget的元数据。
+
+2.元数据的定义
+元数据的定义分为两部分。第一部分是一个metaData的数组，它用来声明支持的widget类型，class属性中的关键值以及相应的提供其他元数据的Javascript Dojo函数名称。第二部分就是映射到每种Dojo widget的Javascript函数。
+
+以下就是metaData数组的声明。
+    var metaData=[]
+    metaData.push(new WidgetMetaData("textbox","dijitValidationTextBox","DojoTextbox"))
+    metaData.push(new WidgetMetaData("slider","dijitSlider","DojoSlider"))
+    metaData.push(new WidgetMetaData("combobox","dijitComboBox","DojoCombobox"))
+    metaData.push(new WidgetMetaData("button","dijitButton","DojoButton"))
+    
+DojoTextbox的定义如下。
+function DojoTextbox(domNode){
+    DojoWidget.call(this,domNode)
+
+    this._getIdentifier=function(){
+        var elem=_textbox("dijitReset dijitInputInner",_in(this.domNode));
+        return this.guess(elem);
+    }
+
+    this._getClassName=function(){
+        return "$DojoTextbox"
+    }
+
+    this._getSahiFuncName=function(){
+        return "_textbox" 
+    }
+}
+_getIdentifier函数返回对this.guess的调用，之所以要传入一个elem参数，是因为name属性有时不在Dojo widget的最外层元素上，而是在其内部某个元素上，例如对输入框来说，name属性就是在其内部的input(type="textbox")元素上。可以看到，这里我们用了Sahi的_in函数以保证只在该widget内部进行识别。_getIdentifier函数返回三种类型的值:"label=...","<attr name>=..."或者undefined。如果返回"label=...",说明该widget可以用label的方式实例化，于是就会生成行如var $name=findByLabel("Name *",$DojoTextbox)的代码。如果返回值是"<attr name>=..."（这里的<attr name>完全有“猜测”函数定义，例如，guessById会返回“id=...”而guessByName返回"name=..."）,行如var $name=new $DojoTextbox(_textbox("name"))的代码会生成。其实，只要<attr name>不等于"label",都会以这样的方式生成代码。最后，如果任何一种“猜测”函数都失败了，就会返回undefined。那么，就会在log里看到红色error信息“Failed to guess the method for...”。对于_getClassName和_getSahiFuncName两个函数，大家不难看出，它们分别返回对应的widget的类函数名称以及相应的用来生成非label方式代码的Sahi函数名称。
+代码行DojoWidget.call(this,domNode)用来实现Javascript中的“继承”。DojoWidget函数定义核心的代码生成逻辑。
+
+3.如何识别页面中的widget
+因为每种Dojo widget的class属性值有不同，因此我们就是通过这一点来识别页面中的widget的。
+输入域widget（通过“dijitValidationTextBox”识别）
+<图 1>
+下拉框widget（通过“dijitComboBox”识别）
+<图 2>
+
+下面我们一起来看看_formContent函数。
+    this._formContent=function(widgetNames){
+        var statements=[];
+
+        for(var i=0;i<widgetNames.length;i++){
+            var widgetName=widgetNames[i]
+            var widgetMetaData=this._findWidgetMetaData(widgetName)
+            var searchPattern=widgetMetaData.searchPattern
+            var handleClassName=widgetMetaData.handleClassName
+            
+            var nodes=dojo.query("[class~='"+searchPattern+"']")
+
+            for(var j=0;j<nodes.length;j++){
+                var node=nodes[j]
+                if(!node.getAttribute("widgetid")){
+                    continue
+                }
+                var handle=eval("new "+handleClassName+"(node)")
+                var statement=handle.getStatement()
+                if(statement){
+                    statements.push(statement)
+                }
+            }
+        }
+        return statements
+    }
+首先，该函数根据widget名称在metaData数组中找到对应的元数据。之后，通过Dojo query查找所有class属性中包含有searchPattern值的元素。当然，这当中有可能会有“假”的，所以我们进而判断该元素是否有widgetid属性。如果有widgetid属性才表明是真的Dojo widget元素。接着，实例化对应的处理“类”并调用getStatement函数返回针对该widget生成的声明代码行。最后，所有的代码行放入statements数组中并返回。
+
+4.两种形式的声明代码行
+在解释_getIdentifier函数时，我们已经提到生成的代码有两种形式：通过label或者是通过元素属性值（如id,name等）。这个逻辑是定义在getStatement函数中的。
+        this.getStatement=function(){
+            var stmt=""
+            this.identifier=this._getIdentifier() 
+            if(!this.identifier || this.identifier.substr(-1)=="="){
+                 _log("Failed to guess the method for "+this._escape(this._outerHTML(domNode)),"error");
+                return;
+            }
+
+            var idKey=this._idKeyValue()[0]
+            var idValue=this._idKeyValue()[1]
+            var varName=this._formVarName(idValue)
+            if(idKey=="label"){
+                stmt=this.byLabelTemplate.replace('{className}',this._getClassName()).replace('{label}',idValue).replace('{varName}',varName)
+            }else{
+                var innerElemSahi=this._getSahiFuncName()+'("'+idValue+'")'
+                stmt=this.byAttrTemplate.replace('{className}',this._getClassName()).replace('{innerElem}',innerElemSahi).replace('{varName}',varName) 
+                return stmt
+            }
+            return stmt
+        }
+函数的开始对_getIdentifier的返回值进行解析。之后，通过一系列的字符串replace操作生成代码行。下面是两种不同的代码模版的定义。正如本文开头提到的，读者也可以将代码模版定义在文件中，让脚本从文件中叫在模版定义。
+	this.byLabelTemplate='var {varName}=findByLabel("{label}",{className})'
+    this.byAttrTemplate='var {varName}=new {className}({innerElem})'
+
+5.label的识别
+guessById和guessByName比较容易理解。我们一起看看guessByLabel函数。
+        this.guessByLabel=function(elem){
+            var idValue=elem.getAttribute("id")
+            if(idValue){
+                var label=dojo.query('label[for="'+idValue+'"]')[0]
+            }
+            
+            if(!label){
+                var label=this.domNode.previousSibling.previousSibling
+            }
+
+            if(label){
+        	return "label="+_getText(label);
+            }
+	}
+因为绝大多数label都有一个for属性，该属性的值是其所附属的元素的id属性值。所以，guessByLabel首先通过Dojo query查找具备这个条件的label。如果没有找到，它会通过相对位置查找label(通常label和其附属的元素是紧邻的)。找到label元素后，调用Sahi的_getText函数返回label的文本。
+为了配合这两种识别label的方式，core.sah中的findByLabel函数需要修改如下。所不同的是，findByLabel通过相逆的操作由已知的label文本识别Dojo widget。
+function findByLabel($labelText,$className){
+    var $label=_label($labelText)
+    var $wid=getAttribute($label,"for")
+    if($wid){
+       _set($id,findIdByWID($wid))
+    }
+    
+    if($id){
+        var $dojoWidget=_byId($id)
+    }else{
+        var $dojoWidget=$label.nextSibling.nextSibling 
+    }
+    return new $className($dojoWidget)
+}
+
+6.增加新的”猜测“函数
+如果需要增加新的”猜测“函数，并且它具备一定的通用性，可以添加到DojoWidget函数中。具体写法可参照guessById和guessByName函数。另外，记得修改guess函数中的如下代码，这样才能把它加入到默认的”猜测“函数列表中。当然，你也需要考虑它的”优先级“，从而把它放在合适的位置。
+	this.guess=function(elem,userGuessFuncs){
+            var guessFuncs=userGuessFuncs
+            if(!guessFuncs){
+                guessFuncs=[this.guessById,this.guessByName,this.guessByLabel] 
+            }
+	    for(var i=0; i<guessFuncs.length; i++) {
+                var guessFunc=guessFuncs[i];
+		rt=guessFunc.call(this,elem)
+		if(rt){
+	            return rt;
+		}
+	    }
+	}
+具体的widget处理函数也可以通过userGuessFuncs指定自己的”猜测“函数以及定义自己的”猜测“顺序。比如DojoButton，因为它的识别方式比较特殊，我们就在DojoButton中定义了guessByText函数，并把它作为第二个参数传给guess函数。读者，如果有类似情况，可以仿照这段代码定义特定的”猜测“函数。
+function DojoButton(domNode){
+    DojoWidget.call(this,domNode)
+
+    this._getIdentifier=function(){
+        var elem=this.domNode;
+        return this.guess(elem,[this.guessByText]);
+    }
+
+    this.guessByText=function(elem){
+        var widgetId=elem.getAttribute("widgetid")
+        var labelId=widgetId+"_label"
+        var label=_span(labelId,_in(elem))
+        var buttonText=_getText(label)
+        return "text="+buttonText 
+    }   
+
+    this._getClassName=function(){
+        return "$DojoButton"
+    }
+
+    this._getSahiFuncName=function(){
+        return "_span" 
+    }
+}
+
+7. 生成文件
+Sahi提供了_writeFile函数用来写文件。下面是main.sah的代码。$filePath定义了文件路径。第三个参数是布尔型，表示是覆盖原文件还是进行追加操作。True表示覆盖原文件。Sahi也可以读写CSV文件、重命名文件以及删除文件。具体请参见 http://sahi.co.in/w/miscellaneous-apis
+
+var $filePath='generated/appobjscode.sah'
+_set($fileContent,new AppObjsCodeGen().gen());
+_writeFile($fileContent,$filePath,true);
+
+四.结束语
+本文向读者介绍了如果通过Sahi脚本生成应用对象层的代码来简化和加速Web自动化测试的开发。在实际应用中，有不少人会在Dojo widget的基础上在进行封装，因此，本文附带的代码未必可以直接使用。但是，读者可以借鉴这当中的思路。希望，本文所讲述的代码生成的思路能对读者有所帮助。
+

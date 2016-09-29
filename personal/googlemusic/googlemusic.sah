@@ -1,0 +1,53 @@
+<browser>
+function scrollOnce(){
+       var $list=_div("list-content");
+       $list.scrollTop=$list.scrollHeight;
+}
+</browser>
+
+function scrolllist($keyword){
+    // “服务条款”页面出现时，点击“同意”
+    var $acceptbtn=_div("同意")
+    _wait(5000,_exists($acceptbtn))
+    if(_exists($acceptbtn)){
+        _log("accept the license")
+        _click($acceptbtn)
+    }else{
+        _log("looks like the license page is not shown.")
+    }
+
+    //删除已有歌曲
+    var $count=_count('_cell','artist-cell')
+    if($count>0){
+       _click(_checkbox(0,_near(_span("全选")))) 
+       _click(_div("删除"))
+       _click(_submit("yes"))
+    }
+
+    //执行搜索
+    _setValue(_textbox(0), $keyword);
+    _click(_div("search_button"));
+    
+    var $done=false;
+    while(!$done){
+       _set($test,scrollOnce());
+       $done=_isVisible(_div("已经到达最后一条搜索结果"));
+    }
+
+    _click(_checkbox(0,_near(_span("全选")))) 
+    _click(_div("试听选中歌曲"));
+    _click(_span("modal-dialog-title-close"));
+
+    //“播放”所有歌曲
+     var $count=_count('_cell','artist-cell')
+     _log($count,'custom1')
+     while($count>0){
+        _click(_div(':4'))
+        $count=$count-1
+     }
+}
+
+var $keyword=_readFile("/tmp/googlemusic_keyword.txt")
+scrolllist($keyword);
+
+

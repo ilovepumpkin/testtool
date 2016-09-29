@@ -1,0 +1,54 @@
+8
+
+dir
+3308
+svn://9.123.196.241/svcbuild/install
+svn://9.123.196.241
+
+
+
+2014-05-09T07:55:22.028392Z
+1064
+shenrui
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3d93a108-704e-44eb-8cf2-0e619907b4b5
+
+sshcopyid.exp
+file
+
+
+
+
+2014-04-30T02:09:28.000000Z
+6403c2fcd6f4d6371e045ce0b436c0e1
+2014-04-30T02:17:40.904576Z
+940
+shenrui
+has-props
+
+install_build.sh
+file
+3521
+
+
+
+2015-04-15T03:16:15.000000Z
+4d81de5c933a851d6dec34a975edb629
+2015-04-15T03:16:19.031444Z
+3521
+shenrui
+has-props
+

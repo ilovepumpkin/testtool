@@ -1,0 +1,53 @@
+=====================================
+Data Preparation
+Lynn, 2014.06.12
+=====================================
+
+1) Please specifiy the cluster IP, cluster type(SVC or V7000) and number of objects in "Config" file.
+
+Please pay attention to the cluster type filed.
+
+SVC, BFN  ===> SVC
+V7000,ITE,TB4,ATL,FAB1 ===> V7000
+
+For example:
+cluster_ip==9.186.96.214
+cluster_port==26
+cluster_user==root
+cluster_pwd==l0destone
+
+cluster_type==V7000  (Only two type: SVC or V7000)
+
+vdisk_gen==10
+vdisk_thinpro==10
+vdisk_mirror==0      (If you don not want to create this objects, set 0) 
+vdisk_thinmirror==0
+vdisk_compress==10
+
+host_fc==5
+host_iscsi==2
+host_sas==2
+
+host_vdisk_mapping==2
+
+fcmap==2
+fccg==2
+rcrel==2
+rccg==2
+
+user_sec==2
+user_adm==2
+user_copy==2
+user_service==2
+user_monitor==2
+
+usergrp==2
+
+
+2) Run the "./dataPrepare.pl".
+
+3) Waiting for about 5 mins, login the GUI and check objects.
+
+
+If you have any questions, please come and speak to Lynn.
+

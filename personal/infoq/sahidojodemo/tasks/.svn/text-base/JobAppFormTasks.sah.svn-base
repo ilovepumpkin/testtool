@@ -1,0 +1,23 @@
+_include("../appobjs/JobAppFormPage.sah")
+
+function fillForm($nameValue, $eduValue, $addressValue, $stateValue){
+    $school.dropTo($eduValue)
+    $name.setValue($nameValue)
+    $address.setValue($addressValue)
+    $state.select($stateValue)
+    var $selectedStateValue=$state.getSelectedValue()
+    var $selectedSchoolIndex=$school.getCurrentIndex()
+    $btnOK.click()
+    var $url=_eval("top.location.href")
+    _log($url)
+    _assertTrue(new String($url).indexOf("name="+$nameValue.replace(/ /g,"+"))!=-1)
+    _assertTrue(new String($url).indexOf("address="+$addressValue.replace(/ /g,"+"))!=-1)
+    _assertTrue(new String($url).indexOf("state="+$selectedStateValue)!=-1)
+    _assertTrue(new String($url).indexOf("school="+$selectedSchoolIndex)!=-1)
+
+    _assertEqual("Education level",$school.getLabel())
+    _assertEqual("Name *",$name.getLabel())
+    _assertEqual("Address *",$address.getLabel())
+    _assertEqual("State",$state.getLabel())
+}
+

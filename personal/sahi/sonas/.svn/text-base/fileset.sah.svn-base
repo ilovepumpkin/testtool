@@ -1,0 +1,132 @@
+_include("common.sah")
+
+var $dlg_browse=dialog("Browse");
+var $dlg_newfileset=dialog("New File Set");
+var $dlg_edfileset=dialog("Edit File Set");
+var $dlg_confirm=dialog("Confirm Delete File Set");
+
+function mkfset($fsname,$fsetname,$comment){
+    _click(_span("New File Set"));
+    _click(_button(6));
+    _click(_span("Browse..."));
+    _click(_button(9));
+    _click(_span($fsname));
+    _click(_span("OK",_in($dlg_browse)));
+    _click(_button(19));
+    _setValue(_textbox("fileSetNameInput"), $fsetname);
+    _setValue(_textbox("fileSetCommentInput"), $comment);
+    _click(_span("Independent"));
+    _click(_row("Dependent +"));
+    _click(_span("OK"));
+    wait_taskdone(); 
+    _click(_span("Close"));
+    _click(_button(9));
+    _assertExists(_bold($fsetname));
+    _assert(_isVisible(_bold($fsetname)));
+}
+
+function delfset($fsetname){
+    _rightClick(_cell($fsetname));
+    _click(_cell("Delete"));
+    _setValue(_textbox(/dijit_form_ValidationTextBox/,_near(_div("To confirm, type YES"))), "YES");
+    _click(_span("OK",_in($dlg_confirm)));
+    wait_taskdone(); 
+    _click(_span("Close"));
+    _assertNotExists(_bold($fsetname),"The fileset is not deleted")
+}
+
+function mkfset_custom($fsname,$fsetname,$comment,$s_quota,$h_quota){
+    var $sq_value=$s_quota.split(" ")[0];
+    var $sq_unit=$s_quota.split(" ")[1]+" +";
+    var $hq_value=$h_quota.split(" ")[0];
+    var $hq_unit=$h_quota.split(" ")[1]+" +[1]";
+
+    _click(_span("New File Set"));
+    _click(_image("FileSet_Preset_custom.png"));
+    _click(_span("Browse..."));
+    _click(_span($fsname));
+    _click(_span("OK",_in($dlg_browse)));
+    _setValue(_textbox("fileSetNameInput"), $fsetname);
+    _setValue(_textbox("fileSetCommentInput"), $comment);
+    _click(_span("Independent"));
+    //_click(_row("Independent +"));
+    _click(_row("Dependent +"));
+    //Quota
+    _click(_div("+- Quota"));
+    _click(_checkbox(/sonas_common_CheckBox_/,_near(_label("Set a quota"))));
+    _setValue(_textbox(/dijit_form_NumberTextBox_.*/,_near(_span("Soft limit:"))), $sq_value);
+    _click(_div("dijitReset dijitArrowButtonInner",_near(_span("Soft limit:"))));
+    _click(_row($sq_unit));
+    _setValue(_textbox(/dijit_form_NumberTextBox_.*/,_near(_span("Hard limit:"))), $hq_value);
+    _click(_div("dijitReset dijitArrowButtonInner",_near(_span("Hard limit:"))));
+    _click(_row($hq_unit));
+    //Snapshot
+    /*
+    _click(_div("+- Snapshot"));
+    _click(_span("New Rule"));
+    _setValue(_textbox("scheduleNameInput"), "dailysnapshot");
+    _click(_cell("Hourly"));
+    _click(_cell("Once a Day"));
+    _setValue(_textbox(/dijit_form_TimeTextBox/,_near(_div("Time of day:"))), "3:00 PM");
+    _setValue(_textbox(/dijit_form_NumberSpinner/,_near(_div("Days:"))), "5");
+    _setValue(_textbox("snapPrefixInput"), "testprefix");
+    _click(_span("OK",_near(_textbox("snapPrefixInput"))));
+    _click(_button(21));
+    wait_taskdone();
+    _click(_span("Close"));
+    _click(_button(9));
+    _click(_checkbox(/dijit_form_CheckBox/,_near(_cell("dailysnapshot"))));
+    */
+    //Summary
+    _click(_div("+- Summary"));
+    _click(_span("OK",_in($dlg_newfileset)));
+    wait_taskdone(); 
+    _click(_span("Close"));
+    _assertExists(_bold($fsetname));
+    _assert(_isVisible(_bold($fsetname)));
+}
+
+
+function edfset_custom($fsetname,$fsetname_new,$fsetcomment,$s_quota,$h_quota){
+    var $sq_value=$s_quota.split(" ")[0];
+    var $sq_unit=$s_quota.split(" ")[1]+" +";
+    var $hq_value=$h_quota.split(" ")[0];
+    var $hq_unit=$h_quota.split(" ")[1]+" +[1]";
+    
+    _rightClick(_cell($fsetname));
+    _click(_cell("Edit"));
+    _setValue(_textbox("fileSetNameInput"), $fsetname_new);
+    _setValue(_textbox("fileSetCommentInput"), $fsetcomment_new);
+    _click(_div("+- Quota"));
+    _wait(1000)
+    _setValue(_textbox(/dijit_form_NumberTextBox_.*/,_near(_span("Soft limit:"))), $sq_value);
+    _click(_div("dijitReset dijitArrowButtonInner",_near(_span("Soft limit:"))));
+    _click(_row($sq_unit));
+    _setValue(_textbox(/dijit_form_NumberTextBox_.*/,_near(_span("Hard limit:"))), $hq_value);
+    _click(_div("dijitReset dijitArrowButtonInner",_near(_span("Hard limit:"))));
+    _click(_row($hq_unit));
+    _click(_div("+- Summary"));
+    _click(_span("OK",_in($dlg_edfileset)));
+    wait_taskdone(); 
+    _click(_span("Close"));
+    _assertExists(_bold($fsetname_new));
+    _assert(_isVisible(_bold($fsetname_new)));
+}
+
+var $fsname="gpfs0"
+var $fsetname="rui_fset"
+var $fsetcomment="This is a filset test"
+var $s_quota="1024 KB"
+var $h_quota="2048 MB"
+var $fsetname_new=$fsetname+"_new";
+var $s_quota_new="2048 TB"
+var $h_quota_new="4096 PB"
+var $fsetcomment_new=$fsetcomment+"_new"
+
+
+_click(_link("File Sets"));
+//mkfset($fsname,$fsetname,$fsetcomment);
+mkfset_custom($fsname,$fsetname,$fsetcomment,$s_quota,$h_quota);
+edfset_custom($fsetname,$fsetname_new,$fsetcomment_new,$s_quota_new,$h_quota_new);
+delfset($fsetname_new);
+

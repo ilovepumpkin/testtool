@@ -1,0 +1,91 @@
+_include('../labels/common.properties')
+
+function to_regx($str){
+    return  $str.replace('(','\\(').replace(')','\\)').replace(']','\\]').replace('[','\\['); 
+}
+
+function label2regx($label){
+    return '/'+to_regx($label)+'.*/';
+}
+
+function dialog($title){
+    return _parentNode(_div($title),"div");
+}
+
+function progressdlg(){
+    var $self=_div("dijitDialog aspenTaskProgressDialog");
+    
+    this.close=function(){
+        _click(_span($lb_close,_in($self)));
+    }
+
+    this.waitfor_taskdone=function($wait_time){
+        if($wait_time==null){
+            $wait_time=60000;
+        }
+        _wait($wait_time,_isVisible(_div("100%")));
+        _assertExists(_div($lb_task_completed));
+    }
+}
+
+function dropdown($label,$top){
+   var $re=label2regx($label);
+
+   if($top==null){
+        var $self=_div("dijitReset dijitArrowButtonInner",_near(_div($re)));
+   }else{
+        var $self=_div("dijitReset dijitArrowButtonInner",_near(_div($re,_in($top))));
+   }
+
+   this.select=function($text){
+       _click($self);
+       _click(_cell($text,_near(_div($re)))); 
+   }
+
+   this.get_selected=function(){
+        return _getText(_span("dijitReset dijitInline dijitSelectLabel",_near($self)));
+   }
+}
+
+
+function nspinner($label,$top){
+   var $re=label2regx($label);
+   
+   if($top==null){
+        return _textbox(/dijit_form_NumberSpinner_.*/,_near(_div($re)));
+   }else{
+        return _textbox(/dijit_form_NumberSpinner_.*/,_near(_div($re,_in($top))));
+   }
+}
+
+function textbox($label,$top){
+   var $re=label2regx($label);
+   
+   if($top==null){
+        //return _textbox(/dijit_form_ValidationTextBox_.*/,_near(_div($re)));
+        return _textbox("dijitReset dijitInputInner",_near(_div($re)));
+   }else{
+        //return _textbox(/dijit_form_ValidationTextBox_.*/,_near(_div($re,_in($top))));
+        return _textbox("dijitReset dijitInputInner",_near(_div($re,_in($top))));
+   }
+}
+
+function checkbox($label,$top){
+   var $re=label2regx($label);
+   
+   if($top==null){
+        return _checkbox(0,_near(_div($re)));
+   }else{
+        return _checkbox(0,_near(_div($re,_in($top))));
+   }
+}
+
+function button($label,$top){
+   if($top==null){
+        return _span($label);
+   }else{
+        return _span($label,_in($top));
+   }
+}
+
+

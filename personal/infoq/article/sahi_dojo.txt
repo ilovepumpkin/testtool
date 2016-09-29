@@ -1,0 +1,180 @@
+使用Sahi测试Dojo应用
+
+谈及开源的Web UI自动化测试工具，相信很多人会可以想到Selenium。今天，给大家介绍的是另一款Web UI自动化测试工具Sahi，这是Sahi的官方网站 － http://sahi.co.in/w/ 。我们暂且不评论它与Selenium孰优孰劣。有时，对于同一问题，答案不知一个。本文的目的是使读者对Sahi有一个初步的了解，并且分享一下个人使用Sahi测试Dojo的经验，希望对读者能有所帮助。
+
+在开始介绍Sahi之前，让我们一起来看看在开发Web UI自动化测试（特指Web 2.0应用）时常面临的两大技术问题。
+
+1. 页面元素的识别
+Web 2.0应用的UI自动化测试常面临的挑战包括：
+1) DOM树随着产品版本升级发生变化
+2) 页面中页面中的元素的id值的动态的。比如很多Dojo应用的
+3) 页面中有具有相同属性的元素不止一个
+针对这一点，应对措施如下：
+1) 要求开发团队对所有测试中用到的元素增加用以识别元素的静态属性值
+2) 通过XPath精确识别元素。虽然XPath能够精确识别元素，但是它很“脆弱”，当DOM树结构的变化很容易导致XPath的失效。
+3) CSS选择器。CSS选择器的方式比XPath好一些但是它如同Javascript一样，存在浏览器的兼容问题。
+
+Sahi关于元素识别的策略：
+1) Sahi不支持XPath或者CSS选择，它只提供基于属性的识别方式。使用者不需要告诉Sahi传入的是什么属性。Sahi的配置文件针对每种HTMl元素定义一个属性查找顺序。并且使用者可以修改这个配置。
+2) Sahi提供了基于上下文查找。目前它支持三中关联方式。
+－ in，也就是在某个DOM节点下查找某个元素
+－ near，在某个元素附近查找最近的一个符合条件的元素
+－ under，在某个元素下方查找符合条件的元素（不过，需要有相同的偏移量）
+3）支持正则表达式和模糊查询
+
+2. 页面等待
+AJAX的应用给Web UI的测试带来另一项挑战。由于AJAX请求是异步的，自动化测试程序需要在得知AJAX请求已经处理完毕后再进行下一步操作，否则极有可能失败。
+通常的作法是：
+1) 指定固定等待时间
+2) 轮询界面上目标元素，直至它出现或者是超时（此时判定为失败）
+
+Sahi能够自己判断AJAX请求是否已经处理完毕，因此绝大多数情况下使用者不需要处理页面等待的问题。但是，有时应用执行某种操作会发送多个AJAX请求（例如，长时间操作的进度条显示），Sahi无法正确处理这种情形。不过，Sahi也提供了等待固定时间已经基于条件的方式。
+
+Sahi的工作原理
+<图>
+Web自动化测试的本质就是模拟用户事件（单击，双击，输入文本等操作）并获取结果状态并验证是否符合预期。如图所示，Sahi的核心一个用Java编写的代理服务器。它位于Web应用与浏览器当中。当HTTP请求响应通过Sahi代理服务器时，它便注入Javascript用来回放测试用例定义的操作。而这些Javascript中，一部分就是Sahi本身用来驱动脚本运行的代码，另外一部分就是用户自己编写的代码所转化成的Javascript的。目前Sahi支持三种编程语言：Sahi脚本,Java和Ruby。
+
+Sahi控制器
+运行<SAHI_HOME>/bin/dashboard.sh可以启动Sahi的Dashboard窗口。Dashboard窗口中显示了所有Sahi预配置并且用户系统上存在的浏览器。当然，你也可以点击下方的Configure修改浏览器配置文件。点击相应的浏览器图标，浏览器就会弹出，此时Sahi已经自动给它配置了Sahi自己的Proxy服务器。在窗口上按住ALT键并双击鼠标左键，就会弹出Sahi控制器窗口。（通常这只在IE中工作，在Firefox和Chrome中你需要按住ALT+CTRL）。Sahi控制器可以工作在所有Sahi支持的浏览器上。录制和回放是Sahi控制器窗口中最重要的两个标签页。
+录制标签页
+<图>
+输入文件名后点“录制”便开始录制，点“停”就停止录制，非常简单。标签页的中部是一个对象识别器，在页面上按住CTRL键，并将鼠标左键悬停在某个元素上，对象识别器就能够显示出能够识别该元素的Sahi语句，例如“_textbox("q")”,并且你还可以在下方的输入框中输入Sahi语句并查看运行结果。
+回放标签页
+<图>
+回放标签页不仅能够一次性运行脚本，还可以单步运行，甚至可以中途暂停，这个调试代码带了很多便利。并且，还可以在点击下方的链接查看解析后的脚本以及运行日志等。
+
+Sahi脚本
+Sahi脚本基于Javascript，不同的是Sahi脚本中所有的变量必须带有$前缀。Sahi的Proxy会将用户编写的Sahi脚本解析成Javasript并在Rhino引擎中执行。Rhino是一个开源的是Javascript运行于JVM的项目。所以，也就不奇怪Sahi为什么能够执行文件甚至数据库操作了。理论上来说，所有Java能办到的，Sahi都可以办到。需要注意的是，所有直接访问DOM节点的函数必须定义在browser tag中。
+
+
+使用Sahi测试Dojo应用
+下面与大家分享一下我个人使用Sahi测试Dojo应用的一些经验。为了使示例代码能够简单的运行，我们选取http://demos.dojotoolkit.org/demos/form/demo.html 假设为我们将要测试的应用。这是一个用来演示Dojo表单Widget的页面。
+
+如何运行示例代码
+1. 下载及安装Sahi（http://sahi.co.in/w/using-sahi）
+2. 下载infoq.zip并解压缩到Sahi的userdata/scripts下面。解压后应该下面这个样子。
+<SAHI_HOME>/userdata/scripts/appobjs/JobAppFormPage.sah
+<SAHI_HOME>/userdata/scripts/tasks/JobAppFormTasks.sah
+<SAHI_HOME>/userdata/scripts/testcases/JobAppFormTests.sah
+<SAHI_HOME>/userdata/scripts/testcases/myapp.suite
+<SAHI_HOME>/userdata/scripts/testcases/testdata.csv
+<SAHI_HOME>/userdata/scripts/core.sah
+<SAHI_HOME>/userdata/scripts/run.sh
+3. 启动Sahi Proxy服务器。
+Sahi的bin目录下有一个sahi.sh，或者dashboard.sh也可以启动Sahi Proxy服务器，并且它还会启动一个Sahi Dashboard。建议启动dashboard，这样你能看到哪些浏览器被Sahi探测到了。
+4. 如果dashboard中显示了Chrome,你可以直接运行infoq下面的run.sh。否则，你可以把run.sh中的chrome替换成firefox或者ie如果dashboard中显示了Firefox或者IE的话。
+5. 如果一切正常你会看到Dojo的Job Form Application应用被打开，然会进行了一系列操作后关掉。Sahi的控制台上会显示"Success"。如果失败了，你可以去sahi/userdata/logs/playback下面查看日志。
+
+
+设计原则
+1）面向对象
+面向对象早已不是什么新鲜事物。为什么在测试Dojo应用时要使用面向对象的理念？原因很简单－因为Dojo Widget本身就采用了面向对象的思想，因此我们写自动化测试时将每个Dojo Widget都对应于一个Javascript的“类”，更便于代码重用。
+2）采用IBM框架或者ITCL（IBM Test Community Leadership）
+做Web自动化测试的读者恐怕对IBM框架不会感到陌生。IBM框架有三层架构组成：应用对象、任务和测试用例。
+        潜在于应用对象、任务和测试用例包之下的基本原理是：
+        层次化的体系架构
+        将“做什么”与“如何做”分离开来
+        代码重用
+        一致和清晰的组织结构
+        快速增强的能力
+        迅速的调试
+        有效地组织文件
+        启用协作
+        学习他人
+        下面是对应用对象、任务和测试用例的解释说明：
+        应用对象：储存有关你的应用程序中的GUI元素信息。同时在这里也可以编写你的Getter 方法，这些 Getter 方法可以返回对象，使 调用者能够对这些GUI元素进行查询和操作。一般情况下，这些方法在Task层中进行调用。
+        任务：在这里你将编写可重用的方法，这些方法在你的应用程序中执行通用功能。同时在这里，你将编写可以处理和查询复杂的特定应用程序控件的方法。在任务中的方法可以被测试用例调用。
+        测试用例：导航一个应用程序，验证其状态，并记录其结果的方法。
+
+3）利用Label识别元素
+通常页面上每个元素都会有一个label并且它是可见的（相对于元素的其他属性，例如id,name等，必须通过一定的工具查看而非肉眼）。因此定义基于label的查找方法可以提高开发效率。
+
+
+代码详解
+
+三个目录appobjs,tasks以及testcases即是IBM框架中的三层架构，其中的JobAppFormPage.sah，JobAppFormTasks.sah以及JobAppFormTests.sah就是应用对象、任务和测试用例文件。
+
+Widget的封装
+下面让我们以DojoWidget和Textbox两个类为例讲解Widget的封装。
+
+function DojoWidget($self){
+    this.getLabel=function(){
+       var $widId=getAttribute($self,"widgetid")
+       _set($labelText,getLabelTextByFor($widId))
+       return $labelText
+    }
+
+    this.hasError=function(){
+       var $class=getAttribute($self,"class")
+       return $class.indexOf("dijitError")==-1?false:true
+    }
+}
+
+var $DojoTextbox=function Textbox($elem){
+    var $self=findEnclosingWidget($elem,"dijitValidationTextBox")
+    DojoWidget.call(this,$self) 
+    var $textbox=_textbox("dijitReset dijitInputInner",_in($self))
+
+    this.setValue=function($value){
+       _setValue($textbox,$value)  
+       var $current=this.getValue()
+       _assertEqual($value,$current)
+    }
+
+    this.getValue=function(){
+       return _getValue($textbox) 
+    }
+    this.blur=function(){
+        _blur($textbox)
+    }
+}
+
+core.sah中定义了所有的widget类。所有的widget类都继承DojoWidget,DojoWidget中定了一些通用的函数，例如getLabel和hasError。$self变量是通过函数findEnclosingWidget获得，它代表了Dojo widget最外层的元素。此函数通过检查父节点中是否有widgetid属性，并且检查class属性的值是否包含指定的标示widget类型的字符串，例如，DojoTextbox的类型字符串是dijitValidationTextBox。Widget的继承通过call函数实现，并且$self会传给DojoWidget类。$textbox的识别使用了_in函数，这样就保证了元素识别的准确性。事实上，无论一个widget本身有多复杂，通过_in函数就可以将内部元素查找与外界隔离。大家或许注意到this.setValue函数中有个比较奇怪的地方，this.getValue()的返回值是先赋值给$current变量然后进行断言判断的。为什么不写成“_assertEqual($value,this.getValue())”呢？这样的写法Sahi是目前是不支持的，或许将来会支持。
+
+findByLabel的实现
+通过元素标签标识元素的原则通过findByLabel函数实现。它有两个参数，第一个是标签的文本内容，第二个是目标widget的实现类。实现原理很简单-label元素的for属性值就是widget的widgetid的值。因此，我们通过widgetid就可以找到widget元素。但事实上，从下面大家看出来我们是先利用的dojo.query找到了元素对应的id，然后通过_byId获得widget元素。为什么这么迂回呢？根据Sahi的文档，理论上我们是可以通过修改concat.js文件（具体参见http://sahi.co.in/w/tweaking-sahi-apis）可以实现利用_div，_table或者_span等函数直接获得widget元素，不幸的是，在当前版本中有个bug导致自定义属性不能被识别。所以我们先通过widgetid找id的方法迂回解决。另外，值得一提的是因为findIdByWID函数用到了dojo的函数，因此它被定义在browser tag中，并且要使用_set函数传递返回值。
+
+function findByLabel($labelText,$className){
+    var $label=_label($labelText)
+    var $wid=getAttribute($label,"for")
+    _set($id,findIdByWID($wid))
+    var $div=_byId($id)
+    return new $className($div)
+}
+
+<browser>
+function findIdByWID($wid){
+    var $widget=dojo.query("[widgetid='"+$wid+"']")[0]
+    return $widget.getAttribute("id")
+}
+</browser>
+
+数据驱动
+Sahi自带对CSV，Excel以及数据库访问的函数。示例代码示范了如何使用CSV进行数据驱动测试。让我们一起来看看JobAppFormTests.sah中的testSimple函数。被注释掉的部分是一般的定义测试数据的方法。_readCSVFile函数加载testdata.csv到$data变量,它事实上一个两维数组。然后_dataDrive函数能够自动遍历数组数据调用fillForm函数。
+
+function testSimple(){
+    /*
+    var $eduValue="masters"
+    var $nameValue="my name"
+    var $addressValue="Shanghai"
+    var $stateValue="California"
+    fillForm($nameValue,$eduValue,$addressValue,$stateValue)
+    */
+    var $data=_readCSVFile("./testdata.csv") 
+    _dataDrive(fillForm,$data)
+}
+
+testdata.csv内容：
+Tom,high school,Address1,Alaska
+Mike,masters,Address2,Florida
+John,PhD,Address3,Hawaii
+
+另外，Sahi提供了类似于JUnit的测试框架。所有以test开头的函数都被认为是测试用例，如果有setUp和tearDown函数，它们会分别在每个测试用例运行前后执行。并且所有测试文件还是可以组织到到一个.suite作为一套测试用例子运行。更详细的介绍，大家可以参考Sahi的文档。
+
+另外，Sahi也能支持拖放，大家可以参考示例代码中Slider widget的实现。文件上传是很多Web自动化测试的局限，不过，Sahi得益于它Proxy的架构实现了文件上传功能。
+
+		
+
+http://www.slideshare.net/narayanraman/gtac-2010
+http://www.slideshare.net/narayanraman
+

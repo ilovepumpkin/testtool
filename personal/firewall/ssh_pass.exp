@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+
+set hostname [lindex $argv 0]
+set username [lindex $argv 1]
+set password [lindex $argv 2]
+
+set timeout 10
+
+spawn ssh $username@$hostname
+expect {
+	"$username@$hostname's password:" { send -- "$password\r" }
+}
+expect eof 

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>SVC/Storwize V7000 GUI CSTL Team Test Stands</title>
+<link rel="StyleSheet" href="css/style.css"></link>
+</head>
+<body>
+<h1>SVC/Storwize V7000 GUI CSTL Team Test Stands</h1>
+
+<table id="mytable" name="mytable">
+	<thead>
+		<tr bgcolor=gold>
+			<th>Status</th>
+			<th>URL</th>
+			<th>Build#</th>
+			<th>Owned By</th>
+			<th>Used By</th>
+			<th>Type/Name</th>
+			<th>Node IPs</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+<br>
+<input type="button" value="Refresh" onclick="javascript:refresh();">
+<script language="javascript" src="js/json.js"></script>
+<script language="javascript" src="js/svcmain.js"></script>
+<script language="javascript">
+
+refresh();
+
+</script>
+
+</body>
+</html>

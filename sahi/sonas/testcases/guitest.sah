@@ -1,0 +1,4 @@
+_setValue(_textbox("login"), "admin");
+_setValue(_textbox("login"), "superuser");
+_setValue(_password("password"), "passw0rd");
+_click(_div("go sprite"));

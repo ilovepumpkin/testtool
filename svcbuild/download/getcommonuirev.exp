@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+
+set type [lindex $argv 0] 
+set release [lindex $argv 1] 
+set version [lindex $argv 2]
+set password hello=1234
+set timeout -1
+
+spawn ssh likezhao@9.71.44.38  "grep '.*svn checkout.*CommonUI' /$type/$release/$version/log/svc*/BACKINGBUILD.log|cut -d ' ' -f7"
+match_max 100000
+expect "*?password:"
+send -- "$password\r"
+send -- "\r"
+expect eof

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>SONAS/IFS Test Stands</title>
+<link rel="StyleSheet" href="css/style.css"></link>
+</head>
+<body>
+<h1>SONAS/IFS Test Stands</h1>
+
+<table id="mytable" name="mytable">
+	<thead>
+		<tr bgcolor=gold>
+			<th>Status</th>
+			<th>URL</th>
+			<th>Build#</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+<br>
+<input type="button" value="Refresh" onclick="javascript:refresh();">
+<script language="javascript" src="js/json.js"></script>
+<script language="javascript" src="js/sonasmain.js"></script>
+<script language="javascript">
+
+refresh();
+
+</script>
+
+</body>
+</html>

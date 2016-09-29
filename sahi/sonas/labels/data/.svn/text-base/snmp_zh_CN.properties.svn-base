@@ -1,0 +1,8 @@
+$lb_newsnmp="[\u9ed2\u6192\u9055New SNMP Server~~~~zh_CN]"
+$lb_statuschange="[\u9ed2\u6192\u9055Status change:~~~~zh_CN]"
+$lb_utilthre="[\u9ed2\u6192\u9055Utilization thresholds:~~~~~~~~zh_CN]"
+$lb_gui="[\u9ed2\u6192\u9055GUI:zh_CN]"
+$lb_portnum="[\u9ed2\u6192\u9055Port number:~~zh_CN]"
+$lb_snmpserver="[\u9ed2\u6192\u9055SNMP server (IP address):~~~~~~~~~zh_CN]"
+$lb_comm="[\u9ed2\u6192\u9055Community:zh_CN]"
+$lb_testsnmp="[\u9ed2\u6192\u9055Test SNMPzh_CN]"

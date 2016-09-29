@@ -1,0 +1,130 @@
+<browser>
+function findIdByWID($wid){
+    var $widget=dojo.query("[widgetid='"+$wid+"']")[0]
+    return $widget.getAttribute("id")
+}
+
+function getLabelTextByFor($for){
+    var $label=dojo.query("label[for="+$for+"]")[0]
+    return _getText($label)
+}
+</browser>
+
+function getAttribute($elem,$attrName){
+    _set($attrValue,$elem.getAttribute($attrName))
+    return $attrValue
+}
+
+function findEnclosingWidget($elem,$expectedType){
+    if(getAttribute($elem,"widgetid")){
+        var $class=getAttribute($elem,"class")
+        if($class.indexOf($expectedType)!=-1){
+            return $elem
+        }
+    }else{
+        return findEnclosingWidget(_parentNode($elem),$expectedType) 
+    }
+}
+
+
+function DojoWidget($self){
+
+    this.getLabel=function(){
+       var $widId=getAttribute($self,"widgetid")
+       _set($labelText,getLabelTextByFor($widId))
+       return $labelText
+    }
+
+    this.hasError=function(){
+       var $class=getAttribute($self,"class")
+       return $class.indexOf("dijitError")==-1?false:true
+    }
+}
+
+var $DojoButton=function Button($elem){
+    var $self=findEnclosingWidget($elem,"dijitButton")
+    DojoWidget.call(this,$self) 
+
+    this.click=function(){
+        _click(_span(/.*dijitButtonText.*/,_in($self)))
+    }
+}
+var $DojoTextbox=function Textbox($elem){
+    var $self=findEnclosingWidget($elem,"dijitValidationTextBox")
+    DojoWidget.call(this,$self) 
+    var $textbox=_textbox("dijitReset dijitInputInner",_in($self))
+
+    this.setValue=function($value){
+       _setValue($textbox,$value)  
+       var $current=this.getValue()
+       _assertEqual($value,$current)
+    }
+
+    this.getValue=function(){
+       return _getValue($textbox) 
+    }
+    this.blur=function(){
+        _blur($textbox)
+    }
+}
+
+var $DojoComboBox=function ComboBox($elem){
+    var $self=findEnclosingWidget($elem,"dijitComboBox")
+    DojoWidget.call(this,$self) 
+
+    this.select=function($value){
+        var $dropdown=_div(getAttribute($self,"id")+"_dropdown")
+        _click(_textbox("dijitReset dijitInputField dijitArrowButtonInner",_in($self)))
+        _click(_div($value,_in($dropdown)))
+        var $current=this.getSelectedText()
+        _assertEqual($value,$current)
+    }
+
+    this.getSelectedText=function(){
+       return _getValue(_textbox("dijitReset dijitInputInner",_in($self))) 
+    }
+
+    this.getSelectedValue=function(){
+       return _getValue(_hidden(0,_in($self)))
+    }
+}
+
+var $DojoSlider=function Slider($elem){
+    var $self=findEnclosingWidget($elem,"dijitSlider")
+    DojoWidget.call(this,$self) 
+    var $handle=_div(/.*dijitSliderImageHandle.*/,_in($self))
+
+    this.dropTo=function($targetText){
+        var $target=_div($targetText,_in($self))
+        _dragDrop($handle,$target)
+        var $current=this.getCurrentText()
+        _assertEqual($targetText,$current)
+    }
+
+    this.getCurrentIndex=function(){
+        return getAttribute($handle,"aria-valuenow")
+    }
+
+    this.getCurrentText=function(){
+        $opts=this.getOptions()
+        $idx=this.getCurrentIndex()
+        return $opts[$idx-1]
+    }
+    this.getOptions=function(){
+        var $opts=new Array()
+        var $elems=_collect("_div","dijitRuleLabel dijitRuleLabelH")
+        for($i=0;$i<$elems.length;$i++){
+            $opts.push(_getText($elems[$i]))
+        }
+        return $opts
+    }
+}
+
+function findByLabel($labelText,$className){
+    var $label=_label($labelText)
+    var $wid=getAttribute($label,"for")
+    _set($id,findIdByWID($wid))
+    var $div=_byId($id)
+    return new $className($div)
+}
+

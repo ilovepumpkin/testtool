@@ -1,0 +1,71 @@
+8
+
+dir
+3308
+svn://9.123.196.241/svcbuild
+svn://9.123.196.241
+
+
+
+2014-12-09T13:54:12.669096Z
+2530
+shenrui
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3d93a108-704e-44eb-8cf2-0e619907b4b5
+
+emailsender.py
+file
+3348
+
+
+
+2015-03-24T09:35:54.000000Z
+97d1bda778b2e898930fd98880e5f664
+2015-03-24T09:35:58.155017Z
+3348
+shenrui
+has-props
+
+guibvt
+dir
+
+dataprep
+dir
+
+svcdown
+dir
+
+.project
+file
+
+
+
+
+2015-03-19T08:48:34.000000Z
+36d296f75132257394cf23bc04286165
+2014-06-11T07:02:49.594083Z
+1406
+shhull
+
+install
+dir
+
+cmvcdefects
+dir
+
+download
+dir
+

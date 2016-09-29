@@ -1,0 +1,15 @@
+.odd {
+	background-color:#E9E9E9;
+}
+
+.even{
+	background-color:#FFFFFF;
+}
+
+table{
+	border:1px lightgrey solid;
+}
+
+td,th{
+	padding:3px;
+}

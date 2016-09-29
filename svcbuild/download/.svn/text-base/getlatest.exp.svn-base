@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+
+set work_dir [lindex $argv 0] 
+set build_type [lindex $argv 1] 
+set release [lindex $argv 2]
+set password hello=1234
+set timeout -1
+
+#spawn bash -c "ssh shenrui@9.71.44.38 ls /build/lodestone730/latest|head -n1"
+#spawn ssh shenrui@9.71.44.38 {ls -t /build/lodestone730|awk '/^[0-9]+[a-z]*$/{print $1}'|head -n1}
+spawn $work_dir/getversion.sh $build_type $release
+match_max 100000
+expect "*?password:"
+send -- "$password\r"
+send -- "\r"
+expect eof

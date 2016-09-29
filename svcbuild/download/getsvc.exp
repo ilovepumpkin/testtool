@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+
+set work_dir [lindex $argv 0] 
+set build_type [lindex $argv 1] 
+set release [lindex $argv 2]
+set latest [lindex $argv 3]
+set password hello=1234
+set timeout -1
+
+spawn bash -c "ssh likezhao@9.71.44.38 ls /$build_type/$release/$latest/log | grep svc | head -n1"
+match_max 100000
+expect "*?password:"
+send -- "$password\r"
+send -- "\r"
+expect eof

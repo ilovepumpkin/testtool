@@ -1,0 +1,4 @@
+#!/bin/sh
+
+. ./setenv.sh
+./pass.exp 9.119.41.146 $username $password

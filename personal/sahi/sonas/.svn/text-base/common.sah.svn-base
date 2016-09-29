@@ -1,0 +1,121 @@
+function wait_taskdone($wait_time){
+    if($wait_time==null){
+        $wait_time=60000;
+    }
+    _wait($wait_time,_isVisible(_div("100%")));
+    _assertExists(_div("The task completed."));
+}
+
+function Page(){
+    
+}
+
+function dialog($title){
+    return _parentNode(_div($title),"div");
+}
+
+function TempDialog($title){
+    this.dlg=_parentNode(_div($title),"div");
+    var $self=this.dlg;
+    
+    this.textbox=function($text){
+        return _textbox($text,_in(this.dlg))
+    };
+
+    this.checkbox=function($text,$for_label){
+        if($for_label!=null){
+            return _checkbox($text,_near(_div($for_label)));
+        }else{
+            return _checkbox($text);  
+        }
+    };
+
+    this.select=function($text,$for_label){
+        _click(_div("dijitReset dijitArrowButtonInner",_near(_div($for_label))));
+        _click(_cell($text));
+    }
+
+    this.clickOK=function(){
+        _click(_span("OK",_in($self)));
+    }
+
+    this.clickCancel=function(){
+        _click(_span("Cancel",_in($self)));
+    }
+
+    this.nspinner=function($for_label){
+        return _textbox(/dijit_form_NumberSpinner_.*/,_near(_div($for_label))); 
+    }
+}
+
+function Dropdown($label,$dlg){
+   var $re='/'+$label+'.*/'
+
+   if($dlg==null){
+        var $sel=_div("dijitReset dijitArrowButtonInner",_near(_div($re)));
+   }else{
+        var $sel=_div("dijitReset dijitArrowButtonInner",_near(_div($re,_in($dlg))));
+   }
+
+   this.select=function($text){
+       _click($sel);
+       _click(_cell($text)); 
+   }
+
+   this.get_selected=function(){
+        return _getValue($sel); 
+   }
+}
+
+
+function nspinner($label,$dlg){
+   var $re='/'+$label+'.*/'
+   if($dlg==null){
+        return _textbox(/dijit_form_NumberSpinner_.*/,_near(_div($re)));
+   }else{
+        return _textbox(/dijit_form_NumberSpinner_.*/,_near(_div($re,_in($dlg))));
+   }
+}
+
+function textbox($label,$dlg){
+   var $re='/'+$label+'.*/'
+   if($dlg==null){
+        return _textbox(/dijit_form_ValidationTextBox_.*/,_near(_div($re)));
+   }else{
+        return _textbox(/dijit_form_ValidationTextBox_.*/,_near(_div($re,_in($dlg))));
+   }
+}
+
+function checkbox($label,$dlg){
+   var $re='/'+$label+'.*/'
+   if($dlg==null){
+        return _checkbox(0,_near(_div($re)));
+   }else{
+        return _checkbox(0,_near(_div($re,_in($dlg))));
+   }
+}
+
+function button($label,$dlg){
+   if($dlg==null){
+        return _span($label);
+   }else{
+        return _span($label,_in($dlg));
+   }
+}
+
+$dlg=new dialog('New SNMP Server');
+$v=checkbox('Status change:',$dlg);
+$v2=checkbox('Utilization thresholds:',$dlg);
+_check($v);
+_check($v2);
+
+$n=nspinner('Port number',$dlg);
+_setValue($n,'111');
+_log(_getValue($n),'info');
+
+$s=new Dropdown('Status change');
+_log($s.get_selected(),'success');
+$s.select('Warning, Critical');
+
+//$b=button("Cancel",$dlg);
+//_click($b)

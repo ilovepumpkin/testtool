@@ -1,0 +1,28 @@
+_include("common.sah")
+
+function dlg_newfs(){
+    return _div("dijitDialog editFilesystemDialog editFilesystemDialogNew")
+}
+
+function dlg_edfs(){
+    return _div("dijitDialog editFilesystemDialog editFilesystemDialogExisting");
+}
+
+function mksinglefs($fsname,$disk_count){
+    _click(_span("New File System"));
+    _setValue(_textbox(/sonas_common_UniqueValueTextBox/,_near(_div(/File system name:.*/))),$fsname);
+    _click(_label(/.*, fg.1/));
+    var $dlgnewfs=dlg_newfs();
+    while(--$disk_count>0){
+       _click(_div("+",_under($dlgnewfs)));
+    }
+    _click(_span("OK",_under($dlgnewfs)));
+   wait_taskdone(600000);
+   _assertExists(_heading3($fsname));
+   _assert(_isVisible(_heading3($fsname)));
+}
+
+var $fsname="ruifilesystem";
+
+_click(_link("File Systems"));
+mksinglefs($fsname,3);
