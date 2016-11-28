@@ -59,6 +59,12 @@ def httppost(url, body):
         url, 'POST', headers=headers, body=urllib.urlencode(body))
     return content.decode('utf-8')
 
+def find(name, path):
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            file=file.decode('utf8')
+            if name == file:
+               return os.path.join(root.decode('utf8'), name)
 
 def go(catUrl, catName):
     last_page_file = catName+'/'+'.last_page'
@@ -128,17 +134,20 @@ def go(catUrl, catName):
                         if not os.path.exists(mp3path):
                             os.system('mkdir -p "'+mp3path+'"')
 
-                    mp3path = mp3path.decode('utf-8')+"/"+title+".mp3"
+                    mp3name=title+".mp3"        
+                    mp3path = mp3path.decode('utf-8')+"/"+mp3name
 
-                    if os.path.exists(mp3path):
-                        print mp3path+' exists. Skip downloading it.'
+                    # if os.path.exists(mp3path):
+                    found_file=find(mp3name,catName)
+                    if found_file!=None:
+                        print found_file+' exists. Skip downloading it.'
                         continue
 
                     dUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+"&tit="+urllib2.quote(title.encode('gbk'));
                     try:
                         dUrl = get_mp3_url(dUrl)
                     except:
-                        os.system('echo '+mp3path.encode('utf-8')+'|'+dUrl.encode('utf-8')+'">>'+failed_file)
+                        os.system('echo "'+mp3path.encode('utf-8')+'|'+dUrl.encode('utf-8')+'">>'+failed_file)
                         continue    
                     wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" '+dUrl
                     wgetcmd_mp3='echo "'+mp3path.encode('utf-8')+'">'+last_item_file+';'+wgetcmd_mp3
