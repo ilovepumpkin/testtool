@@ -86,7 +86,7 @@ def go(catUrl, catName):
         try:
             for i in range(1000):
                 j = i+1
-                url = catUrl.replace('.html', str(j)+".html")
+                url = catUrl[:catUrl.rindex('--')+2]+str(j)+".html"
 
                 if not last_page_found:
                     if last_page != url:
@@ -123,7 +123,7 @@ def go(catUrl, catName):
                     #     '<div class="t_mp3_info t_mp3_gc">.*《(.*)》.*</div>').findall(html)
                     entries = re.compile(u'《(.*)》').findall(html)
                     if(len(entries) > 0):
-                        bookName = entries[0]
+                        bookName = entries[-1]
                         mp3path=mp3path+"/"+bookName.encode('utf-8')
                         if not os.path.exists(mp3path):
                             os.system('mkdir -p "'+mp3path+'"')
@@ -134,14 +134,12 @@ def go(catUrl, catName):
                         print mp3path+' exists. Skip downloading it.'
                         continue
 
-                    dUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + \
-                        aId+"&tit="+urllib2.quote(title.encode('gbk'));
+                    dUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+"&tit="+urllib2.quote(title.encode('gbk'));
                     try:
                         dUrl = get_mp3_url(dUrl)
-                    except HTTPError as e:
-                            os.system(
-                                'echo "['+title.encode('utf-8')+']'+dUrl.encode('utf-8')+'">>'+failed_file)
-                            continue    
+                    except:
+                        os.system('echo "['+title.encode('utf-8')+']'+dUrl.encode('utf-8')+'">>'+failed_file)
+                        continue    
                     wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" '+dUrl
                     wgetcmd_mp3='echo "'+mp3path.encode('utf-8')+'">'+last_item_file+';'+wgetcmd_mp3
                     os.system(wgetcmd_mp3)
@@ -266,7 +264,7 @@ os.system('wget -O 测试.mp3 '+dUrl)
 # catList=[["http://www.baobao88.com/list/68/15--0--0--.html",'7-12岁儿童故事'],["http://www.baobao88.com/list/131/23--0--0--.html","小学课文朗读一年级"],["http://www.baobao88.com/bbmusic/baike/95_.html","儿童百科"],["http://www.baobao88.com/youshen/chengyu/99_.html","成语故事"],["http://www.baobao88.com/youshen/shangxiawuqiannian/100_.html","上下五千年"],["http://www.baobao88.com/youshen/bbstory/zuowen/134_.html","小学生作文"]]
 # catList=[["http://www.baobao88.com/babybook/wenxue/zuowen/91_.html","小学作文"],["http://www.baobao88.com/babybook/baike/shenghuo/40_.html","生活百科"],["http://www.baobao88.com/babybook/baike/zhiran/43_.html","自然百科"],["http://www.baobao88.com/babybook/baike/jiankang/41_.html","健康百科"],["http://www.baobao88.com/babybook/baike/anquan/","安全百科"]]
 
-catList=[["http://www.baobao88.com/list/101/15--182--137--.html",'7-12岁/国外作品/童话小说']]
+catList=[["http://www.baobao88.com/list/101/15--182--137--3.html",'7-12岁/国外作品/童话小说']]
 
 login()
 for cat in catList:
