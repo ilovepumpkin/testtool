@@ -29,6 +29,7 @@ def getOriginalDate(filename):
             return str(t).replace(":",".")[:10]  
         except:  
             pass  
+    return "Backlog"        
     # state = os.stat(filename)  
     # return time.strftime("%Y.%m", time.localtime(state[-2]))  
   
@@ -48,9 +49,6 @@ def classifyPictures(path):
             except Exception,e:  
                 print e  
                 continue  
-
-            if t == None:
-                continue    
 
             info = info + "拍摄时间：" + t + " "  
             pwd = root +'/'+ t  
