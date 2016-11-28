@@ -112,7 +112,7 @@ def go(catUrl, catName):
                     aId = entry[0]
                     storyPageUrl = 'http://www.baobao88.com'+entry[1]
                     title = entry[2]
-                    mp3path = catName.decode('utf-8')
+                    mp3path = catName
 
                     # get the book name
                     bookName = ""
@@ -124,7 +124,7 @@ def go(catUrl, catName):
                     entries = re.compile(u'《(.*)》').findall(html)
                     if(len(entries) > 0):
                         bookName = entries[0]
-                        mp3path=mp3path.encode('utf-8')+"/"+bookName.encode('utf-8')
+                        mp3path=mp3path+"/"+bookName.encode('utf-8')
                         if not os.path.exists(mp3path):
                             os.system('mkdir -p "'+mp3path+'"')
 
