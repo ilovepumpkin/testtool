@@ -29,8 +29,8 @@ def getOriginalDate(filename):
             return str(t).replace(":",".")[:10]  
         except:  
             pass  
-    state = os.stat(filename)  
-    return time.strftime("%Y.%m", time.localtime(state[-2]))  
+    # state = os.stat(filename)  
+    # return time.strftime("%Y.%m", time.localtime(state[-2]))  
   
    
 def classifyPictures(path):  
@@ -48,6 +48,10 @@ def classifyPictures(path):
             except Exception,e:  
                 print e  
                 continue  
+
+            if t == None:
+                continue    
+
             info = info + "拍摄时间：" + t + " "  
             pwd = root +'/'+ t  
             dst = pwd + '/' + filename  
