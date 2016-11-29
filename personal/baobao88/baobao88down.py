@@ -149,7 +149,7 @@ def go(catUrl, catName):
                     except:
                         os.system('echo "'+mp3path.encode('utf-8')+'|'+dUrl.encode('utf-8')+'">>'+failed_file)
                         continue    
-                    wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" '+dUrl
+                    wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" "'+dUrl+'"'
                     wgetcmd_mp3='echo "'+mp3path.encode('utf-8')+'">'+last_item_file+';'+wgetcmd_mp3
                     os.system(wgetcmd_mp3)
             
