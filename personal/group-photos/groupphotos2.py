@@ -40,7 +40,8 @@ def classifyPictures(path):
     for root,dirs,files in os.walk(path,True):  
         # dirs[:] = []  
         for currdir in dirs:
-            classifyPictures(currdir)
+            if currdir.find('~')!=-1:
+                classifyPictures(currdir)
         for filename in files:  
             filename = os.path.join(root, filename)  
             f,e = os.path.splitext(filename)  
