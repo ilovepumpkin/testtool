@@ -127,10 +127,10 @@ def go(catUrl, catName):
                     html = unicode(html,'gbk')
                     # entries = re.compile(
                     #     '<div class="t_mp3_info t_mp3_gc">.*《(.*)》.*</div>').findall(html)
-                    entries = re.compile(u'《(.*)》').findall(html)
-                    if(len(entries) > 0):
-                        bookName = entries[-1]
-                        mp3path=mp3path+"/"+bookName.encode('utf-8')
+                    entries = re.search(u'《((?!《).)+》',html)
+                    if(entries!=None):
+                        bookName = entries.group(0).encode('utf-8').replace('《','').replace('》','')
+                        mp3path=mp3path+"/"+bookName
                         if not os.path.exists(mp3path):
                             os.system('mkdir -p "'+mp3path+'"')
 
