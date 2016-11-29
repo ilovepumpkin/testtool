@@ -80,6 +80,8 @@ def go(catUrl, catName):
         print catName+" was done.Skip it."
         return
     else:
+        # delete very small files
+        os.system('find '+catName+' -size -5k -type f|xargs rm -rf')
         # delete the newest one(it might be broken) so redownload it.
         os.system('more '+last_item_file+' | xargs rm -rf')
         last_page = ''
@@ -157,8 +159,7 @@ def go(catUrl, catName):
         except Exception as e:  
             print 'Error occurred: ',e
             traceback.print_exc()
-            sys.exit(0)
-    
+            sys.exit(0)    
 
 def handleHomepageByMainCatName(catNameList):
     html=httpget('http://www.jinmiao.cn').encode('utf-8')

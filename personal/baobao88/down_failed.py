@@ -15,8 +15,11 @@ cookie = ""
 
 
 def down_failed(failedfile):
+    # delete very small files
+    # os.system('find '+catName+' -size -5k -type f|xargs rm -rf')
     for line in open(failedfile):  
         [filepath,dUrl]=line.split('|') 
+        dUrl=dUrl+'.mp3&dul=2'
         if not os.path.exists(filepath):
             try:
                 wgetcmd_mp3='wget --retry-connrefused -O "'+filepath+'" "'+dUrl+'"'
