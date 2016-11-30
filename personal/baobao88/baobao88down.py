@@ -170,6 +170,7 @@ def go(catUrl):
                         print "["+str(i)+"]"+origDUrl
                         try:
                             dUrl = get_mp3_url(origDUrl)
+                            break
                         except Exception as e: 
                             print 'URL error: ',e
                             traceback.print_exc()

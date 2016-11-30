@@ -31,7 +31,10 @@ def down_failed(path):
                 try:
                     origDUrl=re.compile(r'dul=\d{1}').sub('dul='+str(i),origDUrl)
                     dUrl = get_mp3_url(origDUrl)
+                    break;
                 except:
+                    print 'URL error: ',e
+                    traceback.print_exc()
                     continue
             if i==4:
                 os.system('echo "'+filepath.encode('utf-8')+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
