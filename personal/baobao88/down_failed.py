@@ -14,15 +14,19 @@ from urllib2 import HTTPError
 cookie = ""
 
 
-def down_failed(failedfile):
+def down_failed(path):
+    failedfile=os.path.join(path, ".failed") 
+    if not os.path.exists(failedfile):
+        print "${failedfile} is not found!"
+        sys.exit(0)        
     # delete very small files
-    # os.system('find '+catName+' -size -5k -type f|xargs rm -rf')
+    os.system('find '+path+' -size -5k -type f -name *.mp3|xargs rm -rf')
     for line in open(failedfile):  
         [filepath,dUrl]=line.split('|') 
-        dUrl=dUrl+'.mp3&dul=2'
+        dUrl=dUrl.replace('\n','')+'.mp3&dul=2'
         if not os.path.exists(filepath):
             try:
-                wgetcmd_mp3='wget --retry-connrefused -O "'+filepath+'" "'+dUrl+'"'
+                wgetcmd_mp3='wget --retry-connrefused -O "'+filepath+'" --header "Cookie:'+cookie+'" "'+dUrl+'"'
                 os.system(wgetcmd_mp3)
             except:
                 print "Error: "+filepath    

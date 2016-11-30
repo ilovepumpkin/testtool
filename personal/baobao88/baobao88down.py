@@ -81,7 +81,7 @@ def go(catUrl, catName):
         return
     else:
         # delete very small files
-        os.system('find '+catName+' -size -5k -type f|xargs rm -rf')
+        os.system('find '+catName+' -size -5k -type f -name *.mp3|xargs rm -rf')
         # delete the newest one(it might be broken) so redownload it.
         os.system('more '+last_item_file+' | xargs rm -rf')
         last_page = ''
@@ -145,12 +145,19 @@ def go(catUrl, catName):
                         print found_file+' exists. Skip downloading it.'
                         continue
 
-                    dUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+"&tit="+urllib2.quote(title.encode('gbk'));
-                    try:
-                        dUrl = get_mp3_url(dUrl)
-                    except:
+                    dUrl=""
+                    i=0    
+                    for i in range(1,5):
+                        dUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+"&dul="+str(i)+"&tit="+urllib2.quote(title.encode('gbk'));
+                        try:
+                            dUrl = get_mp3_url(dUrl)
+                        except:
+                            continue
+                    
+                    if i==4: # i==4 means all servers have been tried ever        
                         os.system('echo "'+mp3path.encode('utf-8')+'|'+dUrl.encode('utf-8')+'">>'+failed_file)
                         continue    
+                    
                     wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" "'+dUrl+'"'
                     wgetcmd_mp3='echo "'+mp3path.encode('utf-8')+'">'+last_item_file+';'+wgetcmd_mp3
                     os.system(wgetcmd_mp3)
