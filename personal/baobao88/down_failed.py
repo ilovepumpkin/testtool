@@ -16,20 +16,28 @@ cookie = ""
 
 def down_failed(path):
     failedfile=os.path.join(path, ".failed") 
+    bakfailedfile=os.path.join(path, ".failed.bak") 
     if not os.path.exists(failedfile):
         print "${failedfile} is not found!"
-        sys.exit(0)        
+        sys.exit(0)
+    else:
+        os.system('mv '+failedfile+' '+bakfailedfile)        
     # delete very small files
     os.system('find '+path+' -size -5k -type f -name *.mp3|xargs rm -rf')
-    for line in open(failedfile):  
-        [filepath,dUrl]=line.split('|') 
-        dUrl=dUrl.replace('\n','')+'.mp3&dul=2'
+    for line in open(bakfailedfile):  
+        [filepath,origDUrl]=line.split('|') 
         if not os.path.exists(filepath):
-            try:
-                wgetcmd_mp3='wget --retry-connrefused -O "'+filepath+'" --header "Cookie:'+cookie+'" "'+dUrl+'"'
-                os.system(wgetcmd_mp3)
-            except:
-                print "Error: "+filepath    
+            for i in range(1,5):
+                try:
+                    origDUrl=re.compile(r'dul=\d{1}').sub('dul='+str(i),origDUrl)
+                    dUrl = get_mp3_url(origDUrl)
+                except:
+                    continue
+            if i==4:
+                os.system('echo "'+filepath.encode('utf-8')+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
+                continue        
+            wgetcmd_mp3='wget --retry-connrefused -O "'+filepath+'" --header "Cookie:'+cookie+'" "'+dUrl+'"'
+            os.system(wgetcmd_mp3)
         else:
             print filepath+" already exists. Skip it."
 
@@ -68,7 +76,7 @@ def httpget(url):
 def get_mp3_url(url):
     opener = urllib2.build_opener()
     opener.addheaders.append(('Cookie', cookie))
-    f = opener.open(url)
+    f = opener.open(url,null,5)
     return f.geturl()
 
 

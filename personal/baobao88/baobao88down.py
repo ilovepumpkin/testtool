@@ -48,7 +48,7 @@ def httpget(url):
 def get_mp3_url(url):
     opener = urllib2.build_opener()
     opener.addheaders.append(('Cookie', cookie))
-    f = opener.open(url)
+    f = opener.open(url,None,5)
     return f.geturl()
 
 
@@ -66,7 +66,21 @@ def find(name, path):
             if name == file:
                return os.path.join(root.decode('utf8'), name)
 
-def go(catUrl, catName):
+def fetchCatName(url):
+    html = httpget(url)
+    html = html.decode('gbk')
+    # print html
+    entries = re.compile('<a href="[/\-\.a-z0-9]+" class="red2">(((?!<).)+)</a>').findall(html)
+    if len(entries)>0:
+        return entries[0][0]+"/"+entries[1][0]+"/"+entries[2][0]
+    else:
+        print "Failed to fetch category name for url: "+url
+        sys.exit(0)    
+
+def go(catUrl):
+
+    catName=fetchCatName(catUrl).encode('utf8');
+
     last_page_file = catName+'/'+'.last_page'
     last_item_file = catName+'/'+'.last_item'
     done_file = catName+'/'+'.done'
@@ -145,17 +159,24 @@ def go(catUrl, catName):
                         print found_file+' exists. Skip downloading it.'
                         continue
 
+                    origDUrl=""    
                     dUrl=""
                     i=0    
                     for i in range(1,5):
-                        dUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+"&dul="+str(i)+"&tit="+urllib2.quote(title.encode('gbk'));
+                        dul=""
+                        if i!=1:
+                            dul="&dul="+str(i)
+                        origDUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+dul+"&tit="+urllib2.quote(title.encode('gbk'))+".mp3";
+                        print "["+str(i)+"]"+origDUrl
                         try:
-                            dUrl = get_mp3_url(dUrl)
-                        except:
+                            dUrl = get_mp3_url(origDUrl)
+                        except Exception as e: 
+                            print 'URL error: ',e
+                            traceback.print_exc()
                             continue
                     
                     if i==4: # i==4 means all servers have been tried ever        
-                        os.system('echo "'+mp3path.encode('utf-8')+'|'+dUrl.encode('utf-8')+'">>'+failed_file)
+                        os.system('echo "'+mp3path.encode('utf-8')+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
                         continue    
                     
                     wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" "'+dUrl+'"'
@@ -281,8 +302,8 @@ os.system('wget -O 测试.mp3 '+dUrl)
 # catList=[["http://www.baobao88.com/list/68/15--0--0--.html",'7-12岁儿童故事'],["http://www.baobao88.com/list/131/23--0--0--.html","小学课文朗读一年级"],["http://www.baobao88.com/bbmusic/baike/95_.html","儿童百科"],["http://www.baobao88.com/youshen/chengyu/99_.html","成语故事"],["http://www.baobao88.com/youshen/shangxiawuqiannian/100_.html","上下五千年"],["http://www.baobao88.com/youshen/bbstory/zuowen/134_.html","小学生作文"]]
 # catList=[["http://www.baobao88.com/babybook/wenxue/zuowen/91_.html","小学作文"],["http://www.baobao88.com/babybook/baike/shenghuo/40_.html","生活百科"],["http://www.baobao88.com/babybook/baike/zhiran/43_.html","自然百科"],["http://www.baobao88.com/babybook/baike/jiankang/41_.html","健康百科"],["http://www.baobao88.com/babybook/baike/anquan/","安全百科"]]
 
-catList=[["http://www.baobao88.com/list/101/15--182--137--.html",'7-12岁/国外作品/童话小说']]
+catList=[["http://www.baobao88.com/list/101/15--182--138--.html"]]
 
 login()
 for cat in catList:
-    go(cat[0],cat[1])
+    go(cat[0])
