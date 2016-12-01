@@ -11,14 +11,13 @@ def findCommStr(str1,str2):
     print "str2:"+str2
     str1_len=len(str1)
     print str1_len
-    i=0
-    while (i<str1_len):
-        print i
+    i=str1_len
+    while (i>0):
         print str1[:i]
-        print str1[:5]
-        if not str2.startswith(str1[:i]):
+        if str2.startswith(str1[:i]):
             break
-        i+=1  
+        i-=1  
+    print i    
     if i==0:
         return None
     else:
@@ -64,7 +63,7 @@ def group(path):
             i+=1
 
     
-print findCommStr('塔克的郊外03.mp3','四月（小山雀的日历）.mp3')==""  
+print findCommStr('塔克的郊外03.mp3','四月（小山雀的日历）.mp3')==None 
 # if __name__ == "__main__":  
 #     path = os.path.abspath('.')
 #     group(path)  
