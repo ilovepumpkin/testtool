@@ -173,7 +173,7 @@ def go(catUrl):
                             continue
                     
                     if i==4: # i==4 means all servers have been tried ever        
-                        os.system('echo "'+mp3path.encode('utf-8')+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
+                        os.system('echo "'+mp3path+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
                         continue    
                     
                     wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path+'" "'+dUrl+'"'
