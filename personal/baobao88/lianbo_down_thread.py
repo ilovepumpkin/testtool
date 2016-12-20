@@ -102,7 +102,6 @@ def go(catUrl):
         # delete the newest one(it might be broken) so redownload it.
         os.system('find '+catName+' -name *.part|xargs cat|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf')
         os.system('find '+catName+' -name *.part|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf')
-        sys.exit(0)
         last_page = ''
         last_page_found = True
         if os.path.exists(last_page_file):
