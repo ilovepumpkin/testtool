@@ -86,6 +86,8 @@ def go(catUrl):
     last_page_file = catName+'/'+'.last_page'
     last_item_file = catName+'/'+'.last_item'
     done_file = catName+'/'+'.done'
+
+    global failed_file
     failed_file = catName+'/'+'.failed'
 
     print 'Start downloading the category <'+catName+'>'
@@ -98,10 +100,16 @@ def go(catUrl):
     else:
         # delete very small files
         cmd='find '+catName+' -size -5k -type f -name *.mp3|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf'
+        print cmd
         os.system(cmd)
         # delete the newest one(it might be broken) so redownload it.
-        os.system('find '+catName+' -name *.part|xargs cat|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf')
-        os.system('find '+catName+' -name *.part|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf')
+        cmd='find '+catName+' -name *.part|xargs cat|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf'
+        print cmd
+        os.system(cmd)
+        cmd='find '+catName+' -name *.part|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf'
+        print cmd
+        os.system(cmd)
+
         last_page = ''
         last_page_found = True
         if os.path.exists(last_page_file):
@@ -154,10 +162,10 @@ def go(catUrl):
                     print mp3name  
                     mp3path = bookDir+"/"+mp3name.encode('utf-8')
 
-                    # if os.path.exists(mp3path):
-                    found_file=find(mp3name,catName)
-                    if found_file!=None:
-                        print found_file+' exists. Skip downloading it.'
+                    if os.path.exists(mp3path):
+                    # found_file=find(mp3name,catName)
+                    # if found_file!=None:
+                        print mp3path+' exists. Skip downloading it.'
                         continue
 
                     file_list.append((None,{'aId':aId,'mp3path':mp3path}))
@@ -190,8 +198,10 @@ def down_mp3(aId,mp3path):
             traceback.print_exc()
             continue
     
-    if i==4: # i==4 means all servers have been tried ever        
-        os.system('echo "'+mp3path+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
+    if i==4: # i==4 means all servers have been tried ever  
+        cmd='echo "'+mp3path+'|'+origDUrl.encode('utf-8')+'">>'+failed_file      
+        print cmd
+        os.system(cmd)
         return
     
     part_file=mp3path+".part"
