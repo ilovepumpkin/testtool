@@ -122,7 +122,7 @@ def go(catUrl):
                     '<li class="zjlist"><a href="(.*\.html)" target="_blank"><img.*alt="(.*)" /><span>.*</li>').findall(html)
             for entry in entries:
                 url="http://www.baobao88.com/lianbo/"+entry[0]
-                bookName=entry[1]
+                bookName=entry[1].strip()
                 # print storyUrl
                 # print name
                 bookDir=catName+"/"+bookName.encode('utf-8')
@@ -155,7 +155,7 @@ def go(catUrl):
                     # url="http://www.baobao88.com"+entry.replace('downid','id')
                     # print entry
                     aId=re.compile('downid=(\d+)&').findall(entry)[0]
-                    title=re.compile('tit=\d+(.*)$').findall(entry)[0]
+                    title=re.compile('tit=\d+(.*)$').findall(entry)[0].strip()
                     mp3path = catName
 
                     mp3name=title+".mp3"      
