@@ -205,10 +205,10 @@ def down_mp3(aId,mp3path):
         return
     
     part_file=mp3path+".part"
-    os.system('echo "'+mp3path+'">'+part_file)
+    os.system('echo "'+mp3path+'">"'+part_file+'"')
     wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path+'" "'+dUrl+'"'
     os.system(wgetcmd_mp3)            
-    os.system('rm -rf '+part_file)
+    os.system('rm -rf "'+part_file+'"')
 
 def handleHomepageByMainCatName(catNameList):
     html=httpget('http://www.jinmiao.cn').encode('utf-8')
