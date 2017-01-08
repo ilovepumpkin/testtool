@@ -10,9 +10,11 @@ import sys
 import urllib
 import urllib2
 from urllib2 import HTTPError
+import threadpool
 
 cookie = ""
 
+pool=threadpool.ThreadPool(20)
 
 def login():
     global cookie
@@ -85,6 +87,8 @@ def go(catUrl):
     last_page_file = catName+'/'+'.last_page'
     last_item_file = catName+'/'+'.last_item'
     done_file = catName+'/'+'.done'
+
+    global failed_file
     failed_file = catName+'/'+'.failed'
 
     print 'Start downloading the category <'+catName+'>'
@@ -96,9 +100,17 @@ def go(catUrl):
         return
     else:
         # delete very small files
-        os.system('find '+catName+' -size -5k -type f -name *.mp3|xargs rm -rf')
+        cmd='find '+catName+' -size -5k -type f -name *.mp3|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf'
+        print cmd
+        os.system(cmd)
         # delete the newest one(it might be broken) so redownload it.
-        os.system('more '+last_item_file+' | xargs rm -rf')
+        cmd='find '+catName+' -name *.part|awk \'{print "\\\""$0"\\\""}\'|xargs cat|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf'
+        print cmd
+        os.system(cmd)
+        cmd='find '+catName+' -name *.part|awk \'{print "\\\""$0"\\\""}\'|xargs rm -rf'
+        print cmd
+        os.system(cmd)
+
         last_page = ''
         last_page_found = True
         if os.path.exists(last_page_file):
@@ -131,6 +143,8 @@ def go(catUrl):
                 cmd_record_lastpage = 'echo "'+url+'">'+last_page_file
                 os.system(cmd_record_lastpage)
 
+                file_list=[]
+
                 for entry in entries:
                     aId = entry[0]
                     storyPageUrl = 'http://www.baobao88.com'+entry[1]
@@ -151,45 +165,57 @@ def go(catUrl):
                         if not os.path.exists(mp3path):
                             os.system('mkdir -p "'+mp3path+'"')
 
-                    mp3name=title+".mp3"        
+                    mp3name=title+".mp3" 
+                    print mp3name       
                     mp3path = mp3path.decode('utf-8')+"/"+mp3name
 
-                    # if os.path.exists(mp3path):
-                    found_file=find(mp3name,catName)
-                    if found_file!=None:
-                        print found_file+' exists. Skip downloading it.'
+                    if os.path.exists(mp3path):
+                    # found_file=find(mp3name,catName)
+                    # if found_file!=None:
+                        print mp3path+' exists. Skip downloading it.'
                         continue
 
-                    origDUrl=""    
-                    dUrl=""
-                    i=0    
-                    for i in range(1,5):
-                        dul=""
-                        if i!=1:
-                            dul="&dul="+str(i)
-                        origDUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+dul+"&tit="+urllib2.quote(title.encode('gbk'))+".mp3";
-                        print "["+str(i)+"]"+origDUrl
-                        try:
-                            dUrl = get_mp3_url(origDUrl)
-                            break
-                        except Exception as e: 
-                            print 'URL error: ',e
-                            traceback.print_exc()
-                            continue
-                    
-                    if i==4: # i==4 means all servers have been tried ever        
-                        os.system('echo "'+mp3path.encode('utf-8')+'|'+origDUrl.encode('utf-8')+'">>'+failed_file)
-                        continue    
-                    
-                    wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path.encode('utf-8')+'" "'+dUrl+'"'
-                    wgetcmd_mp3='echo "'+mp3path.encode('utf-8')+'">'+last_item_file+';'+wgetcmd_mp3
-                    os.system(wgetcmd_mp3)
+                    file_list.append((None,{'aId':aId,'mp3path':mp3path}))
+
+                requests=threadpool.makeRequests(down_mp3,file_list)
+                [pool.putRequest(req) for req in requests]  
+                pool.wait() 
             
             os.system('touch '+done_file)
         except Exception as e:  
             print 'Error occurred: ',e
             traceback.print_exc()
             sys.exit(0)    
+
+def down_mp3(aId,mp3path):
+    origDUrl=""    
+    dUrl=""
+    i=0    
+    for i in range(1,5):
+        dul=""
+        if i!=1:
+            dul="&dul="+str(i)
+        origDUrl = 'http://www.baobao88.com/member/loginsta_DOWN.php?id=' + aId+dul;
+        print "["+str(i)+"]"+origDUrl
+        try:
+            dUrl = get_mp3_url(origDUrl)
+            break
+        except Exception as e: 
+            print 'URL error: ',e
+            traceback.print_exc()
+            continue
+    
+    if i==4: # i==4 means all servers have been tried ever  
+        cmd='echo "'+mp3path+'|'+origDUrl.encode('utf-8')+'">>'+failed_file      
+        print cmd
+        os.system(cmd)
+        return
+    
+    part_file=mp3path+".part"
+    os.system('echo "'+mp3path+'">"'+part_file+'"')
+    wgetcmd_mp3='wget --retry-connrefused -O "'+mp3path+'" "'+dUrl+'"'
+    os.system(wgetcmd_mp3)            
+    os.system('rm -rf "'+part_file+'"')
 
 def handleHomepageByMainCatName(catNameList):
     html=httpget('http://www.jinmiao.cn').encode('utf-8')
