@@ -175,7 +175,7 @@ def go(catUrl):
                         print mp3path+' exists. Skip downloading it.'
                         continue
 
-                    file_list.append((None,{'aId':aId,'mp3path':mp3path}))
+                    file_list.append((None,{'aId':aId,'mp3path':mp3path.encode('utf-8')}))
 
                 requests=threadpool.makeRequests(down_mp3,file_list)
                 [pool.putRequest(req) for req in requests]  
