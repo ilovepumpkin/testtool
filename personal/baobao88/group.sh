@@ -10,5 +10,6 @@ fi
 mkdir -p "$dir"
 echo "目录【$dir 】已创建"
 
-ls -F | grep [^\/]$|grep "$dir"|xargs -i mv "{}" "$dir"
+#ls -F | grep [^\/]$|grep "$dir"|xargs -i mv "{}" "$dir"
+ls *.mp3 |grep "$dir"|awk '{print "\""$0"\""}'|xargs -i mv "{}" "$dir"
 echo "故事已转移至目录【$dir】"
